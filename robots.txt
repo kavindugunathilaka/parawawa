@@ -1,0 +1,21 @@
+# Robots.txt for Parawawa Eco Bio Septic Tank System Official Website
+User-agent: *
+Allow: /
+
+# GEO / AI Crawler Directives (ChatGPT, Perplexity, Gemini, Claude)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://parawawa.lk/sitemap.xml
