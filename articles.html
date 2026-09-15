@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  
+
   <!-- ==========================================================================
        SENIOR SEO / AEO / GEO HUB METADATA
        ========================================================================== -->
@@ -12,13 +12,13 @@
   <meta name="keywords" content="Parawewa articles, Parawewa blog, bio septic tank guide Sri Lanka, Dharmakeerthi Mannage, septic tank maintenance, Buddija Construction Sri Lanka, CEA approval bio tank">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <link rel="canonical" href="https://parawawa.lk/en/articles.html">
-  
+
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://parawawa.lk/en/articles.html">
   <meta property="og:title" content="Parawewa 10 SEO Engineering Articles & Knowledge Base">
   <meta property="og:description" content="10 Expert technical guides on patented eco bio septic tanks in Sri Lanka by Mr. Dharmakeerthi Mannage (Buddija Construction Pvt Ltd).">
   <meta property="og:image" content="assets/real_hero.jpg">
-  
+
   <link rel="icon" type="image/png" href="assets/real_logo.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
@@ -73,12 +73,12 @@
   <div class="top-bar">
     <div class="container top-bar-container">
       <div class="top-bar-info">
-        <a href="tel:+94777347620" class="top-bar-link"><i class="fas fa-phone-alt" style="color: #0284c7;"></i> Hotline: 0777 347 620</a>
-        <a href="mailto:info@parawawa.lk" class="top-bar-link"><i class="fas fa-envelope" style="color: #0284c7;"></i> info@parawawa.lk</a>
-        <span class="top-bar-link"><i class="fas fa-map-marker-alt" style="color: #059669;"></i> Piliyandala, Sri Lanka</span>
+        <a href="tel:+94777347620" class="top-bar-link"><i class="fas fa-phone-alt"></i> Hotline: 0777 347 620</a>
+        <a href="mailto:info@parawawa.lk" class="top-bar-link"><i class="fas fa-envelope"></i> info@parawawa.lk</a>
+        <span class="top-bar-link"><i class="fas fa-map-marker-alt"></i> Piliyandala, Sri Lanka</span>
       </div>
       <div>
-        <span style="color: #e2e8f0; font-weight: 600;"><i class="fas fa-award" style="color: #f59e0b;"></i> Presidential Innovation Award Winner</span>
+        <span class="top-bar-award"><i class="fas fa-award" style="color: #f59e0b;"></i> Presidential Innovation Award Winner</span>
       </div>
     </div>
   </div>
@@ -87,7 +87,7 @@
   <header class="navbar">
     <div class="container navbar-container">
       <a href="index.html" class="logo">
-        <img src="assets/real_logo.png" alt="Parawawa Official Brand Logo" width="180" height="42" style="height: 42px; width: auto;">
+        <img src="assets/real_logo.png" alt="Parawawa Official Brand Logo" width="180" height="42">
         <span class="logo-badge">PATENTED</span>
       </a>
 
@@ -96,18 +96,34 @@
         <li><a href="index.html#founder" class="nav-link">About Us</a></li>
         <li><a href="index.html#calculator" class="nav-link">Products</a></li>
         <li><a href="index.html#comparison" class="nav-link">Technology</a></li>
-        <li><a href="articles.html" class="nav-link active" style="color: var(--accent-blue);">10 SEO Articles</a></li>
+        <li><a href="articles.html" class="nav-link active">10 SEO Articles</a></li>
         <li><a href="index.html#contact" class="nav-link">Contact</a></li>
       </ul>
 
       <div class="nav-actions">
         <a href="index.html#contact" class="btn btn-primary">Get Price Quote</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Mobile Menu"><i class="fas fa-bars"></i></button>
       </div>
     </div>
   </header>
 
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="index.html#founder" class="mobile-nav-link">About Us</a></li>
+      <li><a href="index.html#calculator" class="mobile-nav-link">Products</a></li>
+      <li><a href="index.html#comparison" class="mobile-nav-link">Technology</a></li>
+      <li><a href="articles.html" class="mobile-nav-link">10 SEO Articles</a></li>
+      <li><a href="index.html#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-actions">
+      <a href="tel:+94777347620" class="btn btn-primary btn-block"><i class="fas fa-phone"></i> Call Hotline: 0777 347 620</a>
+    </div>
+  </div>
+
   <!-- Main SEO Hub Header -->
-  <section class="section" style="background: #ffffff; border-bottom: 1px solid var(--border-color); padding-top: 3rem; padding-bottom: 3rem;">
+  <section class="section section-alt section-border-b" style="padding-top: var(--space-6); padding-bottom: var(--space-6);">
     <div class="container">
       <div class="section-header">
         <span class="section-tag"><i class="fas fa-book-open"></i> SEO & AEO KNOWLEDGE HUB</span>
@@ -118,108 +134,88 @@
   </section>
 
   <!-- 10 SEO Articles Grid Section -->
-  <section class="section" style="background: var(--bg-primary);">
+  <section class="section">
     <div class="container">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+      <div class="grid grid-auto-lg">
 
         <!-- Article 1 -->
-        <article class="article-card" data-article="1" style="background: #fff; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.75rem; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-          <span style="background: #e0f2fe; color: var(--accent-blue-dark); padding: 0.2rem 0.6rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; align-self: start;">ARTICLE #1 • WATER SAFETY</span>
-          <h3 style="font-size: 1.2rem; margin: 0.75rem 0 0.5rem 0; color: #0f172a;">5 Signs Your Septic Tank is Leaking Groundwater in Sri Lanka</h3>
-          <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem; flex-grow: 1;">
-            Traditional concrete septic tanks frequently crack during monsoons, contaminating drinking well water. Learn how sealed layer-base bio tanks prevent well water pollution.
-          </p>
-          <button class="btn btn-secondary open-article-btn" data-article="1" style="font-size: 0.85rem;"><i class="fas fa-book-reader"></i> Read Full Guide</button>
+        <article class="article-hub-card" data-article="1">
+          <span class="article-hub-badge" style="background: var(--accent-blue-light); color: var(--accent-blue-dark);">ARTICLE #1 • WATER SAFETY</span>
+          <h3 class="article-hub-title">5 Signs Your Septic Tank is Leaking Groundwater in Sri Lanka</h3>
+          <p class="article-hub-desc">Traditional concrete septic tanks frequently crack during monsoons, contaminating drinking well water. Learn how sealed layer-base bio tanks prevent well water pollution.</p>
+          <button class="btn btn-secondary open-article-btn btn-sm" data-article="1"><i class="fas fa-book-reader"></i> Read Full Guide</button>
         </article>
 
         <!-- Article 2 -->
-        <article class="article-card" data-article="2" style="background: #fff; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.75rem; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-          <span style="background: #d1fae5; color: var(--accent-emerald); padding: 0.2rem 0.6rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; align-self: start;">ARTICLE #2 • COST SAVINGS</span>
-          <h3 style="font-size: 1.2rem; margin: 0.75rem 0 0.5rem 0; color: #0f172a;">Parawawa vs. Mechanical STPs: Why 0% Electricity Saves LKR 500k+</h3>
-          <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem; flex-grow: 1;">
-            Mechanical STPs require 24/7 electric air blowers that inflate monthly electricity bills. Discover why passive biological gravity flow is the smartest choice for homes.
-          </p>
-          <button class="btn btn-secondary open-article-btn" data-article="2" style="font-size: 0.85rem;"><i class="fas fa-book-reader"></i> Read Full Guide</button>
+        <article class="article-hub-card" data-article="2">
+          <span class="article-hub-badge" style="background: var(--accent-emerald-light); color: var(--accent-emerald-dark);">ARTICLE #2 • COST SAVINGS</span>
+          <h3 class="article-hub-title">Parawawa vs. Mechanical STPs: Why 0% Electricity Saves LKR 500k+</h3>
+          <p class="article-hub-desc">Mechanical STPs require 24/7 electric air blowers that inflate monthly electricity bills. Discover why passive biological gravity flow is the smartest choice for homes.</p>
+          <button class="btn btn-secondary open-article-btn btn-sm" data-article="2"><i class="fas fa-book-reader"></i> Read Full Guide</button>
         </article>
 
         <!-- Article 3 -->
-        <article class="article-card" data-article="3" style="background: #fff; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.75rem; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-          <span style="background: #ffedd5; color: var(--accent-orange); padding: 0.2rem 0.6rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; align-self: start;">ARTICLE #3 • COASTAL & MARSHY LANDS</span>
-          <h3 style="font-size: 1.2rem; margin: 0.75rem 0 0.5rem 0; color: #0f172a;">Installing Bio Septic Tanks in High Water Table Lands (Piliyandala & Coastal)</h3>
-          <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem; flex-grow: 1;">
-            Struggling with waterlogged land in coastal regions? Read our step-by-step engineering guide on installing leak-proof bio septic systems in marshy soil.
-          </p>
-          <button class="btn btn-secondary open-article-btn" data-article="3" style="font-size: 0.85rem;"><i class="fas fa-book-reader"></i> Read Full Guide</button>
+        <article class="article-hub-card" data-article="3">
+          <span class="article-hub-badge" style="background: var(--accent-orange-light); color: #b45309;">ARTICLE #3 • COASTAL & MARSHY LANDS</span>
+          <h3 class="article-hub-title">Installing Bio Septic Tanks in High Water Table Lands (Piliyandala & Coastal)</h3>
+          <p class="article-hub-desc">Struggling with waterlogged land in coastal regions? Read our step-by-step engineering guide on installing leak-proof bio septic systems in marshy soil.</p>
+          <button class="btn btn-secondary open-article-btn btn-sm" data-article="3"><i class="fas fa-book-reader"></i> Read Full Guide</button>
         </article>
 
         <!-- Article 4 -->
-        <article class="article-card" data-article="4" style="background: #fff; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.75rem; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-          <span style="background: #e0f2fe; color: var(--accent-blue); padding: 0.2rem 0.6rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; align-self: start;">ARTICLE #4 • BIOLOGICAL SCIENCE</span>
-          <h3 style="font-size: 1.2rem; margin: 0.75rem 0 0.5rem 0; color: #0f172a;">How Does a Layer-Base Bio Septic Tank Work Without Electricity?</h3>
-          <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem; flex-grow: 1;">
-            Explore the 4-stage natural biological filtration process that uses beneficial microbes to digest sludge into clean, irrigation-safe water.
-          </p>
-          <button class="btn btn-secondary open-article-btn" data-article="4" style="font-size: 0.85rem;"><i class="fas fa-book-reader"></i> Read Full Guide</button>
+        <article class="article-hub-card" data-article="4">
+          <span class="article-hub-badge" style="background: var(--accent-blue-light); color: var(--accent-blue);">ARTICLE #4 • BIOLOGICAL SCIENCE</span>
+          <h3 class="article-hub-title">How Does a Layer-Base Bio Septic Tank Work Without Electricity?</h3>
+          <p class="article-hub-desc">Explore the 4-stage natural biological filtration process that uses beneficial microbes to digest sludge into clean, irrigation-safe water.</p>
+          <button class="btn btn-secondary open-article-btn btn-sm" data-article="4"><i class="fas fa-book-reader"></i> Read Full Guide</button>
         </article>
 
         <!-- Article 5 -->
-        <article class="article-card" data-article="5" style="background: #fff; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.75rem; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-          <span style="background: #d1fae5; color: var(--accent-emerald); padding: 0.2rem 0.6rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; align-self: start;">ARTICLE #5 • MAINTENANCE FREE</span>
-          <h3 style="font-size: 1.2rem; margin: 0.75rem 0 0.5rem 0; color: #0f172a;">Why Gully Bowser Emptying is No Longer Necessary for Modern Homes</h3>
-          <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem; flex-grow: 1;">
-            Say goodbye to dirty, foul-smelling gully bowser suction trucks. See how Parawawa maintains a continuous aerobic cycle to eliminate sludge buildup permanently.
-          </p>
-          <button class="btn btn-secondary open-article-btn" data-article="5" style="font-size: 0.85rem;"><i class="fas fa-book-reader"></i> Read Full Guide</button>
+        <article class="article-hub-card" data-article="5">
+          <span class="article-hub-badge" style="background: var(--accent-emerald-light); color: var(--accent-emerald);">ARTICLE #5 • MAINTENANCE FREE</span>
+          <h3 class="article-hub-title">Why Gully Bowser Emptying is No Longer Necessary for Modern Homes</h3>
+          <p class="article-hub-desc">Say goodbye to dirty, foul-smelling gully bowser suction trucks. See how Parawawa maintains a continuous aerobic cycle to eliminate sludge buildup permanently.</p>
+          <button class="btn btn-secondary open-article-btn btn-sm" data-article="5"><i class="fas fa-book-reader"></i> Read Full Guide</button>
         </article>
 
         <!-- Article 6 -->
-        <article class="article-card" data-article="6" style="background: #fff; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.75rem; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-          <span style="background: #ffedd5; color: var(--accent-orange); padding: 0.2rem 0.6rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; align-self: start;">ARTICLE #6 • COMPLIANCE & CEA</span>
-          <h3 style="font-size: 1.2rem; margin: 0.75rem 0 0.5rem 0; color: #0f172a;">How Parawewa Helps Properties Pass Central Environmental Authority (CEA) Standards</h3>
-          <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem; flex-grow: 1;">
-            Learn about BOD and COD discharge compliance standards in Sri Lanka and why Parawewa's lab-tested discharge meets all government environmental clearance codes.
-          </p>
-          <button class="btn btn-secondary open-article-btn" data-article="6" style="font-size: 0.85rem;"><i class="fas fa-book-reader"></i> Read Full Guide</button>
+        <article class="article-hub-card" data-article="6">
+          <span class="article-hub-badge" style="background: var(--accent-orange-light); color: var(--accent-orange);">ARTICLE #6 • COMPLIANCE & CEA</span>
+          <h3 class="article-hub-title">How Parawewa Helps Properties Pass Central Environmental Authority (CEA) Standards</h3>
+          <p class="article-hub-desc">Learn about BOD and COD discharge compliance standards in Sri Lanka and why Parawewa's lab-tested discharge meets all government environmental clearance codes.</p>
+          <button class="btn btn-secondary open-article-btn btn-sm" data-article="6"><i class="fas fa-book-reader"></i> Read Full Guide</button>
         </article>
 
         <!-- Article 7 -->
-        <article class="article-card" data-article="7" style="background: #fff; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.75rem; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-          <span style="background: #e0f2fe; color: var(--accent-blue); padding: 0.2rem 0.6rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; align-self: start;">ARTICLE #7 • FINANCIAL ANALYSIS</span>
-          <h3 style="font-size: 1.2rem; margin: 0.75rem 0 0.5rem 0; color: #0f172a;">25-Year Cost Breakdown: Traditional Concrete Pit vs Parawawa Bio Tank</h3>
-          <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem; flex-grow: 1;">
-            A detailed financial comparison showing why Parawawa pays for itself in under 3 years by eliminating annual gully bowser costs and power bills.
-          </p>
-          <button class="btn btn-secondary open-article-btn" data-article="7" style="font-size: 0.85rem;"><i class="fas fa-book-reader"></i> Read Full Guide</button>
+        <article class="article-hub-card" data-article="7">
+          <span class="article-hub-badge" style="background: var(--accent-blue-light); color: var(--accent-blue);">ARTICLE #7 • FINANCIAL ANALYSIS</span>
+          <h3 class="article-hub-title">25-Year Cost Breakdown: Traditional Concrete Pit vs Parawawa Bio Tank</h3>
+          <p class="article-hub-desc">A detailed financial comparison showing why Parawawa pays for itself in under 3 years by eliminating annual gully bowser costs and power bills.</p>
+          <button class="btn btn-secondary open-article-btn btn-sm" data-article="7"><i class="fas fa-book-reader"></i> Read Full Guide</button>
         </article>
 
         <!-- Article 8 -->
-        <article class="article-card" data-article="8" style="background: #fff; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.75rem; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-          <span style="background: #d1fae5; color: var(--accent-emerald); padding: 0.2rem 0.6rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; align-self: start;">ARTICLE #8 • HOTELS & RESORTS</span>
-          <h3 style="font-size: 1.2rem; margin: 0.75rem 0 0.5rem 0; color: #0f172a;">Best Bio Septic Tank Options for Hotels & Eco-Resorts in Sri Lanka</h3>
-          <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem; flex-grow: 1;">
-            Eco-tourism resorts in Bentota, Ella, and Sigiriya rely on odorless waste management. Discover how Parawawa recycles water for hotel garden lawns.
-          </p>
-          <button class="btn btn-secondary open-article-btn" data-article="8" style="font-size: 0.85rem;"><i class="fas fa-book-reader"></i> Read Full Guide</button>
+        <article class="article-hub-card" data-article="8">
+          <span class="article-hub-badge" style="background: var(--accent-emerald-light); color: var(--accent-emerald);">ARTICLE #8 • HOTELS & RESORTS</span>
+          <h3 class="article-hub-title">Best Bio Septic Tank Options for Hotels & Eco-Resorts in Sri Lanka</h3>
+          <p class="article-hub-desc">Eco-tourism resorts in Bentota, Ella, and Sigiriya rely on odorless waste management. Discover how Parawawa recycles water for hotel garden lawns.</p>
+          <button class="btn btn-secondary open-article-btn btn-sm" data-article="8"><i class="fas fa-book-reader"></i> Read Full Guide</button>
         </article>
 
         <!-- Article 9 -->
-        <article class="article-card" data-article="9" style="background: #fff; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.75rem; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-          <span style="background: #ffedd5; color: var(--accent-orange); padding: 0.2rem 0.6rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; align-self: start;">ARTICLE #9 • MONSOONS & CLIMATE</span>
-          <h3 style="font-size: 1.2rem; margin: 0.75rem 0 0.5rem 0; color: #0f172a;">How Heavy Monsoons Affect Household Sewage Systems in Sri Lanka</h3>
-          <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem; flex-grow: 1;">
-            Heavy flooding can cause traditional septic tanks to back up into bathrooms. Learn how non-return bio tanks keep your home hygienic during monsoon floods.
-          </p>
-          <button class="btn btn-secondary open-article-btn" data-article="9" style="font-size: 0.85rem;"><i class="fas fa-book-reader"></i> Read Full Guide</button>
+        <article class="article-hub-card" data-article="9">
+          <span class="article-hub-badge" style="background: var(--accent-orange-light); color: var(--accent-orange);">ARTICLE #9 • MONSOONS & CLIMATE</span>
+          <h3 class="article-hub-title">How Heavy Monsoons Affect Household Sewage Systems in Sri Lanka</h3>
+          <p class="article-hub-desc">Heavy flooding can cause traditional septic tanks to back up into bathrooms. Learn how non-return bio tanks keep your home hygienic during monsoon floods.</p>
+          <button class="btn btn-secondary open-article-btn btn-sm" data-article="9"><i class="fas fa-book-reader"></i> Read Full Guide</button>
         </article>
 
         <!-- Article 10 -->
-        <article class="article-card" data-article="10" style="background: #fff; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.75rem; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-          <span style="background: #e0f2fe; color: var(--accent-blue); padding: 0.2rem 0.6rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; align-self: start;">ARTICLE #10 • PATENT & HISTORY</span>
-          <h3 style="font-size: 1.2rem; margin: 0.75rem 0 0.5rem 0; color: #0f172a;">The Story of Sri Lanka Patent #10848: How Eng. Dharmakeerthi Mannage Invented Parawewe</h3>
-          <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem; flex-grow: 1;">
-            Read the inspiring history of how Sri Lankan inventor Mr. Dharmakeerthi Mannage created Parawawa in 1996 and won the 2018 Presidential Innovation Award.
-          </p>
-          <button class="btn btn-secondary open-article-btn" data-article="10" style="font-size: 0.85rem;"><i class="fas fa-book-reader"></i> Read Full Guide</button>
+        <article class="article-hub-card" data-article="10">
+          <span class="article-hub-badge" style="background: var(--accent-blue-light); color: var(--accent-blue);">ARTICLE #10 • PATENT & HISTORY</span>
+          <h3 class="article-hub-title">The Story of Sri Lanka Patent #10848: How Eng. Dharmakeerthi Mannage Invented Parawewe</h3>
+          <p class="article-hub-desc">Read the inspiring history of how Sri Lankan inventor Mr. Dharmakeerthi Mannage created Parawawa in 1996 and won the 2018 Presidential Innovation Award.</p>
+          <button class="btn btn-secondary open-article-btn btn-sm" data-article="10"><i class="fas fa-book-reader"></i> Read Full Guide</button>
         </article>
 
       </div>
@@ -230,21 +226,21 @@
   <div class="modal-overlay" id="articleModal">
     <div class="modal-card" style="max-width: 750px;">
       <button class="modal-close" id="closeArticleModalBtn" aria-label="Close Article Reader">&times;</button>
-      <span id="articleBadge" style="background: #e0f2fe; color: var(--accent-blue-dark); padding: 0.25rem 0.75rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700;">SEO ARTICLE</span>
-      <h2 id="articleModalTitle" style="font-size: 1.5rem; margin: 0.75rem 0 1rem 0; color: #0f172a; line-height: 1.35;">Article Title</h2>
-      <div id="articleModalContent" style="color: var(--text-main); font-size: 0.95rem; line-height: 1.7; max-height: 60vh; overflow-y: auto; padding-right: 0.5rem;">
+      <span id="articleBadge" class="lang-pill">SEO ARTICLE</span>
+      <h2 id="articleModalTitle" class="modal-article-title">Article Title</h2>
+      <div id="articleModalContent" class="modal-article-body">
         Article text will be rendered dynamically...
       </div>
-      <div style="margin-top: 1.5rem; border-top: 1px solid var(--border-color); padding-top: 1rem; display: flex; justify-content: space-between; align-items: center;">
+      <div class="modal-article-footer">
         <span style="font-size: 0.8rem; color: var(--text-muted);">Author: Eng. Dharmakeerthi Mannage</span>
-        <a href="index.html#contact" class="btn btn-primary" style="font-size: 0.85rem;"><i class="fas fa-paper-plane"></i> Get Free Quote</a>
+        <a href="index.html#contact" class="btn btn-primary btn-sm"><i class="fas fa-paper-plane"></i> Get Free Quote</a>
       </div>
     </div>
   </div>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container text-center" style="text-align: center;">
+    <div class="container text-center">
       <p style="color: #94a3b8; font-size: 0.85rem;">© 2026 Buddija Construction (Pvt) Ltd. Chairman: Dharmakeerthi Mannage. All Rights Reserved.</p>
     </div>
   </footer>
