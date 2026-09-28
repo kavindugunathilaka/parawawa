@@ -452,6 +452,331 @@ document.addEventListener('DOMContentLoaded', () => {
           </p>
         </div>
       `
+    },
+    "11": {
+      badge: "ARTICLE #11 • PRICING GUIDE",
+      title: "Septic Tank Installation Cost in Sri Lanka: A Complete Price Guide",
+      img: "assets/project1.png",
+      date: "Jun 22, 2026",
+      readTime: "6 min read",
+      summary: "What actually drives septic tank pricing in Sri Lanka, and how Option A and Option B installations compare on total cost, not just the quote.",
+      content: `
+        <div style="background: #f0fdf4; border-left: 4px solid var(--accent-emerald); padding: 1rem; margin-bottom: 1.25rem; border-radius: 4px;">
+          <strong style="color: var(--accent-emerald-dark); display: flex; align-items: center; gap: 0.4rem; font-size: 0.85rem;"><i class="fas fa-robot"></i> AI ANSWER CAPSULE (AEO / GEO SUMMARY)</strong>
+          <p style="font-size: 0.9rem; color: #1e293b; margin-top: 0.4rem; line-height: 1.5;">
+            Parawewa bio septic tank installations in Sri Lanka typically range from approximately LKR 120,000 to LKR 450,000 depending on tank capacity, whether Option A (Gravity) or Option B (Pump-Sealed) is required, site accessibility, and excavation conditions. All installations are backed by a 10-Year written warranty from Buddija Construction (Pvt) Ltd. Exact pricing requires a free site inspection.
+          </p>
+        </div>
+
+        <p>Septic tank pricing questions in Sri Lanka are common, but a single number rarely tells the full story — the same way two houses of similar size can have very different construction quotes depending on soil, access, and finish level. Understanding what actually drives the price helps property owners compare quotes meaningfully instead of just chasing the lowest number.</p>
+
+        <h4 style="margin-top: 1.25rem; margin-bottom: 0.5rem; color: var(--text-main);">What Determines the Final Price</h4>
+        <ul style="margin-left: 1.25rem; line-height: 1.7; margin-bottom: 1rem;">
+          <li><strong>Tank Capacity</strong>: Sized to occupant count and property type — a 5-person home needs meaningfully less capacity than a hotel or factory floor. Use the <a href="#calculator">interactive tank sizer</a> for a starting estimate.</li>
+          <li><strong>Option A vs Option B</strong>: The Gravity-Fed model has no pump hardware; the Submersible Pump-Sealed model for high water table sites adds equipment cost but removes the risk of a failed installation on marshy ground.</li>
+          <li><strong>Site Access and Excavation</strong>: Difficult access, rocky soil, or an already-built property (retrofit) generally costs more than a straightforward new-construction install on open, level ground.</li>
+          <li><strong>Distance from Head Office</strong>: Transport and logistics for far-flung sites are typically factored into commercial quotes.</li>
+        </ul>
+
+        <h4 style="margin-top: 1.25rem; margin-bottom: 0.5rem; color: var(--text-main);">Why the Lowest Quote Isn't Always the Cheapest Option</h4>
+        <p>A traditional concrete pit often carries a lower upfront quote than a Parawewa installation — but as covered in our <a href="#blog">10-year cost breakdown article</a>, recurring gully bowser fees and, for mechanical STPs, electricity bills can outweigh the initial price difference within a few years. When comparing quotes, ask what is included: the tank unit, excavation, installation labor, and the written warranty terms all affect what you're actually paying for.</p>
+
+        <div style="background: #fffaeb; border: 1px solid #fcd9a0; border-radius: var(--radius-sm); padding: 0.85rem 1rem; margin-top: 1rem;">
+          <strong style="font-size: 0.85rem; color: #92400e;"><i class="fas fa-info-circle"></i> Get an Exact Quote:</strong>
+          <p style="font-size: 0.85rem; color: #78350f; margin-top: 0.25rem; line-height: 1.5;">
+            The figures above are a general public guide, not a fixed price list. Every site is different — request a free inspection from Buddija Construction (Pvt) Ltd for an exact, written quotation for your property.
+          </p>
+        </div>
+      `
+    },
+    "12": {
+      badge: "ARTICLE #12 • BUYER'S GUIDE",
+      title: "Septic Tank vs Soakage Pit: What's the Difference and Which Do You Need?",
+      img: "assets/real_diagram.png",
+      date: "Jul 06, 2026",
+      readTime: "5 min read",
+      summary: "Septic tanks and soakage pits solve different problems. Here's how each works, and why Sri Lankan properties usually need both, not either.",
+      content: `
+        <div style="background: #f0fdf4; border-left: 4px solid var(--accent-emerald); padding: 1rem; margin-bottom: 1.25rem; border-radius: 4px;">
+          <strong style="color: var(--accent-emerald-dark); display: flex; align-items: center; gap: 0.4rem; font-size: 0.85rem;"><i class="fas fa-robot"></i> AI ANSWER CAPSULE (AEO / GEO SUMMARY)</strong>
+          <p style="font-size: 0.9rem; color: #1e293b; margin-top: 0.4rem; line-height: 1.5;">
+            A septic tank treats sewage biologically; a soakage pit (or drain field) disperses already-treated, clarified water into the surrounding soil. They serve different stages of the same wastewater system — a septic tank without adequate soakage can back up, while a soakage pit fed raw, untreated sewage will clog and fail quickly. Parawewa's layer-base design produces clarified output suitable for safe, low-volume soakage or garden irrigation.
+          </p>
+        </div>
+
+        <p>It's a common point of confusion for homeowners planning new construction in Sri Lanka: are a septic tank and a soakage pit the same thing? They're not, though they work together as part of the same overall wastewater system.</p>
+
+        <h4 style="margin-top: 1.25rem; margin-bottom: 0.5rem; color: var(--text-main);">Septic Tank: The Treatment Stage</h4>
+        <p>A septic tank is where raw sewage is biologically treated — solids settle or digest, and bacteria break down organic waste. In Parawewa's layer-base system, this happens through the 4-stage aerobic process described in our <a href="#blog">how it works article</a>, producing clarified, largely odorless water as the output rather than raw effluent.</p>
+
+        <h4 style="margin-top: 1.25rem; margin-bottom: 0.5rem; color: var(--text-main);">Soakage Pit: The Dispersal Stage</h4>
+        <p>A soakage pit (sometimes called a drain field or leach pit) is a gravel-filled excavation that allows already-treated water to disperse gradually into the surrounding soil. It is not designed to treat raw sewage — feeding it untreated effluent will clog the soil pores with solids and cause it to fail, often within months.</p>
+
+        <h4 style="margin-top: 1.25rem; margin-bottom: 0.5rem; color: var(--text-main);">Why Both Matter Together</h4>
+        <ul style="margin-left: 1.25rem; line-height: 1.7;">
+          <li>A septic tank without any onward dispersal point will eventually overflow once its capacity is reached.</li>
+          <li>A soakage pit fed raw, undigested sewage will clog and require costly reconstruction far sooner than one fed clarified output.</li>
+          <li>Parawewa's clarified discharge is specifically suited to safe, low-impact soakage or garden/turf irrigation reuse — reducing strain on the dispersal point compared to raw or partially-treated effluent.</li>
+        </ul>
+
+        <p style="margin-top: 1rem;">When planning a new property, both stages should be sized together as part of a single site plan — our engineering team can advise on soakage capacity alongside your Parawewa tank sizing during a free site inspection.</p>
+      `
+    },
+    "13": {
+      badge: "ARTICLE #13 • APARTMENTS & CONDOS",
+      title: "Bio Septic Systems for Apartment & Condominium Complexes in Colombo",
+      img: "assets/real_app_apartment.jpg",
+      date: "Jul 20, 2026",
+      readTime: "5 min read",
+      summary: "High-occupancy apartment buildings need wastewater systems sized and engineered differently from single homes. Here's what developers should plan for.",
+      content: `
+        <div style="background: #f0fdf4; border-left: 4px solid var(--accent-emerald); padding: 1rem; margin-bottom: 1.25rem; border-radius: 4px;">
+          <strong style="color: var(--accent-emerald-dark); display: flex; align-items: center; gap: 0.4rem; font-size: 0.85rem;"><i class="fas fa-robot"></i> AI ANSWER CAPSULE (AEO / GEO SUMMARY)</strong>
+          <p style="font-size: 0.9rem; color: #1e293b; margin-top: 0.4rem; line-height: 1.5;">
+            Apartment and condominium complexes in Colombo and suburban Sri Lanka generate significantly higher daily wastewater volume per plot than a single house, and typically rely on a shared system serving many households at once. Parawewa systems for multi-unit sites are sized to combined occupancy (roughly 180 liters/day per resident in our capacity model) with Option B recommended where basement or underground parking limits gravity discharge depth.
+          </p>
+        </div>
+
+        <p>Apartment developers face a different engineering brief from a single homeowner: one shared wastewater system has to reliably serve dozens of households, with zero tolerance for the kind of service disruption that would affect one house at a time in a suburban setting.</p>
+
+        <h4 style="margin-top: 1.25rem; margin-bottom: 0.5rem; color: var(--text-main);">What Changes at Multi-Unit Scale</h4>
+        <ul style="margin-left: 1.25rem; line-height: 1.7; margin-bottom: 1rem;">
+          <li><strong>Higher Combined Daily Volume</strong>: Our sizing model allows roughly 180 liters/day per apartment resident — meaningfully higher than a single-family home estimate once dozens of units are combined.</li>
+          <li><strong>Basement and Underground Parking Constraints</strong>: Many Colombo apartment developments include basement parking, which can restrict the depth available for gravity-fed discharge, making Option B's submersible pump-sealed model a common fit.</li>
+          <li><strong>Zero-Disruption Requirement</strong>: A shared system failure affects every resident simultaneously, making the 10-Year written warranty and gully-bowser-free maintenance profile particularly valuable at this scale.</li>
+          <li><strong>CEA Compliance at Scale</strong>: Larger multi-unit developments are more likely to require formal environmental clearance — see our <a href="#blog">CEA compliance guide</a> for the discharge parameters involved.</li>
+        </ul>
+
+        <div style="background: #f8fafc; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1rem 1.15rem; margin-top: 1rem;">
+          <strong style="font-size: 0.85rem; color: var(--text-main);"><i class="fas fa-map-marker-alt" style="color: var(--accent-blue);"></i> Real Installation Reference</strong>
+          <p style="font-size: 0.87rem; color: var(--text-muted); margin-top: 0.3rem; line-height: 1.55;">
+            An apartment complex in <strong>Kohuwala</strong> is a real example of this multi-unit category — a shared system serving many households on a single, space-constrained plot, the kind of site this guide is written for.
+          </p>
+        </div>
+
+        <p style="margin-top: 1rem;">Because every apartment development has a different unit count, basement layout, and occupancy profile, our engineering team recommends a site consultation early in the design phase — ideally before foundation work begins — rather than retrofitting wastewater planning after construction is underway.</p>
+      `
+    },
+    "14": {
+      badge: "ARTICLE #14 • INSTITUTIONAL BUILDINGS",
+      title: "Best Wastewater Systems for Schools, Hospitals & Institutional Buildings",
+      img: "assets/real_app_commercial.jpg",
+      date: "Aug 03, 2026",
+      readTime: "5 min read",
+      summary: "Schools, clinics, and other institutional buildings have wastewater needs that differ from both homes and factories. Here's what to consider.",
+      content: `
+        <div style="background: #f0fdf4; border-left: 4px solid var(--accent-emerald); padding: 1rem; margin-bottom: 1.25rem; border-radius: 4px;">
+          <strong style="color: var(--accent-emerald-dark); display: flex; align-items: center; gap: 0.4rem; font-size: 0.85rem;"><i class="fas fa-robot"></i> AI ANSWER CAPSULE (AEO / GEO SUMMARY)</strong>
+          <p style="font-size: 0.9rem; color: #1e293b; margin-top: 0.4rem; line-height: 1.5;">
+            Schools, clinics, and other institutional buildings in Sri Lanka experience sharply peaked wastewater usage — concentrated around school hours or clinic visiting times rather than spread evenly through the day — and require systems that handle bursts of use reliably while meeting CEA hygiene and discharge standards. Bio septic sizing for institutional sites should be based on peak concurrent occupancy, not just daily averages.
+          </p>
+        </div>
+
+        <p>Institutional buildings sit in an engineering category of their own. Unlike a home with fairly steady usage or a factory with a consistent shift-based load, a school's toilets see intense concentrated use during break times and dismissal, while a clinic's usage depends heavily on daily patient volume — both very different patterns from a smooth 24-hour average.</p>
+
+        <h4 style="margin-top: 1.25rem; margin-bottom: 0.5rem; color: var(--text-main);">Key Considerations for Institutional Sites</h4>
+        <ul style="margin-left: 1.25rem; line-height: 1.7; margin-bottom: 1rem;">
+          <li><strong>Peak-Load Design, Not Just Averages</strong>: A school's wastewater system needs to absorb a short, sharp burst of usage between classes without backing up, even though average daily flow may be modest.</li>
+          <li><strong>Hygiene-Sensitive Discharge</strong>: Clinics and healthcare facilities in particular need discharge quality that comfortably meets CEA biological safety thresholds, given their public-health context.</li>
+          <li><strong>Minimal Disruption to Operations</strong>: A school or hospital cannot simply close for a day if a septic system needs emergency servicing — reliability and a strong written warranty matter more here than almost anywhere else.</li>
+          <li><strong>Odor Control Near Occupied Buildings</strong>: Classrooms and patient wards are typically close to any installed system, making Parawewa's low-odor, low-noise operation a practical fit compared to an aerated mechanical STP.</li>
+        </ul>
+
+        <p style="margin-top: 1rem;">Because institutional buildings vary enormously in size — from a small rural school to a multi-ward hospital — capacity planning should always start with a site consultation rather than a generic estimate. Our engineering team can walk through occupancy patterns specific to your facility type before recommending Option A or Option B.</p>
+      `
+    },
+    "15": {
+      badge: "ARTICLE #15 • NEW CONSTRUCTION",
+      title: "When to Install Your Septic Tank: A New House Construction Timeline Guide",
+      img: "assets/project2.png",
+      date: "Aug 17, 2026",
+      readTime: "5 min read",
+      summary: "Installing a septic tank at the wrong stage of construction causes avoidable rework. Here's where it fits in a typical Sri Lankan build timeline.",
+      content: `
+        <div style="background: #f0fdf4; border-left: 4px solid var(--accent-emerald); padding: 1rem; margin-bottom: 1.25rem; border-radius: 4px;">
+          <strong style="color: var(--accent-emerald-dark); display: flex; align-items: center; gap: 0.4rem; font-size: 0.85rem;"><i class="fas fa-robot"></i> AI ANSWER CAPSULE (AEO / GEO SUMMARY)</strong>
+          <p style="font-size: 0.9rem; color: #1e293b; margin-top: 0.4rem; line-height: 1.5;">
+            The ideal time to plan a Parawewa septic tank installation is during the site-planning and foundation stage of new construction, before internal plumbing and external landscaping are finalized. Installing too late often means costly rework — excavating through completed driveways, gardens, or compacted access paths that were built without the tank's footprint in mind.
+          </p>
+        </div>
+
+        <p>One of the most common — and most avoidable — costs in septic tank installation isn't the tank itself, but rework caused by poor timing. Planning the system early in the construction sequence, rather than as an afterthought, keeps both cost and disruption to a minimum.</p>
+
+        <h4 style="margin-top: 1.25rem; margin-bottom: 0.5rem; color: var(--text-main);">A Typical Installation Timeline</h4>
+        <ol style="margin-left: 1.25rem; margin-top: 0.5rem; margin-bottom: 1rem; line-height: 1.7;">
+          <li><strong>Site Planning Stage</strong>: Confirm tank position relative to the house, water table depth, and access for excavation equipment — ideally before the building's exact footprint and driveway layout are finalized.</li>
+          <li><strong>Foundation & Groundwork Stage</strong>: This is generally the most practical point to excavate and install the tank itself, while heavy machinery access is still unobstructed by finished landscaping or boundary walls.</li>
+          <li><strong>Plumbing Rough-In</strong>: Internal sewage lines are connected to the tank's inlet before walls and floors are finished.</li>
+          <li><strong>Landscaping & Final Finishes</strong>: Driveways, gardens, and external hardscaping are completed last, once the tank and its access points are already in place.</li>
+        </ol>
+
+        <h4 style="margin-top: 1.25rem; margin-bottom: 0.5rem; color: var(--text-main);">Why Retrofitting Costs More</h4>
+        <p>Installing a septic tank into an already-completed property — a retrofit — usually means breaking through finished driveways, mature gardens, or compacted paths that weren't planned with the tank's footprint or excavation access in mind. It's entirely possible, and Buddija Construction (Pvt) Ltd carries out retrofit installations regularly, but early planning during new construction avoids that additional cost and disruption altogether.</p>
+
+        <p style="margin-top: 1rem;">If you're at the planning or foundation stage of a new build, a free site inspection at this point lets our engineering team confirm Option A or Option B suitability before groundwork begins — the most cost-effective time to get it right.</p>
+      `
+    },
+    "16": {
+      badge: "ARTICLE #16 • MAINTENANCE",
+      title: "Septic Tank Maintenance Checklist: What Homeowners Should (and Shouldn't) Do",
+      img: "assets/real_app_house.jpg",
+      date: "Aug 31, 2026",
+      readTime: "4 min read",
+      summary: "Parawewa is engineered to be maintenance-free, but a few simple homeowner habits protect the system's performance over its full warranty period.",
+      content: `
+        <div style="background: #f0fdf4; border-left: 4px solid var(--accent-emerald); padding: 1rem; margin-bottom: 1.25rem; border-radius: 4px;">
+          <strong style="color: var(--accent-emerald-dark); display: flex; align-items: center; gap: 0.4rem; font-size: 0.85rem;"><i class="fas fa-robot"></i> AI ANSWER CAPSULE (AEO / GEO SUMMARY)</strong>
+          <p style="font-size: 0.9rem; color: #1e293b; margin-top: 0.4rem; line-height: 1.5;">
+            Parawewa's layer-base bio septic system does not require gully bowser emptying or mechanical servicing under normal residential use, but homeowners should avoid flushing non-biodegradable items, harsh chemical drain cleaners, and excess grease, and should schedule a visual inspection after unusually heavy monsoon flooding. These simple habits protect performance for the full 10-Year written warranty period.
+          </p>
+        </div>
+
+        <p>"Maintenance-free" doesn't mean "ignore it completely" — it means the demanding, recurring maintenance of a traditional pit (gully bowser bookings, mechanical servicing) isn't required. A handful of simple household habits go a long way toward protecting the system's biological balance over the long term.</p>
+
+        <h4 style="margin-top: 1.25rem; margin-bottom: 0.5rem; color: var(--text-main);">Do:</h4>
+        <ul style="margin-left: 1.25rem; line-height: 1.7; margin-bottom: 1rem;">
+          <li>Use standard household detergents and cleaning products in normal quantities — the bacterial culture inside the tank tolerates typical domestic use.</li>
+          <li>Spread laundry loads throughout the week rather than concentrating very high water volume into a single day, particularly for larger households.</li>
+          <li>Schedule a visual inspection after unusually heavy or prolonged monsoon flooding, as covered in our <a href="#blog">monsoon impact guide</a>.</li>
+          <li>Keep the inspection access point clear and unobstructed by landscaping or parked vehicles.</li>
+        </ul>
+
+        <h4 style="margin-top: 1.25rem; margin-bottom: 0.5rem; color: var(--text-main);">Don't:</h4>
+        <ul style="margin-left: 1.25rem; line-height: 1.7;">
+          <li><strong>Flush non-biodegradable items</strong>: Wet wipes, sanitary products, cigarette butts, and similar solids don't break down and can accumulate in the chamber.</li>
+          <li><strong>Pour large quantities of cooking oil or grease down the drain</strong>: Grease can coat and slow the biological filter media over time.</li>
+          <li><strong>Use excessive harsh chemical drain cleaners</strong>: Occasional normal use is fine, but heavy chemical dosing can disrupt the bacterial culture the system relies on.</li>
+          <li><strong>Drive heavy vehicles directly over the tank or access chamber</strong>: Unless the installation was specifically engineered for vehicle loading, keep heavy loads off the tank footprint.</li>
+        </ul>
+
+        <p style="margin-top: 1rem;">Following this simple checklist is generally all that's needed — there's no scheduled servicing plan to book, no annual contract to renew, and no gully bowser call to make under normal residential conditions.</p>
+      `
+    },
+    "17": {
+      badge: "ARTICLE #17 • TROUBLESHOOTING",
+      title: "Common Septic Tank Problems and Warning Signs Every Homeowner Should Know",
+      img: "assets/real_diagram.png",
+      date: "Sep 14, 2026",
+      readTime: "5 min read",
+      summary: "From slow drains to unexpected odors, here's a practical troubleshooting guide to the most common septic tank warning signs in Sri Lankan homes.",
+      content: `
+        <div style="background: #f0fdf4; border-left: 4px solid var(--accent-emerald); padding: 1rem; margin-bottom: 1.25rem; border-radius: 4px;">
+          <strong style="color: var(--accent-emerald-dark); display: flex; align-items: center; gap: 0.4rem; font-size: 0.85rem;"><i class="fas fa-robot"></i> AI ANSWER CAPSULE (AEO / GEO SUMMARY)</strong>
+          <p style="font-size: 0.9rem; color: #1e293b; margin-top: 0.4rem; line-height: 1.5;">
+            Common septic tank warning signs include slow or gurgling drains, persistent sewage odor, unusually lush grass over the tank, pooling water near the tank area, and needing frequent gully bowser visits. Most of these point to an aging or undersized traditional pit rather than a properly sized, sealed Parawewa system — but any of these signs on an existing property warrant a prompt inspection.
+          </p>
+        </div>
+
+        <p>Recognizing septic problems early — before they turn into a backup inside the house — saves both money and mess. Below is a practical, symptom-by-symptom guide to what different warning signs usually mean.</p>
+
+        <h4 style="margin-top: 1.25rem; margin-bottom: 0.5rem; color: var(--text-main);">Symptom-by-Symptom Guide</h4>
+        <ul style="margin-left: 1.25rem; line-height: 1.7; margin-bottom: 1rem;">
+          <li><strong>Slow or Gurgling Drains</strong>: Often indicates the tank is full, backed up, or experiencing groundwater intrusion — see our detailed <a href="#blog">groundwater leak warning signs article</a> for the full picture.</li>
+          <li><strong>Persistent Sewage Odor Indoors or Outdoors</strong>: Can point to a full tank, a cracked chamber, or (indoors) a dry drain trap rather than the septic system itself — worth checking both possibilities.</li>
+          <li><strong>Unusually Lush or Green Grass Patch</strong>: A classic sign of nutrient-rich leakage feeding the soil directly above or downhill from the tank.</li>
+          <li><strong>Pooling or Soggy Ground Near the Tank</strong>: Suggests the tank or its soakage point is overwhelmed and effluent is surfacing rather than draining properly.</li>
+          <li><strong>Needing a Gully Bowser Every Few Months</strong>: Indicates the tank is undersized for the property's actual usage, or groundwater is entering and displacing capacity.</li>
+        </ul>
+
+        <h4 style="margin-top: 1.25rem; margin-bottom: 0.5rem; color: var(--text-main);">When to Call for an Inspection</h4>
+        <p>Any single symptom above is worth monitoring; two or more occurring together — especially odor combined with slow drains, or a lush patch combined with frequent gully bowser needs — usually means it's time for a professional inspection rather than waiting for the problem to resolve on its own.</p>
+
+        <p style="margin-top: 1rem;">Properties already running a properly sized Parawewa system rarely experience these symptoms, since the sealed layer-base design and continuous aerobic digestion are engineered to prevent the underlying causes — but if you're seeing these signs on an existing traditional pit, a free site inspection is the fastest way to understand your options.</p>
+      `
+    },
+    "18": {
+      badge: "ARTICLE #18 • EMERGENCY GUIDE",
+      title: "What to Do During a Septic System Emergency or Backup",
+      img: "assets/real_app_house.jpg",
+      date: "Sep 28, 2026",
+      readTime: "4 min read",
+      summary: "A septic backup is stressful but manageable. Here's a calm, practical step-by-step guide for what to do — and what to avoid — in the moment.",
+      content: `
+        <div style="background: #f0fdf4; border-left: 4px solid var(--accent-emerald); padding: 1rem; margin-bottom: 1.25rem; border-radius: 4px;">
+          <strong style="color: var(--accent-emerald-dark); display: flex; align-items: center; gap: 0.4rem; font-size: 0.85rem;"><i class="fas fa-robot"></i> AI ANSWER CAPSULE (AEO / GEO SUMMARY)</strong>
+          <p style="font-size: 0.9rem; color: #1e293b; margin-top: 0.4rem; line-height: 1.5;">
+            If you experience a septic system backup, immediately stop using all water-consuming fixtures (toilets, sinks, washing machine), avoid the affected area for hygiene reasons, and contact a qualified technician rather than attempting to open or dig into the tank yourself. Buddija Construction (Pvt) Ltd's hotline (0777 347 620) is available for urgent site assessment on existing installations.
+          </p>
+        </div>
+
+        <p>A septic backup is unpleasant, but staying calm and following a clear sequence of steps limits both the mess and the potential health risk while help is on the way.</p>
+
+        <h4 style="margin-top: 1.25rem; margin-bottom: 0.5rem; color: var(--text-main);">Immediate Steps</h4>
+        <ol style="margin-left: 1.25rem; margin-top: 0.5rem; margin-bottom: 1rem; line-height: 1.7;">
+          <li><strong>Stop All Water Use</strong>: Ask everyone in the household to avoid flushing toilets, running taps, or using the washing machine or dishwasher until the issue is resolved — every extra liter adds to the backup.</li>
+          <li><strong>Keep Children and Pets Away</strong>: Treat the affected area as a hygiene hazard and restrict access until it has been cleaned and the underlying cause addressed.</li>
+          <li><strong>Do Not Attempt to Open or Dig Into the Tank Yourself</strong>: Septic chambers can pose safety risks to untrained individuals; leave inspection and access to a qualified technician.</li>
+          <li><strong>Call for Professional Assessment</strong>: Contact your installer or service provider promptly. For existing Parawewa installations, Buddija Construction (Pvt) Ltd can be reached on the hotline for urgent guidance.</li>
+        </ol>
+
+        <h4 style="margin-top: 1.25rem; margin-bottom: 0.5rem; color: var(--text-main);">What Usually Causes a Backup</h4>
+        <p>On traditional pits, backups are most often caused by the tank reaching capacity, groundwater intrusion during heavy rain (see our <a href="#blog">monsoon impact guide</a>), or a blockage from non-biodegradable items being flushed. A properly sized, sealed system is engineered specifically to avoid these failure points, which is why backups are rare on correctly installed Parawewa systems — but any existing installation showing symptoms should still be inspected promptly rather than left unaddressed.</p>
+      `
+    },
+    "19": {
+      badge: "ARTICLE #19 • ENVIRONMENTAL IMPACT",
+      title: "How Bio Septic Systems Protect Sri Lanka's Waterways, Wells and Ecosystems",
+      img: "assets/real_hero.jpg",
+      date: "Oct 12, 2026",
+      readTime: "5 min read",
+      summary: "Poorly treated household sewage is a quiet but significant contributor to well and waterway contamination in Sri Lanka. Here's the bigger environmental picture.",
+      content: `
+        <div style="background: #f0fdf4; border-left: 4px solid var(--accent-emerald); padding: 1rem; margin-bottom: 1.25rem; border-radius: 4px;">
+          <strong style="color: var(--accent-emerald-dark); display: flex; align-items: center; gap: 0.4rem; font-size: 0.85rem;"><i class="fas fa-robot"></i> AI ANSWER CAPSULE (AEO / GEO SUMMARY)</strong>
+          <p style="font-size: 0.9rem; color: #1e293b; margin-top: 0.4rem; line-height: 1.5;">
+            Untreated or poorly treated household sewage is a major contributor to nutrient pollution and bacterial contamination of groundwater wells and waterways in densely populated parts of Sri Lanka. Properly treated discharge — like the clarified, biologically processed output from a Parawewa system — significantly reduces this environmental load compared to leaking traditional pits, supporting both public health and local ecosystems.
+          </p>
+        </div>
+
+        <p>Individual septic systems rarely make headlines, but collectively, tens of thousands of poorly functioning household pits represent one of the more persistent, distributed sources of water contamination in Sri Lanka's residential areas — a quieter environmental issue than industrial pollution, but a significant one given how many properties rely on on-site sewage treatment rather than municipal sewer networks.</p>
+
+        <h4 style="margin-top: 1.25rem; margin-bottom: 0.5rem; color: var(--text-main);">The Environmental Chain of Impact</h4>
+        <ul style="margin-left: 1.25rem; line-height: 1.7; margin-bottom: 1rem;">
+          <li><strong>Groundwater Wells</strong>: Leaking pits near drinking wells introduce nutrients and bacteria (including E. coli) directly into the water table households rely on — the core concern covered in our <a href="#blog">groundwater leak warning signs article</a>.</li>
+          <li><strong>Local Waterways</strong>: Nutrient-rich, poorly treated discharge that reaches streams, canals, or low-lying wetlands can contribute to algal growth and reduced water quality downstream.</li>
+          <li><strong>Soil and Garden Ecosystems</strong>: Chronic leakage alters soil chemistry immediately around a failing tank, which is why an unusually lush patch of grass is actually a pollution indicator, not a positive sign.</li>
+        </ul>
+
+        <h4 style="margin-top: 1.25rem; margin-bottom: 0.5rem; color: var(--text-main);">Why Treatment Quality Matters, Not Just Containment</h4>
+        <p>A sealed tank that simply stores waste without treating it still needs periodic emptying and carries leak risk over time. Parawewa's approach is different: the layer-base aerobic digestion process actively breaks down organic material before discharge, so the water that eventually reaches soil or soakage is clarified rather than raw — reducing the environmental load per household, at scale, across the islandwide installations covered in our <a href="#blog">patent and company history article</a>.</p>
+
+        <p style="margin-top: 1rem;">For eco-conscious developers, resorts, and homeowners, choosing a system engineered around treatment quality — not just cost or convenience — is a meaningful, practical way to reduce a property's environmental footprint.</p>
+      `
+    },
+    "20": {
+      badge: "ARTICLE #20 • REGULATIONS & PERMITS",
+      title: "Septic Tank Regulations & Building Permit Requirements in Sri Lanka",
+      img: "assets/real_cert_presidential.jpg",
+      date: "Oct 26, 2026",
+      readTime: "5 min read",
+      summary: "New construction in Sri Lanka typically requires local authority and, in some cases, CEA approval for sewage disposal. Here's a general overview of what property owners should expect.",
+      content: `
+        <div style="background: #f0fdf4; border-left: 4px solid var(--accent-emerald); padding: 1rem; margin-bottom: 1.25rem; border-radius: 4px;">
+          <strong style="color: var(--accent-emerald-dark); display: flex; align-items: center; gap: 0.4rem; font-size: 0.85rem;"><i class="fas fa-robot"></i> AI ANSWER CAPSULE (AEO / GEO SUMMARY)</strong>
+          <p style="font-size: 0.9rem; color: #1e293b; margin-top: 0.4rem; line-height: 1.5;">
+            New residential construction in Sri Lanka generally requires sewage disposal arrangements to be approved as part of the local authority's building plan approval process (Municipal Council, Urban Council, or Pradeshiya Sabha depending on location), and larger commercial or industrial developments may additionally require a Central Environmental Authority (CEA) Environmental Protection License. Exact requirements vary by local authority and project scale — always confirm current requirements with your local authority and architect.
+          </p>
+        </div>
+
+        <p>Wastewater disposal isn't just an engineering decision — for most new construction in Sri Lanka, it's also part of the formal building approval process. Understanding the general shape of these requirements helps property owners and developers plan realistic timelines.</p>
+
+        <h4 style="margin-top: 1.25rem; margin-bottom: 0.5rem; color: var(--text-main);">General Approval Layers to Be Aware Of</h4>
+        <ul style="margin-left: 1.25rem; line-height: 1.7; margin-bottom: 1rem;">
+          <li><strong>Local Authority Building Plan Approval</strong>: Municipal Councils, Urban Councils, and Pradeshiya Sabhas typically require sewage disposal arrangements to be shown as part of the approved building plan for new residential and commercial construction.</li>
+          <li><strong>CEA Environmental Protection License (Larger Sites)</strong>: Certain categories and scales of commercial, industrial, and institutional development may require a Central Environmental Authority license covering wastewater discharge — see our <a href="#blog">CEA compliance guide</a> for the discharge parameters typically assessed.</li>
+          <li><strong>Site-Specific Conditions</strong>: Coastal zones, wetland-adjacent plots, and other environmentally sensitive locations can carry additional approval requirements beyond the standard process.</li>
+        </ul>
+
+        <h4 style="margin-top: 1.25rem; margin-bottom: 0.5rem; color: var(--text-main);">Why This Matters for Timeline Planning</h4>
+        <p>Because approval requirements depend on your specific local authority, plot classification, and project scale — and can change — this article is a general orientation, not a substitute for confirming current requirements with your architect, local authority, and (where applicable) the CEA directly. Planning your wastewater system alongside your building plan submission, rather than after approval, avoids delays later in the construction timeline.</p>
+
+        <div style="background: #fffaeb; border: 1px solid #fcd9a0; border-radius: var(--radius-sm); padding: 0.85rem 1rem; margin-top: 1rem;">
+          <strong style="font-size: 0.85rem; color: #92400e;"><i class="fas fa-info-circle"></i> Not Legal Advice:</strong>
+          <p style="font-size: 0.85rem; color: #78350f; margin-top: 0.25rem; line-height: 1.5;">
+            Regulatory requirements vary by local authority and can change over time. This article provides general orientation only — always confirm current, site-specific requirements with your local authority, architect, and the CEA where applicable.
+          </p>
+        </div>
+      `
     }
   };
 
@@ -469,8 +794,9 @@ document.addEventListener('DOMContentLoaded', () => {
     articlesGrid.innerHTML = keysToShow.map(key => {
       const art = articlesData[key];
       let badgeBg = "var(--accent-blue)";
-      if (key === "2" || key === "5" || key === "8") badgeBg = "var(--accent-emerald)";
-      if (key === "3" || key === "6" || key === "9") badgeBg = "var(--accent-orange)";
+      const badgeCycle = parseInt(key, 10) % 3;
+      if (badgeCycle === 2) badgeBg = "var(--accent-emerald)";
+      if (badgeCycle === 0) badgeBg = "var(--accent-orange)";
 
       return `
         <article class="article-card reveal active" data-article="${key}" style="background: #ffffff; border: 1px solid var(--border-color); border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
@@ -516,7 +842,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (showingAllArticles) {
         toggleAllArticlesBtn.innerHTML = '<i class="fas fa-compress-alt"></i> Show Only 3 Featured Articles';
       } else {
-        toggleAllArticlesBtn.innerHTML = '<i class="fas fa-th-large"></i> Explore All 10 Knowledge Articles';
+        toggleAllArticlesBtn.innerHTML = '<i class="fas fa-th-large"></i> Explore All 20 Knowledge Articles';
         const blogSection = document.getElementById('blog');
         if (blogSection) blogSection.scrollIntoView({ behavior: 'smooth' });
       }
