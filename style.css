@@ -3,7 +3,7 @@
    Modern Minimal Design System — Mobile-First CSS
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap');
 
 /* --- Design Tokens --- */
 :root {
@@ -39,8 +39,8 @@
   --radius-lg: 22px;
   --radius-full: 9999px;
 
-  --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Barlow Condensed', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 
   --space-1: 0.5rem;
   --space-2: 0.75rem;
@@ -85,8 +85,9 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
-  font-weight: 700;
-  line-height: 1.2;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
   color: var(--text-main);
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -374,12 +375,13 @@ button, input, select, textarea { font-family: inherit; }
   align-items: center;
   justify-content: center;
   gap: 0.45rem;
-  padding: 0.75rem 1.35rem;
+  padding: 0.75rem 1.6rem;
   min-height: 48px;
   font-family: var(--font-heading);
-  font-size: 0.92rem;
-  font-weight: 600;
-  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  border-radius: var(--radius-full);
   border: 1px solid transparent;
   cursor: pointer;
   transition: all var(--transition-fast);
@@ -567,8 +569,8 @@ button, input, select, textarea { font-family: inherit; }
 .hero-badge-orange { background: var(--accent-orange-light); border-color: #fbd7b5; color: #b45309; }
 
 .hero-title {
-  font-size: clamp(1.7rem, 5.2vw, 3.1rem);
-  letter-spacing: -0.02em;
+  font-size: clamp(1.8rem, 5.6vw, 3.4rem);
+  letter-spacing: -0.01em;
   margin-bottom: var(--space-3);
 }
 
@@ -1113,34 +1115,52 @@ button, input, select, textarea { font-family: inherit; }
 
 .faq-search-icon { position: absolute; left: 0.9rem; top: 50%; transform: translateY(-50%); color: var(--text-light); }
 
-.accordion { display: flex; flex-direction: column; gap: 0.5rem; max-width: 900px; margin: 0 auto; }
-.accordion-item { background: #ffffff; border: 1px solid var(--border-color); border-radius: var(--radius-md); overflow: hidden; }
+.accordion { display: flex; flex-direction: column; max-width: 900px; margin: 0 auto; border-top: 1px solid var(--border-color); }
+.accordion-item { background: transparent; border-bottom: 1px solid var(--border-color); }
 
 .accordion-header {
-  padding: 0.9rem 1.1rem;
-  font-size: 0.9rem;
-  font-weight: 600;
+  padding: 1.15rem 0.25rem;
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 48px;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
-.accordion-icon { transition: transform var(--transition-fast); flex-shrink: 0; color: var(--text-light); }
-.accordion-item.active .accordion-icon { transform: rotate(180deg); color: var(--accent-blue); }
+.accordion-icon {
+  transition: transform var(--transition-fast), background var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2px solid var(--accent-blue);
+  color: var(--accent-blue);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.68rem;
+}
+
+.accordion-item.active .accordion-icon {
+  transform: rotate(135deg);
+  background: var(--accent-blue);
+  color: #fff;
+}
 
 .accordion-body {
   max-height: 0;
   overflow: hidden;
   transition: max-height var(--transition-normal);
-  padding: 0 1.1rem;
+  padding: 0 0.25rem;
   color: var(--text-muted);
-  font-size: 0.87rem;
+  font-size: 0.9rem;
 }
 
-.accordion-item.active .accordion-body { padding: 0 1.1rem 0.9rem 1.1rem; }
+.accordion-item.active .accordion-body { padding: 0 0.25rem 1.1rem 0.25rem; }
 
 /* --- Contact Section --- */
 .contact-info-card { background: var(--bg-subtle); border: 1px solid var(--border-color); padding: var(--space-5); border-radius: var(--radius-md); }
