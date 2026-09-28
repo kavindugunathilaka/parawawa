@@ -252,7 +252,11 @@ button, input, select, textarea { font-family: inherit; }
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  max-width: 70%;
+  flex-shrink: 0;
+}
+
+@media (max-width: 991px) {
+  .logo { max-width: 70%; }
 }
 
 .logo img { height: 32px; width: auto; object-fit: contain; }
@@ -815,6 +819,35 @@ button, input, select, textarea { font-family: inherit; }
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* --- Scrolling Client/Project Marquee --- */
+.logo-marquee {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.logo-marquee-track {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  animation: logo-marquee-scroll 28s linear infinite;
+}
+
+.logo-marquee:hover .logo-marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes logo-marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-50% - 0.75rem)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-marquee-track { animation: none; flex-wrap: wrap; }
 }
 
 /* --- Article Cards --- */
