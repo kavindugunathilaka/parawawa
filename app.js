@@ -5,6 +5,16 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // --- 0. Compact Navbar on Scroll ---
+  const navbarEl = document.querySelector('.navbar');
+  if (navbarEl) {
+    const updateNavbarScrolled = () => {
+      navbarEl.classList.toggle('scrolled', window.scrollY > 20);
+    };
+    updateNavbarScrolled();
+    window.addEventListener('scroll', updateNavbarScrolled, { passive: true });
+  }
+
   // --- 1. Mobile Menu Drawer Toggle ---
   const mobileMenuBtn = document.getElementById('mobileMenuBtn');
   const mobileDrawer = document.getElementById('mobileDrawer');
