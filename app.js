@@ -419,7 +419,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "10": {
       badge: "ARTICLE #10 • PATENT & HISTORY",
       title: "The Story of Sri Lanka Patent #10848: How Mr. Dharmakeerthi Mannage Invented Parawewa",
-      img: "assets/owner.png",
+      img: "assets/real_patent.jpg",
       date: "Jun 08, 2026",
       readTime: "7 min read",
       summary: "Read the inspiring history of how Sri Lankan inventor Mr. Dharmakeerthi Mannage created Parawewa in 1996 and won the 2018 Presidential Innovation Award.",
@@ -456,7 +456,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "11": {
       badge: "ARTICLE #11 • PRICING GUIDE",
       title: "Septic Tank Installation Cost in Sri Lanka: A Complete Price Guide",
-      img: "assets/project1.png",
+      img: "assets/project1.jpg",
       date: "Jun 22, 2026",
       readTime: "6 min read",
       summary: "What actually drives septic tank pricing in Sri Lanka, and how Option A and Option B installations compare on total cost, not just the quote.",
@@ -588,7 +588,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "15": {
       badge: "ARTICLE #15 • NEW CONSTRUCTION",
       title: "When to Install Your Septic Tank: A New House Construction Timeline Guide",
-      img: "assets/project2.png",
+      img: "assets/project2.jpg",
       date: "Aug 17, 2026",
       readTime: "5 min read",
       summary: "Installing a septic tank at the wrong stage of construction causes avoidable rework. Here's where it fits in a typical Sri Lankan build timeline.",

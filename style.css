@@ -1098,6 +1098,28 @@ button, input, select, textarea { font-family: inherit; }
 /* --- Founder Section --- */
 .founder-photo { border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); }
 
+.founder-photo-placeholder {
+  aspect-ratio: 6 / 7;
+  background: var(--bg-subtle);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  color: var(--text-light);
+}
+
+.founder-photo-placeholder i {
+  font-size: 3.5rem;
+  color: var(--accent-blue);
+  opacity: 0.5;
+}
+
+.founder-photo-placeholder span {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
 .founder-eyebrow {
   display: inline-block;
   background: var(--accent-blue-light);
