@@ -298,6 +298,7 @@ button, input, select, textarea { font-family: inherit; }
 .nav-item { position: relative; }
 
 .nav-link {
+  white-space: nowrap;
   font-weight: 700;
   color: var(--text-main);
   font-size: 0.92rem;
@@ -352,6 +353,7 @@ button, input, select, textarea { font-family: inherit; }
 .dropdown-item { display: block; }
 
 .dropdown-link {
+  min-height: 44px;
   padding: 0.65rem 1.1rem;
   font-size: 0.88rem;
   font-weight: 500;
@@ -378,7 +380,7 @@ button, input, select, textarea { font-family: inherit; }
   gap: 0.6rem;
 }
 
-.nav-actions .btn-primary { display: none; }
+.nav-actions .btn-primary { display: none; white-space: nowrap; padding: 0.6rem 1.25rem; min-height: 44px; }
 
 @media (min-width: 992px) {
   .nav-actions .btn-primary { display: inline-flex; }
@@ -502,10 +504,11 @@ button, input, select, textarea { font-family: inherit; }
 }
 
 .mobile-sub-link {
-  font-size: 0.92rem;
+  font-size: 0.95rem;
   color: var(--text-muted);
-  padding: 0.45rem 0;
-  display: block;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
 }
 
 .mobile-drawer-actions {
@@ -552,40 +555,16 @@ button, input, select, textarea { font-family: inherit; }
   .hero { padding-top: var(--space-7); padding-bottom: var(--space-7); }
 }
 
-/* --- Photo Hero with Transparent Scrim --- */
-.hero-photo {
-  position: relative;
-  padding-top: var(--space-6);
-  padding-bottom: var(--space-6);
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
+.hero-sinhala {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.85;
+  color: var(--accent-blue-dark);
+  margin-bottom: var(--space-2);
 }
 
-@media (min-width: 768px) {
-  .hero-photo { padding-top: 5.5rem; padding-bottom: 5.5rem; }
-}
-
-.hero-scrim {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.97) 0%, rgba(255, 255, 255, 0.94) 55%, rgba(255, 255, 255, 0.82) 100%);
-  z-index: 1;
-}
-
-@media (min-width: 768px) {
-  .hero-scrim {
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.97) 0%, rgba(255, 255, 255, 0.93) 42%, rgba(255, 255, 255, 0.55) 72%, rgba(255, 255, 255, 0.15) 100%);
-  }
-}
-
-.hero-photo > .container {
-  position: relative;
-  z-index: 2;
-}
-
-.hero-photo .hero-content {
-  max-width: 620px;
+@media (max-width: 991px) {
+  .hero-ctas .open-quote-modal { display: none; }
 }
 
 .hero-grid {
@@ -1138,7 +1117,23 @@ button, input, select, textarea { font-family: inherit; }
   box-shadow: var(--shadow-sm);
 }
 
-.comparison-table { width: 100%; min-width: 560px; border-collapse: collapse; text-align: left; }
+.comparison-table { width: 100%; border-collapse: collapse; text-align: left; }
+
+@media (min-width: 768px) {
+  .comparison-table { min-width: 560px; }
+}
+
+@media (max-width: 767px) {
+  .comparison-table-wrapper { overflow: visible; background: transparent; border: 0; box-shadow: none; }
+  .comparison-table, .comparison-table tbody, .comparison-table tr, .comparison-table td { display: block; width: 100%; }
+  .comparison-table thead { display: none; }
+  .comparison-table tr { background: #fff; border-radius: var(--radius-md); margin-bottom: var(--space-3); overflow: hidden; }
+  .comparison-table td { border-bottom: 1px solid var(--border-color); padding: 0.75rem 1rem; font-size: 0.9rem; }
+  .comparison-table td:first-child { background: var(--bg-subtle); font-family: var(--font-heading); font-size: 1.05rem; border-bottom: 1px solid var(--border-color); }
+  .comparison-table td[data-label]::before { content: attr(data-label); display: block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--text-light); margin-bottom: 0.15rem; }
+  .comparison-table td.highlight-col { background: var(--accent-blue-light); }
+  .comparison-table tr td:last-child { border-bottom: 0; }
+}
 
 .comparison-table th, .comparison-table td {
   padding: 0.8rem 0.9rem;
@@ -1421,8 +1416,8 @@ button, input, select, textarea { font-family: inherit; }
 }
 .footer-social a.whatsapp { background: #25d366; }
 
-.footer-links { display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.85rem; }
-.footer-links a { color: #94a3b8; }
+.footer-links { display: flex; flex-direction: column; gap: 0; font-size: 0.85rem; }
+.footer-links a { color: #94a3b8; display: inline-flex; align-items: center; min-height: 44px; }
 .footer-links a:hover { color: #ffffff; }
 
 .footer-keywords { display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.85rem; color: #94a3b8; }
