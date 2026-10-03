@@ -11,7 +11,7 @@
   --bg-secondary: #ffffff;
   --bg-card: #ffffff;
   --bg-subtle: #f4f6f8;
-  --bg-topbar: #0f172a;
+  --bg-topbar: #04170f;
 
   --border-color: #e5e9ee;
   --border-active: #0284c7;
@@ -44,9 +44,9 @@
 
   --bg-soft: #f3f5f8;
   --text-dim: #7b8494;
-  --dark: #0b1220;
-  --dark-2: #111a2e;
-  --dark-3: #17233d;
+  --dark: #062418;
+  --dark-2: #0c3324;
+  --dark-3: #11452f;
   --dark-line: rgba(255, 255, 255, 0.10);
   --radius-btn: 10px;
 
@@ -1782,7 +1782,7 @@ p { line-height: 1.6; }
 .feature-title { margin-top: 2.25rem; font-size: 1.25rem; letter-spacing: -0.02em; }
 
 .feature-card-dark {
-  background: radial-gradient(70% 90% at 100% 0%, rgba(2, 132, 199, 0.38), transparent 70%), var(--dark);
+  background: radial-gradient(70% 90% at 100% 0%, rgba(16, 185, 129, 0.34), transparent 70%), var(--dark);
 }
 .feature-card-dark .feature-icon { background: rgba(255, 255, 255, 0.10); color: #7dd3fc; box-shadow: none; }
 .feature-card-dark .feature-title { color: #ffffff; }
@@ -1915,7 +1915,7 @@ p { line-height: 1.6; }
 
 /* --- Dark comparison + footer share the hero palette --- */
 .section-feature-dark {
-  background: radial-gradient(45% 50% at 0% 0%, rgba(2, 132, 199, 0.22), transparent 70%), var(--dark);
+  background: radial-gradient(45% 50% at 0% 0%, rgba(16, 185, 129, 0.20), transparent 70%), var(--dark);
 }
 
 .comparison-table-wrapper { border-radius: 24px; border: 0; }
@@ -1966,4 +1966,68 @@ p { line-height: 1.6; }
   .feature-card { min-height: 230px; }
   .feature-title { margin-top: 2.25rem; }
   .ind-panel-visual { min-height: 190px; }
+}
+
+/* ==========================================================================
+   GREEN HERO (matches the logo green) — overrides the blue dark-surface tints
+   ========================================================================== */
+:root { --dark-text: #a9c0b4; --brand-green: #10b981; }
+
+.hero-glow {
+  background:
+    radial-gradient(45% 60% at 0% 0%, rgba(16, 185, 129, 0.30), transparent 70%),
+    radial-gradient(40% 50% at 100% 100%, rgba(2, 132, 199, 0.16), transparent 70%);
+}
+
+.hero-title-dim { color: #86a396; }
+.hero-sinhala { color: #a7f3d0; }
+.hero-subtitle, .hero-stat .stat-label { color: var(--dark-text); }
+
+.hero-badge { background: rgba(16, 185, 129, 0.16); border-color: rgba(110, 231, 183, 0.35); color: #a7f3d0; }
+
+.hero .btn-primary,
+.option-card-dark .btn-emerald { background: var(--brand-green); color: #04281b; box-shadow: none; }
+.hero .btn-primary:hover { background: #34d399; color: #04281b; box-shadow: 0 6px 18px rgba(16, 185, 129, 0.3); }
+.hero .btn-ghost { background: var(--dark-2); }
+.hero .btn-ghost:hover { border-color: #6ee7b7; }
+.hero :focus-visible { outline-color: #6ee7b7; }
+
+.option-card-dark .option-desc,
+.feature-card-dark .feature-desc { color: var(--dark-text); }
+.feature-card-dark .feature-icon { color: #6ee7b7; }
+.section-tag-on-dark::before { background: #34d399; }
+.section-title-on-dark .text-sky { color: #86a396; }
+.section-subtitle-on-dark { color: var(--dark-text); }
+.footer p, .footer-desc, .footer-links a, .footer-keywords, .footer-bottom { color: var(--dark-text); }
+.footer-bottom { border-top-color: rgba(255, 255, 255, 0.10); }
+.footer-social a { background: var(--dark-2); }
+
+/* ==========================================================================
+   PHASE 3: keyboard access, reduced motion, layout-shift guards
+   ========================================================================== */
+
+/* Dropdown menus also open from the keyboard */
+.nav-item:focus-within .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+/* Pressed state for buttons */
+.btn:active { transform: translateY(0) scale(0.99); }
+
+/* Reserve image space so nothing jumps while photos load */
+.hero-photo-card img { aspect-ratio: 5 / 3; }
+@media (min-width: 992px) { .hero-photo-card img { aspect-ratio: auto; } }
+.client-logo-card img { aspect-ratio: 1 / 1; object-fit: contain; }
+.article-card-img img { aspect-ratio: 2 / 1; }
+
+@media (prefers-reduced-motion: reduce) {
+  html, body { scroll-behavior: auto; }
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+  .btn:hover, .btn:active, .article-card:hover, .client-logo-card:hover { transform: none; }
 }
