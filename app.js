@@ -793,23 +793,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     articlesGrid.innerHTML = keysToShow.map(key => {
       const art = articlesData[key];
-      let badgeBg = "var(--accent-blue)";
+      const imgClass = /\.png$/i.test(art.img) ? ' contain' : '';
 
       return `
-        <article class="article-card reveal active" data-article="${key}" style="background: #ffffff; border: 1px solid var(--border-color); border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-          <div style="height: 190px; overflow: hidden; position: relative;">
-            <img src="${art.img}" alt="${art.title}" width="400" height="200" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
-            <span style="position: absolute; top: 10px; left: 10px; background: ${badgeBg}; color: #fff; padding: 0.2rem 0.6rem; border-radius: var(--radius-full); font-size: var(--text-xs); font-weight: 700;">${art.badge}</span>
+        <article class="article-card reveal active" data-article="${key}">
+          <div class="article-card-img${imgClass}">
+            <img src="${art.img}" alt="${art.title}" width="400" height="200" loading="lazy" decoding="async">
+            <span class="article-badge badge-blue">${art.badge}</span>
           </div>
-          <div style="padding: 1.25rem; display: flex; flex-direction: column; flex-grow: 1;">
-            <div style="font-size: var(--text-xs); color: var(--text-light); margin-bottom: 0.4rem;">
-              <i class="far fa-calendar-alt"></i> ${art.date} • ${art.readTime}
-            </div>
-            <h3 style="font-size: var(--text-lg); margin-bottom: 0.5rem; line-height: 1.35; color: #0f172a;">${art.title}</h3>
-            <p style="font-size: var(--text-sm); color: var(--text-muted); line-height: 1.5; margin-bottom: 1.25rem; flex-grow: 1;">
-              ${art.summary}
-            </p>
-            <button class="btn btn-secondary open-article-btn" data-article="${key}" style="width: 100%; font-size: var(--text-sm);"><i class="fas fa-book-reader"></i> Read Full Article</button>
+          <div class="article-card-body">
+            <div class="article-meta"><i class="far fa-calendar-alt"></i> ${art.date} • ${art.readTime}</div>
+            <h3 class="article-title">${art.title}</h3>
+            <p class="article-summary">${art.summary}</p>
+            <button class="btn btn-secondary open-article-btn btn-block btn-sm" data-article="${key}"><i class="fas fa-book-reader"></i> Read Full Article</button>
           </div>
         </article>
       `;
@@ -1016,5 +1012,39 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     revealElements.forEach(el => el.classList.add('active'));
   }
+
+  // --- 7. Industries Tab List (Who does Parawewa suit?) ---
+  const indTabs = Array.from(document.querySelectorAll('.ind-item'));
+  const indPanels = Array.from(document.querySelectorAll('.ind-panel'));
+
+  const selectIndustry = (index, moveFocus) => {
+    indTabs.forEach((tab, i) => {
+      const on = i === index;
+      tab.classList.toggle('active', on);
+      tab.setAttribute('aria-selected', on ? 'true' : 'false');
+      tab.tabIndex = on ? 0 : -1;
+    });
+    indPanels.forEach((panel, i) => {
+      const on = i === index;
+      panel.classList.toggle('active', on);
+      panel.hidden = !on;
+    });
+    if (moveFocus) indTabs[index].focus();
+  };
+
+  indTabs.forEach((tab, i) => {
+    tab.addEventListener('click', () => selectIndustry(i, false));
+    tab.addEventListener('keydown', (e) => {
+      let next = null;
+      if (e.key === 'ArrowDown' || e.key === 'ArrowRight') next = (i + 1) % indTabs.length;
+      if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') next = (i - 1 + indTabs.length) % indTabs.length;
+      if (e.key === 'Home') next = 0;
+      if (e.key === 'End') next = indTabs.length - 1;
+      if (next !== null) {
+        e.preventDefault();
+        selectIndustry(next, true);
+      }
+    });
+  });
 
 });
