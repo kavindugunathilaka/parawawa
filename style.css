@@ -2052,3 +2052,11 @@ p { line-height: 1.6; }
 .person-card figcaption { display: flex; flex-direction: column; gap: 0.15rem; padding: 1rem 0.75rem 0.75rem; }
 .person-name { font-family: var(--font-heading); font-size: 1.25rem; font-weight: 600; letter-spacing: -0.02em; color: var(--text-main); }
 .person-role { font-size: var(--text-sm); color: var(--text-dim); }
+
+/* --- Team row (About) --- */
+.team-block { margin-top: var(--space-6); }
+.team-heading { font-size: 1.5rem; letter-spacing: -0.025em; margin-bottom: var(--space-4); }
+.team-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 300px)); gap: 16px; }
+.person-card { max-width: none; }
+.person-cred { font-size: var(--text-xs); color: var(--text-muted); line-height: 1.4; margin-top: 0.15rem; }
+@media (max-width: 575px) { .team-grid { grid-template-columns: 1fr; } .person-card { max-width: 340px; } }
