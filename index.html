@@ -11,7 +11,7 @@
   <meta name="description" content="Parawewa patented eco bio septic tank system. 10-Year warranty, gravity & pump seal type options, zero gully bowser emptying.">
   <meta name="keywords" content="Parawewa, Parawawa, bio septic tank Sri Lanka, Parawewa, sewage treatment system Sri Lanka, Dharmakeerthi Mannage, maintenance free septic tank, eco septic tank Sri Lanka, Piliyandala">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-  <link rel="canonical" href="https://parawawa.lk/en/">
+  <link rel="canonical" href="https://parawawa.lk/">
 
   <!-- Resource Preconnects for High Speed Loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
@@ -31,7 +31,7 @@
 
   <!-- Open Graph Social Metadata -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://parawawa.lk/en/">
+  <meta property="og:url" content="https://parawawa.lk/">
   <meta property="og:title" content="Parawewa Eco Bio Septic Tank System">
   <meta property="og:description" content="Patented Sri Lankan Eco Sewage Treatment Technology by Mr. Dharmakeerthi Mannage. 100% Maintenance Free with 10-Year Warranty by Parawewa.">
   <meta property="og:image" content="https://parawawa.lk/assets/real_hero.jpg">
@@ -52,7 +52,7 @@
 
   <!-- Vendor Icons & Fonts -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="style.css?v=20261020">
+  <link rel="stylesheet" href="style.css?v=20261021">
 
   <!-- ==========================================================================
        GEO / AEO (GENERATIVE ENGINE & ANSWER ENGINE OPTIMIZATION) JSON-LD SCHEMA
@@ -76,7 +76,7 @@
         "@type": "LocalBusiness",
         "@id": "https://parawawa.lk/#organization",
         "name": "Parawewa - Parawewa Bio Septic Tank",
-        "url": "https://parawawa.lk/en/",
+        "url": "https://parawawa.lk/",
         "logo": "https://parawawa.lk/assets/real_logo.png",
         "image": "https://parawawa.lk/assets/real_hero.jpg",
         "founder": { "@id": "https://parawawa.lk/#founder" },
@@ -97,14 +97,7 @@
         "name": "Parawewa Eco Bio Septic Tank System",
         "image": "https://parawawa.lk/assets/real_hero.jpg",
         "description": "Patented 4-stage biological layer-base eco septic tank by Parawewa. Available in Gravity-Fed and Electrical Submersible Pump Seal Type models with 10-Year Manufacturer Warranty.",
-        "brand": { "@type": "Brand", "name": "Parawewa" },
-        "offers": {
-          "@type": "AggregateOffer",
-          "priceCurrency": "LKR",
-          "lowPrice": "120000",
-          "highPrice": "450000",
-          "offerCount": "10"
-        }
+        "brand": { "@type": "Brand", "name": "Parawewa" }
       },
       {
         "@type": "FAQPage",
@@ -178,7 +171,7 @@
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://parawawa.lk/en/" }
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://parawawa.lk/" }
         ]
       }
     ]
@@ -671,14 +664,12 @@
   <!-- ==========================================================================
        INTERACTIVE ARTICLE READER MODAL POPUP (#ARTICLEMODAL)
        ========================================================================== -->
-  <div class="modal-overlay" id="articleModal">
-    <div class="modal-card" style="max-width: 750px;">
+  <div class="modal-overlay" id="articleModal" aria-hidden="true">
+    <div class="modal-card" style="max-width: 750px;" role="dialog" aria-modal="true" aria-labelledby="articleModalTitle">
       <button class="modal-close" id="closeArticleModalBtn" aria-label="Close Article Reader">&times;</button>
-      <span id="articleBadge" class="lang-pill">SEO ARTICLE</span>
-      <h2 id="articleModalTitle" class="modal-article-title">Article Title</h2>
-      <div id="articleModalContent" class="modal-article-body">
-        Article text will be rendered dynamically...
-      </div>
+      <span id="articleBadge" class="lang-pill"></span>
+      <h2 id="articleModalTitle" class="modal-article-title"></h2>
+      <div id="articleModalContent" class="modal-article-body"></div>
       <div class="modal-article-footer">
         <span style="font-size: var(--text-xs); color: var(--text-muted);">Author: Mr. Dharmakeerthi Mannage, Chairman & Founder</span>
         <a href="#contact" class="btn btn-primary open-quote-modal btn-sm"><i class="fas fa-paper-plane"></i> Get Free Quote</a>
@@ -1341,11 +1332,11 @@
   <!-- ==========================================================================
        MODAL POPUP FOR QUOTE REQUEST (CONSISTENT WITH ON-PAGE FORM)
        ========================================================================== -->
-  <div class="modal-overlay" id="quoteModal">
-    <div class="modal-card">
+  <div class="modal-overlay" id="quoteModal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="quoteModalTitle">
       <button class="modal-close" id="closeModalBtn" aria-label="Close Modal">&times;</button>
       <div class="flex-between" style="margin-bottom: 0.5rem;">
-        <h3 class="modal-title">Request Price Quote</h3>
+        <h3 class="modal-title" id="quoteModalTitle">Request Price Quote</h3>
         <span class="lang-pill">ENGLISH / සිංහල</span>
       </div>
       <p class="modal-subtitle">Fill out details for customized pricing & technical specifications from Parawewa.</p>
@@ -1448,6 +1439,6 @@
   </footer>
 
   <!-- Main JavaScript File -->
-  <script src="app.js?v=20261020" defer></script>
+  <script src="app.js?v=20261021" defer></script>
 </body>
 </html>

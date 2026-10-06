@@ -1,0 +1,23 @@
+{
+  "redirects": [
+    { "source": "/en", "destination": "/", "permanent": true },
+    { "source": "/en/", "destination": "/", "permanent": true },
+    { "source": "/en/home", "destination": "/", "permanent": true },
+    { "source": "/en/home/", "destination": "/", "permanent": true },
+    { "source": "/en/about", "destination": "/#founder", "permanent": true },
+    { "source": "/en/about/", "destination": "/#founder", "permanent": true },
+    { "source": "/en/services", "destination": "/#models", "permanent": true },
+    { "source": "/en/services/", "destination": "/#models", "permanent": true },
+    { "source": "/en/projects", "destination": "/#customers", "permanent": true },
+    { "source": "/en/projects/", "destination": "/#customers", "permanent": true },
+    { "source": "/en/contact-us", "destination": "/#contact", "permanent": true },
+    { "source": "/en/contact-us/", "destination": "/#contact", "permanent": true },
+    { "source": "/en/articles.html", "destination": "/articles.html", "permanent": true },
+    { "source": "/en/sample-page/", "destination": "/", "permanent": true },
+    { "source": "/en/hello-world/", "destination": "/", "permanent": true },
+    { "source": "/en/category/uncategorized/", "destination": "/", "permanent": true },
+    { "source": "/wp-sitemap.xml", "destination": "/sitemap.xml", "permanent": true },
+    { "source": "/si", "destination": "/", "permanent": false },
+    { "source": "/si/", "destination": "/", "permanent": false }
+  ]
+}

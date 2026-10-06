@@ -1047,4 +1047,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // --- 8. Keep modal ARIA state in sync (hidden modals are not read as page content) ---
+  document.querySelectorAll('.modal-overlay').forEach(modal => {
+    const sync = () => modal.setAttribute('aria-hidden', modal.classList.contains('active') ? 'false' : 'true');
+    sync();
+    new MutationObserver(sync).observe(modal, { attributes: true, attributeFilter: ['class'] });
+  });
+
 });

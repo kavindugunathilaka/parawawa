@@ -11,10 +11,10 @@
   <meta name="description" content="Parawewa Knowledge Hub: 20 SEO & AEO articles on bio septic tanks, groundwater protection, gravity vs pump options, and Sri Lanka Patent #10848.">
   <meta name="keywords" content="Parawewa articles, Parawewa blog, bio septic tank guide Sri Lanka, Dharmakeerthi Mannage, septic tank maintenance, Parawewa Sri Lanka, CEA approval bio tank">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
-  <link rel="canonical" href="https://parawawa.lk/en/articles.html">
+  <link rel="canonical" href="https://parawawa.lk/articles.html">
 
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://parawawa.lk/en/articles.html">
+  <meta property="og:url" content="https://parawawa.lk/articles.html">
   <meta property="og:title" content="Parawewa 20 SEO Engineering Articles & Knowledge Base">
   <meta property="og:description" content="20 Expert technical guides on patented eco bio septic tanks in Sri Lanka by Mr. Dharmakeerthi Mannage (Parawewa Pvt Ltd).">
   <meta property="og:image" content="https://parawawa.lk/assets/real_hero.jpg">
@@ -29,7 +29,7 @@
 
   <link rel="icon" type="image/png" href="assets/real_logo.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css?v=20261020">
+  <link rel="stylesheet" href="style.css?v=20261021">
 
   <!-- GEO & AEO JSON-LD SCHEMAS FOR ALL 20 ARTICLES -->
   <script type="application/ld+json">
@@ -265,8 +265,8 @@
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://parawawa.lk/en/" },
-          { "@type": "ListItem", "position": 2, "name": "Knowledge Hub", "item": "https://parawawa.lk/en/articles.html" }
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://parawawa.lk/" },
+          { "@type": "ListItem", "position": 2, "name": "Knowledge Hub", "item": "https://parawawa.lk/articles.html" }
         ]
       }
     ]
@@ -510,14 +510,12 @@
   </section>
 
   <!-- Interactive Article Modal Reader -->
-  <div class="modal-overlay" id="articleModal">
+  <div class="modal-overlay" id="articleModal" aria-hidden="true">
     <div class="modal-card" style="max-width: 750px;">
       <button class="modal-close" id="closeArticleModalBtn" aria-label="Close Article Reader">&times;</button>
-      <span id="articleBadge" class="lang-pill">SEO ARTICLE</span>
-      <h2 id="articleModalTitle" class="modal-article-title">Article Title</h2>
-      <div id="articleModalContent" class="modal-article-body">
-        Article text will be rendered dynamically...
-      </div>
+      <span id="articleBadge" class="lang-pill"></span>
+      <h2 id="articleModalTitle" class="modal-article-title"></h2>
+      <div id="articleModalContent" class="modal-article-body"></div>
       <div class="modal-article-footer">
         <span style="font-size: var(--text-xs); color: var(--text-muted);">Author: Mr. Dharmakeerthi Mannage, Chairman & Founder</span>
         <a href="index.html#contact" class="btn btn-primary btn-sm"><i class="fas fa-paper-plane"></i> Get Free Quote</a>
@@ -532,6 +530,6 @@
     </div>
   </footer>
 
-  <script src="app.js?v=20261020"></script>
+  <script src="app.js?v=20261021"></script>
 </body>
 </html>
