@@ -79,7 +79,11 @@ def page(sy):
   <meta name="twitter:image" content="{img_abs}">
 
   <link rel="icon" type="image/png" href="/assets/real_logo.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preload" href="/assets/fonts/inter-tight-2.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/instrument-sans-1.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fa/fa-solid.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css?v={VER}">
+  <link rel="stylesheet" href="/assets/fa/fa-subset.css?v={VER}">
   <link rel="stylesheet" href="/style.css?v={VER}">
 
   <script type="application/ld+json">
@@ -112,7 +116,7 @@ def page(sy):
 
     <article class="container article-wrap article-main">
       <figure class="article-figure">
-        <img src="/{sy['img']}" alt="{esc(sy['imgAlt'])}" width="{w}" height="{h}" fetchpriority="high" decoding="async">
+        <img src="/{ba.webp(sy['img'])}" alt="{esc(sy['imgAlt'])}" width="{w}" height="{h}" fetchpriority="high" decoding="async">
       </figure>
 
       <dl class="fact-grid">{facts}</dl>

@@ -26,7 +26,7 @@ from systems import SYSTEMS  # noqa: E402
 from compare import COMPARE  # noqa: E402
 
 index_html = open('index.html', encoding='utf-8', newline='').read().replace('\r\n', '\n')
-VER = re.search(r'style\.css\?v=(\d+)', index_html).group(1)
+VER = re.search(r'style\.css\?v=([0-9A-Za-z]+)', index_html).group(1)
 
 
 def esc(s):
@@ -108,12 +108,16 @@ def body_html(a):
     return c
 
 
+def webp(path):
+    return re.sub(r'\.(jpg|jpeg|png)$', '.webp', path, flags=re.I)
+
+
 def card_html(a):
     w, h = img_size(a['img'])
     contain = ' contain' if a['img'].lower().endswith('.png') else ''
     return f'''          <article class="article-card" data-article="{a['id']}">
             <div class="article-card-img{contain}">
-              <img src="/{a['img']}" alt="{esc(a['imgAlt'])}" width="{w}" height="{h}" loading="lazy" decoding="async">
+              <img src="/{webp(a['img'])}" alt="{esc(a['imgAlt'])}" width="{w}" height="{h}" loading="lazy" decoding="async">
               <span class="article-badge badge-blue">{esc(category(a))}</span>
             </div>
             <div class="article-card-body">
@@ -198,7 +202,11 @@ def page(a):
   <meta name="twitter:image" content="{img_abs}">
 
   <link rel="icon" type="image/png" href="/assets/real_logo.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preload" href="/assets/fonts/inter-tight-2.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/instrument-sans-1.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fa/fa-solid.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css?v={VER}">
+  <link rel="stylesheet" href="/assets/fa/fa-subset.css?v={VER}">
   <link rel="stylesheet" href="/style.css?v={VER}">
 
   <script type="application/ld+json">
@@ -228,7 +236,7 @@ def page(a):
 
     <article class="container article-wrap article-main">
       <figure class="article-figure">
-        <img src="/{a['img']}" alt="{esc(a['imgAlt'])}" width="{w}" height="{h}" fetchpriority="high" decoding="async">
+        <img src="/{webp(a['img'])}" alt="{esc(a['imgAlt'])}" width="{w}" height="{h}" fetchpriority="high" decoding="async">
       </figure>
 
       <div class="article-body">

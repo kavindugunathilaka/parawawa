@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return `
         <article class="article-card reveal active" data-article="${key}">
           <div class="article-card-img${imgClass}">
-            <img src="/${art.img}" alt="${art.imgAlt}" width="400" height="200" loading="lazy" decoding="async">
+            <img src="/${art.img.replace(/\.(jpg|jpeg|png)$/i, '.webp')}" alt="${art.imgAlt}" width="400" height="200" loading="lazy" decoding="async">
             <span class="article-badge badge-blue">${art.badge}</span>
           </div>
           <div class="article-card-body">
