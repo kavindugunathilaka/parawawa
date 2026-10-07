@@ -81,7 +81,7 @@ def not_found():
         <ul class="notfound-links">
           <li><a href="/systems/gravity-fed-bio-septic-tank/">Option A: gravity-fed bio septic tank</a></li>
           <li><a href="/systems/pump-seal-type-bio-septic-tank/">Option B: pump seal type for high water table land</a></li>
-          <li><a href="/compare/parawewa-vs-johkasou/">Parawewa vs Johkasou</a></li>
+          <li><a href="/compare/parawewa-vs-aerated-package-plants/">Parawewa vs Aerated Package Plants</a></li>
         </ul>
       </div>
     </section>
