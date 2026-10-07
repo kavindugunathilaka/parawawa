@@ -2139,3 +2139,23 @@ p { line-height: 1.6; }
 .article-pn-next { text-align: right; }
 
 .article-related .grid { gap: 16px; }
+
+/* --- System pages (/systems/<slug>/) and Option card links --- */
+.option-more { display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.85rem; font-size: var(--text-sm); font-weight: 600; color: var(--accent-blue); }
+.option-more:hover { color: var(--accent-blue-dark); }
+.option-card-dark .option-more { color: #6ee7b7; }
+.option-card-dark .option-more:hover { color: #a7f3d0; }
+
+.system-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: var(--space-4); }
+
+.fact-grid { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 0 0 var(--space-5); }
+@media (min-width: 560px) { .fact-grid { grid-template-columns: repeat(2, 1fr); } }
+.fact-grid > div { background: var(--bg-soft); border-radius: 16px; padding: 0.9rem 1.1rem; }
+.fact-grid dt { font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-dim); margin-bottom: 0.15rem; }
+.fact-grid dd { font-weight: 600; color: var(--text-main); line-height: 1.35; }
+
+.system-faq { margin-top: var(--space-6); }
+.system-faq-title { font-size: 1.5rem; letter-spacing: -0.025em; margin-bottom: var(--space-3); }
+.system-faq .accordion { max-width: none; margin: 0; }
+
+.article-cta a:not(.btn) { color: #a7f3d0; text-decoration: underline; text-underline-offset: 2px; }

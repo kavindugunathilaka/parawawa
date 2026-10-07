@@ -20,6 +20,10 @@ SITE = 'https://parawawa.lk'
 ARTICLES = json.load(open('content/articles.json', encoding='utf-8'))
 BY_ID = {a['id']: a for a in ARTICLES}
 
+import sys
+sys.path.insert(0, os.path.join(ROOT, 'content'))
+from systems import SYSTEMS  # noqa: E402
+
 index_html = open('index.html', encoding='utf-8', newline='').read().replace('\r\n', '\n')
 VER = re.search(r'style\.css\?v=(\d+)', index_html).group(1)
 
@@ -233,7 +237,7 @@ def page(a):
       <aside class="article-cta" aria-label="Request a quote">
         <div>
           <h2>Planning a septic system for your site?</h2>
-          <p>Talk to the Parawewa team about Option A (gravity) or Option B (pump seal type) for your property. Every installation comes with a 10-year written warranty.</p>
+          <p>Talk to the Parawewa team about <a href="/systems/gravity-fed-bio-septic-tank/">Option A (gravity-fed)</a> or <a href="/systems/pump-seal-type-bio-septic-tank/">Option B (pump seal type)</a> for your property. Every installation comes with a 10-year written warranty.</p>
         </div>
         <div class="article-cta-actions">
           <a href="/#contact" class="btn btn-primary open-quote-modal"><i class="fas fa-paper-plane"></i> Get Free Quote</a>
@@ -329,7 +333,11 @@ def main():
       <image:title>Parawewa Patented Eco Bio Septic Tank System Sri Lanka</image:title>
     </image:image>'''),
         (SITE + '/articles.html', '2026-10-06', 'weekly', '0.9', ''),
-    ] + [(url_of(a), a['modified'], 'monthly', '0.8', f'''
+    ] + [(f"{SITE}/systems/{sy['slug']}/", sy['modified'], 'monthly', '0.9', f'''
+    <image:image>
+      <image:loc>{SITE}/{sy['img']}</image:loc>
+      <image:title>{esc(sy['imgAlt'])}</image:title>
+    </image:image>''') for sy in SYSTEMS] + [(url_of(a), a['modified'], 'monthly', '0.8', f'''
     <image:image>
       <image:loc>{SITE}/{a['img']}</image:loc>
       <image:title>{esc(a['imgAlt'])}</image:title>
