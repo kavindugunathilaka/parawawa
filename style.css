@@ -2159,3 +2159,8 @@ p { line-height: 1.6; }
 .system-faq .accordion { max-width: none; margin: 0; }
 
 .article-cta a:not(.btn) { color: #a7f3d0; text-decoration: underline; text-underline-offset: 2px; }
+
+/* Link under the dark comparison table */
+.comparison-more { margin-top: var(--space-4); color: var(--dark-text); font-size: var(--text-base); }
+.comparison-more a { color: #6ee7b7; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.comparison-more a:hover { color: #a7f3d0; }

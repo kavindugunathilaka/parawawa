@@ -23,6 +23,7 @@ BY_ID = {a['id']: a for a in ARTICLES}
 import sys
 sys.path.insert(0, os.path.join(ROOT, 'content'))
 from systems import SYSTEMS  # noqa: E402
+from compare import COMPARE  # noqa: E402
 
 index_html = open('index.html', encoding='utf-8', newline='').read().replace('\r\n', '\n')
 VER = re.search(r'style\.css\?v=(\d+)', index_html).group(1)
@@ -333,7 +334,11 @@ def main():
       <image:title>Parawewa Patented Eco Bio Septic Tank System Sri Lanka</image:title>
     </image:image>'''),
         (SITE + '/articles.html', '2026-10-06', 'weekly', '0.9', ''),
-    ] + [(f"{SITE}/systems/{sy['slug']}/", sy['modified'], 'monthly', '0.9', f'''
+    ] + [(f"{SITE}/compare/{c['slug']}/", c['modified'], 'monthly', '0.9', f'''
+    <image:image>
+      <image:loc>{SITE}/{c['img']}</image:loc>
+      <image:title>{esc(c['imgAlt'])}</image:title>
+    </image:image>''') for c in COMPARE] + [(f"{SITE}/systems/{sy['slug']}/", sy['modified'], 'monthly', '0.9', f'''
     <image:image>
       <image:loc>{SITE}/{sy['img']}</image:loc>
       <image:title>{esc(sy['imgAlt'])}</image:title>
