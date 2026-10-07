@@ -38,7 +38,7 @@ def llms():
         '## Company and tools',
         f'- [Home page]({SITE}/): system options, why Parawewa, who it suits, projects, team, certificates, tank-size calculator, FAQ and quote form.',
         f'- [Knowledge hub]({SITE}/articles.html): all 20 articles.',
-        f'- [Team]({SITE}/#team): managing director, directors, engineering lead and [removed].',
+        f'- [Team]({SITE}/#team): managing director, directors and engineering lead.',
         f'- [FAQ]({SITE}/#faq): answers on electricity, warranty, high water table, CEA compliance and sizing.',
         '',
     ]

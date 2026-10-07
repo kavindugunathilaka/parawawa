@@ -38,5 +38,5 @@ Prices are not published; quotes follow a free site inspection. The site is in E
 ## Company and tools
 - [Home page](https://parawawa.lk/): system options, why Parawewa, who it suits, projects, team, certificates, tank-size calculator, FAQ and quote form.
 - [Knowledge hub](https://parawawa.lk/articles.html): all 20 articles.
-- [Team](https://parawawa.lk/#team): managing director, directors, engineering lead and [removed].
+- [Team](https://parawawa.lk/#team): managing director, directors and engineering lead.
 - [FAQ](https://parawawa.lk/#faq): answers on electricity, warranty, high water table, CEA compliance and sizing.
