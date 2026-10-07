@@ -43,15 +43,18 @@
   <meta name="twitter:image" content="https://parawawa.lk/assets/real_hero.jpg">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/real_logo.png">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <link rel="alternate" type="application/rss+xml" title="Parawewa Knowledge Hub" href="/feed.xml">
 
   <!-- Vendor Icons & Fonts -->
   <link rel="preload" href="/assets/fonts/inter-tight-2.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/instrument-sans-1.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fa/fa-solid.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/assets/fonts/fonts.css?v=885602cd9d">
-  <link rel="stylesheet" href="/assets/fa/fa-subset.css?v=885602cd9d">
-  <link rel="stylesheet" href="style.css?v=885602cd9d">
+  <link rel="stylesheet" href="/assets/fonts/fonts.css?v=125cbc3df8">
+  <link rel="stylesheet" href="/assets/fa/fa-subset.css?v=125cbc3df8">
+  <link rel="stylesheet" href="style.css?v=125cbc3df8">
 
   <!-- ==========================================================================
        GEO / AEO (GENERATIVE ENGINE & ANSWER ENGINE OPTIMIZATION) JSON-LD SCHEMA
@@ -272,6 +275,8 @@
   <!-- ==========================================================================
        CORPORATE TOP CONTACT BAR
        ========================================================================== -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
   <div class="top-bar">
     <div class="container top-bar-container">
       <div class="top-bar-info">
@@ -412,6 +417,8 @@
       <a href="#contact" class="btn btn-secondary open-quote-modal btn-block text-center"><i class="fas fa-paper-plane"></i> Get Free Quote</a>
     </div>
   </div>
+
+  <main id="main">
 
   <!-- ==========================================================================
        HERO SECTION WITH SINHALA QUOTE BADGE & 10-YEAR WARRANTY
@@ -1015,7 +1022,7 @@
         </aside>
       </div>
 
-      <div class="team-block reveal">
+      <div class="team-block reveal" id="team">
         <h3 class="team-heading">Meet the team</h3>
         <div class="team-grid">
           <figure class="person-card">
@@ -1399,6 +1406,8 @@
     </div>
   </section>
 
+  </main>
+
   <!-- ==========================================================================
        MOBILE STICKY BOTTOM ACTION BAR
        ========================================================================== -->
@@ -1517,7 +1526,7 @@
   </footer>
 
   <!-- Main JavaScript File -->
-  <script src="articles-meta.js?v=885602cd9d" defer></script>
-  <script src="app.js?v=885602cd9d" defer></script>
+  <script src="articles-meta.js?v=125cbc3df8" defer></script>
+  <script src="app.js?v=125cbc3df8" defer></script>
 </body>
 </html>

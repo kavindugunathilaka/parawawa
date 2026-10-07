@@ -78,7 +78,10 @@ def page(sy):
   <meta name="twitter:description" content="{esc(sy['metaDescription'])}">
   <meta name="twitter:image" content="{img_abs}">
 
-  <link rel="icon" type="image/png" href="/assets/real_logo.png">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <link rel="alternate" type="application/rss+xml" title="Parawewa Knowledge Hub" href="/feed.xml">
   <link rel="preload" href="/assets/fonts/inter-tight-2.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/instrument-sans-1.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fa/fa-solid.woff2" as="font" type="font/woff2" crossorigin>

@@ -151,7 +151,35 @@ def build_webp():
     print(f'webp   : {made} new, saved {saved//1024} KB vs originals')
 
 
+def build_favicons():
+    """Square icons from the logo emblem (Google wants a square favicon, multiples of 48px)."""
+    im = Image.open('assets/real_logo.png').convert('RGBA')
+    alpha = im.split()[3]
+    cols = [x for x in range(im.width) if any(alpha.getpixel((x, y)) > 40 for y in range(0, im.height, 2))]
+    run = [cols[0]]
+    for c in cols[1:]:
+        if c - run[-1] > 6:
+            break
+        run.append(c)
+    x0, x1 = run[0], run[-1] + 1
+    rows = [y for y in range(im.height) if any(alpha.getpixel((x, y)) > 40 for x in range(x0, x1))]
+    emblem = im.crop((x0, rows[0], x1, rows[-1] + 1))
+    side = max(emblem.size)
+    sq = Image.new('RGBA', (side, side), (0, 0, 0, 0))
+    sq.paste(emblem, ((side - emblem.width) // 2, (side - emblem.height) // 2))
+    os.makedirs('assets/icons', exist_ok=True)
+    sq.resize((192, 192), Image.LANCZOS).save('assets/icons/icon-192.png', optimize=True)
+    sq.resize((48, 48), Image.LANCZOS).save('assets/icons/icon-48.png', optimize=True)
+    touch = Image.new('RGB', (180, 180), (255, 255, 255))
+    inner = sq.resize((156, 156), Image.LANCZOS)
+    touch.paste(inner, (12, 12), inner)
+    touch.save('assets/icons/apple-touch-icon.png', optimize=True)
+    sq.resize((48, 48), Image.LANCZOS).save('favicon.ico', sizes=[(16, 16), (32, 32), (48, 48)])
+    print('favicon: icon-48/192, apple-touch-icon, favicon.ico')
+
+
 def main():
+    build_favicons()
     build_icons()
     build_fonts()
     build_webp()

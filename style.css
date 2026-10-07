@@ -2164,3 +2164,9 @@ p { line-height: 1.6; }
 .comparison-more { margin-top: var(--space-4); color: var(--dark-text); font-size: var(--text-base); }
 .comparison-more a { color: #6ee7b7; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
 .comparison-more a:hover { color: #a7f3d0; }
+
+/* --- Skip link (keyboard users) and 404 page --- */
+.skip-link { position: absolute; left: 0.75rem; top: -4rem; z-index: 3000; padding: 0.7rem 1.1rem; background: var(--dark); color: #fff; border-radius: 10px; font-weight: 600; transition: top 0.15s ease; }
+.skip-link:focus { top: 0.75rem; color: #fff; }
+.notfound-links { margin-top: var(--space-5); display: grid; gap: 0.5rem; }
+.notfound-links a { color: var(--accent-blue); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }

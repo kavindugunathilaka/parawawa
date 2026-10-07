@@ -98,6 +98,46 @@ FOOTER = rootify(FOOTER)
 
 
 # ---------------------------------------------------------------- content transforms
+AUTOLINKS = [
+    (r'\bOption A\b', '/systems/gravity-fed-bio-septic-tank/', 'gravity-fed-bio-septic-tank'),
+    (r'\bOption B\b', '/systems/pump-seal-type-bio-septic-tank/', 'pump-seal-type-bio-septic-tank'),
+    (r'\bgully bowser\b', '/articles/gully-bowser-emptying-not-needed-bio-septic/', 'gully-bowser-emptying-not-needed-bio-septic'),
+    (r'\bCEA\b', '/articles/cea-compliance-septic-tank-sri-lanka/', 'cea-compliance-septic-tank-sri-lanka'),
+    (r'\bhigh water table\b', '/articles/bio-septic-tank-high-water-table-sri-lanka/', 'bio-septic-tank-high-water-table-sri-lanka'),
+    (r'Patent #10848', '/articles/sri-lanka-patent-10848-parawewa-story/', 'sri-lanka-patent-10848-parawewa-story'),
+    (r'\blayer-base\b', '/articles/how-layer-base-bio-septic-tank-works/', 'how-layer-base-bio-septic-tank-works'),
+    (r'\bsoakage pit\b', '/articles/septic-tank-vs-soakage-pit-sri-lanka/', 'septic-tank-vs-soakage-pit-sri-lanka'),
+]
+NO_LINK_TAGS = {'a', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'th', 'button', 'script', 'style'}
+
+
+def autolink(html_str, self_slug, limit=6):
+    """Link the first mention of a few key terms to the page that covers them.
+    Skips headings, table headers and existing links; at most one link per text node."""
+    parts = re.split(r'(<[^>]+>)', html_str)
+    depth = 0
+    done = {self_slug}
+    n = 0
+    for i, part in enumerate(parts):
+        if part.startswith('<'):
+            m = re.match(r'<(/?)\s*([a-zA-Z0-9]+)', part)
+            if m and m.group(2).lower() in NO_LINK_TAGS and not part.endswith('/>'):
+                depth = max(0, depth + (-1 if m.group(1) else 1))
+            continue
+        if depth or n >= limit or not part.strip():
+            continue
+        for pattern, href, key in AUTOLINKS:
+            if key in done:
+                continue
+            m = re.search(pattern, part)
+            if m:
+                parts[i] = part[:m.start()] + f'<a href="{href}">{m.group(0)}</a>' + part[m.end():]
+                done.add(key)
+                n += 1
+                break
+    return ''.join(parts)
+
+
 def body_html(a):
     c = a['content']
     c = re.sub(r'<h4[^>]*>', '<h2>', c)
@@ -105,7 +145,7 @@ def body_html(a):
     c = c.replace('href="#calculator"', 'href="/#calculator"').replace('href="#blog"', 'href="/articles.html"')
     c = re.sub(r'<i class="fas fa-robot"></i>\s*AI ANSWER CAPSULE \(AEO / GEO SUMMARY\)', '<i class="fas fa-bolt"></i> QUICK ANSWER', c)
     c = c.replace('<table', '<div class="table-scroll"><table').replace('</table>', '</table></div>')
-    return c
+    return autolink(c, a['slug'])
 
 
 def webp(path):
@@ -201,7 +241,10 @@ def page(a):
   <meta name="twitter:description" content="{esc(a['metaDescription'])}">
   <meta name="twitter:image" content="{img_abs}">
 
-  <link rel="icon" type="image/png" href="/assets/real_logo.png">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <link rel="alternate" type="application/rss+xml" title="Parawewa Knowledge Hub" href="/feed.xml">
   <link rel="preload" href="/assets/fonts/inter-tight-2.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/instrument-sans-1.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fa/fa-solid.woff2" as="font" type="font/woff2" crossorigin>
