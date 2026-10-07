@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    alert('Thank you! Your quote request has been received. Our engineering team at Parawewa led by Mr. Dharmakeerthi Mannage will contact you within 2 hours. / ස්තූතියි! ඔබගේ පණිවිඩය ලැබුණි. පරවැව ඉංජිනේරු කණ්ඩායම පැය 2ක් ඇතුළත ඔබ හා සම්බන්ධ වනු ඇත.');
+    alert('Thank you! Your quote request has been received. Our engineering team at Parawewa led by Ranjith Dharmakeerthi Mannage will contact you within 2 hours. / ස්තූතියි! ඔබගේ පණිවිඩය ලැබුණි. පරවැව ඉංජිනේරු කණ්ඩායම පැය 2ක් ඇතුළත ඔබ හා සම්බන්ධ වනු ඇත.');
     if (quoteModal) quoteModal.classList.remove('active');
     document.body.style.overflow = '';
     e.target.reset();

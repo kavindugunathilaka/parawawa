@@ -2170,3 +2170,6 @@ p { line-height: 1.6; }
 .skip-link:focus { top: 0.75rem; color: #fff; }
 .notfound-links { margin-top: var(--space-5); display: grid; gap: 0.5rem; }
 .notfound-links a { color: var(--accent-blue); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+
+.article-byline a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.article-byline a:hover { color: var(--accent-blue); }

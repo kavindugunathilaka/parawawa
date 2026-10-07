@@ -179,7 +179,7 @@ def page(a):
     url = url_of(a)
     img_abs = f"{SITE}/{a['img']}"
     w, h = img_size(a['img'])
-    author = {"@type": "Person", "name": "Mr. Dharmakeerthi Mannage", "jobTitle": "Chairman & Lead Inventor"}
+    author = {"@type": "Person", "@id": SITE + "/#founder", "name": "Ranjith Dharmakeerthi Mannage", "jobTitle": "Managing Director"}
     graph = {
         "@context": "https://schema.org",
         "@graph": [
@@ -273,7 +273,7 @@ def page(a):
         <span class="section-tag">{esc(category(a))}</span>
         <h1 class="article-h1">{esc(a['title'])}</h1>
         <p class="article-lede">{esc(a['summary'])}</p>
-        <p class="article-byline">By Mr. Dharmakeerthi Mannage &middot; Updated {fmt_date(a['modified'])} &middot; {esc(a['readTime'])}</p>
+        <p class="article-byline">By <a href="/#team">Ranjith Dharmakeerthi Mannage</a> &middot; Updated {fmt_date(a['modified'])} &middot; {esc(a['readTime'])}</p>
       </div>
     </header>
 
