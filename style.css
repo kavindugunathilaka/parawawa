@@ -14,17 +14,17 @@
   --bg-topbar: #0a3019;
 
   --border-color: #e1ece3;
-  --border-active: #1a8245;
+  --border-active: #187a40;
 
   --text-main: #0f1a14;
   --text-muted: #55655b;
-  --text-light: #86968c;
+  --text-light: #66766c;
   --text-white: #ffffff;
 
-  --accent-blue: #1a8245;
+  --accent-blue: #187a40;
   --accent-blue-dark: #0f5c2e;
   --accent-blue-light: #e8f4ec;
-  --accent-emerald: #1a8245;
+  --accent-emerald: #187a40;
   --accent-emerald-dark: #0f5c2e;
   --accent-emerald-light: #e8f4ec;
   --accent-orange: #ea580c;
@@ -43,7 +43,7 @@
   --font-body: 'Instrument Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
   --bg-soft: #f0f7f1;
-  --text-dim: #7c8c82;
+  --text-dim: #5f6f65;
   --dark: #0c3b21;
   --dark-2: #135029;
   --dark-3: #1a6636;
@@ -103,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: 600;
   line-height: 1.1;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.013em;
   color: var(--text-main);
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -619,7 +619,7 @@ button, input, select, textarea { font-family: inherit; }
 
 .hero-title {
   font-size: clamp(1.8rem, 5.6vw, 3.4rem);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.005em;
   margin-bottom: var(--space-3);
 }
 
@@ -1521,7 +1521,7 @@ p { line-height: 1.6; }
 .section-title {
   font-size: clamp(1.9rem, 5.2vw, 3rem);
   line-height: 1.08;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.015em;
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -1623,7 +1623,7 @@ p { line-height: 1.6; }
 .hero-title {
   font-size: clamp(2.25rem, 7vw, 4.25rem);
   line-height: 1.04;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.018em;
   font-weight: 600;
   color: #ffffff;
   margin-bottom: 0;
@@ -1693,7 +1693,7 @@ p { line-height: 1.6; }
   font-family: var(--font-heading);
   font-weight: 600;
   font-size: clamp(1.4rem, 5vw, 2.4rem);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.015em;
   line-height: 1;
   color: #ffffff;
 }
@@ -1736,7 +1736,7 @@ p { line-height: 1.6; }
   letter-spacing: 0.02em;
 }
 
-.option-title { font-size: 1.6rem; margin-top: 0; letter-spacing: -0.025em; }
+.option-title { font-size: 1.6rem; margin-top: 0; letter-spacing: -0.013em; }
 
 .option-card-dark { background: var(--dark); border-color: var(--dark); }
 .option-card-dark .option-panel { background: var(--dark-2); box-shadow: none; }
@@ -1779,7 +1779,7 @@ p { line-height: 1.6; }
   margin-bottom: auto;
 }
 
-.feature-title { margin-top: 2.25rem; font-size: 1.25rem; letter-spacing: -0.02em; }
+.feature-title { margin-top: 2.25rem; font-size: 1.25rem; letter-spacing: -0.01em; }
 
 .feature-card-dark {
   background: radial-gradient(70% 90% at 100% 0%, rgba(110, 180, 68, 0.34), transparent 70%), var(--dark);
@@ -1853,7 +1853,7 @@ p { line-height: 1.6; }
 @media (min-width: 640px) { .ind-panel-text { padding: 1.75rem 1.5rem; } }
 
 .ind-num { font-size: var(--text-sm); font-weight: 500; color: var(--text-dim); }
-.ind-panel-title { font-size: 1.6rem; letter-spacing: -0.025em; }
+.ind-panel-title { font-size: 1.6rem; letter-spacing: -0.013em; }
 .ind-panel-desc { font-size: var(--text-base); line-height: 1.6; flex-grow: 1; }
 
 .ind-panel-visual {
@@ -1865,7 +1865,7 @@ p { line-height: 1.6; }
   font-size: 4.25rem;
   background:
     radial-gradient(rgba(255, 255, 255, 0.16) 1px, transparent 1.3px) 0 0 / 18px 18px,
-    linear-gradient(135deg, #1a8245, #0f5c2e);
+    linear-gradient(135deg, #187a40, #0f5c2e);
 }
 
 /* --- Framed cards on soft sections --- */
@@ -1883,7 +1883,7 @@ p { line-height: 1.6; }
 
 .article-card-img { border-radius: 16px; height: 200px; background: var(--bg-soft); }
 .article-card-body { padding: 1.25rem 1rem 1rem; }
-.article-title { letter-spacing: -0.02em; }
+.article-title { letter-spacing: -0.01em; }
 
 .video-embed { border-radius: 16px; }
 .video-card-body { padding: 1.25rem 1rem 1rem; }
@@ -2050,12 +2050,12 @@ p { line-height: 1.6; }
 }
 
 .person-card figcaption { display: flex; flex-direction: column; gap: 0.15rem; padding: 1rem 0.75rem 0.75rem; }
-.person-name { font-family: var(--font-heading); font-size: 1.25rem; font-weight: 600; letter-spacing: -0.02em; color: var(--text-main); }
+.person-name { font-family: var(--font-heading); font-size: 1.25rem; font-weight: 600; letter-spacing: -0.01em; color: var(--text-main); }
 .person-role { font-size: var(--text-sm); color: var(--text-dim); }
 
 /* --- Team row (About) --- */
 .team-block { margin-top: var(--space-6); }
-.team-heading { font-size: 1.5rem; letter-spacing: -0.025em; margin-bottom: var(--space-4); }
+.team-heading { font-size: 1.5rem; letter-spacing: -0.013em; margin-bottom: var(--space-4); }
 .team-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; max-width: 1000px; }
 @media (min-width: 700px) { .team-grid { grid-template-columns: repeat(4, 1fr); gap: 16px; } }
 .person-card { max-width: none; }
@@ -2092,7 +2092,7 @@ p { line-height: 1.6; }
 .breadcrumbs a:hover { color: var(--accent-blue); }
 .breadcrumbs [aria-current] { color: var(--text-main); }
 
-.article-h1 { font-size: clamp(1.9rem, 5.2vw, 3rem); line-height: 1.1; letter-spacing: -0.03em; margin-bottom: 1rem; }
+.article-h1 { font-size: clamp(1.9rem, 5.2vw, 3rem); line-height: 1.1; letter-spacing: -0.015em; margin-bottom: 1rem; }
 .article-lede { font-size: var(--text-lg); line-height: 1.55; color: #667085; margin-bottom: 1rem; }
 .article-byline { font-size: var(--text-sm); color: var(--text-dim); }
 
@@ -2103,7 +2103,7 @@ p { line-height: 1.6; }
 
 .article-body { font-size: 1.0625rem; line-height: 1.75; color: var(--text-main); }
 .article-body p { color: var(--text-main); margin-bottom: 1.1rem; }
-.article-body h2 { font-size: 1.5rem; letter-spacing: -0.025em; margin: 2rem 0 0.75rem; }
+.article-body h2 { font-size: 1.5rem; letter-spacing: -0.013em; margin: 2rem 0 0.75rem; }
 .article-body ul { list-style: disc; padding-left: 1.4rem; margin-bottom: 1.1rem; }
 .article-body ol { list-style: decimal; padding-left: 1.4rem; margin-bottom: 1.1rem; }
 .article-body li { margin-bottom: 0.4rem; }
@@ -2155,7 +2155,7 @@ p { line-height: 1.6; }
 .fact-grid dd { font-weight: 600; color: var(--text-main); line-height: 1.35; }
 
 .system-faq { margin-top: var(--space-6); }
-.system-faq-title { font-size: 1.5rem; letter-spacing: -0.025em; margin-bottom: var(--space-3); }
+.system-faq-title { font-size: 1.5rem; letter-spacing: -0.013em; margin-bottom: var(--space-3); }
 .system-faq .accordion { max-width: none; margin: 0; }
 
 .article-cta a:not(.btn) { color: #cfeab9; text-decoration: underline; text-underline-offset: 2px; }
@@ -2178,11 +2178,11 @@ p { line-height: 1.6; }
 /* ==========================================================================
    REDESIGN v3: green, rounded "card" layout with a notch navigation pill.
    Palette sampled from the reference design:
-   brand #1a8245, lime #6eb444, mint #f0f8f0.
+   brand #187a40, lime #6eb444, mint #f0f8f0.
    ========================================================================== */
 
 :root {
-  --brand: #1a8245;
+  --brand: #187a40;
   --brand-dark: #0f5c2e;
   --brand-deep: #0c3b21;
   --lime: #6eb444;
@@ -2380,7 +2380,7 @@ body { background: #ffffff; }
 .hx-title {
   font-size: clamp(2.3rem, 7.2vw, 4.7rem);
   line-height: 1.02;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.018em;
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 0;
@@ -2423,7 +2423,7 @@ body { background: #ffffff; }
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22);
 }
 .hx-fact-icon { display: grid; place-items: center; width: 44px; height: 44px; flex-shrink: 0; border-radius: 50%; background: var(--mint); color: var(--brand); font-size: 1.35rem; }
-.hx-fact strong { display: block; font-size: var(--text-base); font-family: var(--font-heading); letter-spacing: -0.01em; }
+.hx-fact strong { display: block; font-size: var(--text-base); font-family: var(--font-heading); letter-spacing: -0.005em; }
 .hx-fact span:not(.hx-fact-icon) { display: block; font-size: var(--text-xs); color: var(--text-muted); line-height: 1.4; }
 
 @media (max-width: 991px) {
@@ -2440,7 +2440,7 @@ body { background: #ffffff; }
   margin: 10px var(--panel-gap) 0;
 }
 .hx-stat { display: flex; flex-direction: column; gap: 0.3rem; padding: 1rem; background: var(--mint); border-radius: 22px; }
-.hx-stat .stat-value { font-family: var(--font-heading); font-weight: 700; font-size: clamp(1.35rem, 4.4vw, 2.5rem); letter-spacing: -0.03em; line-height: 1; color: var(--brand); }
+.hx-stat .stat-value { font-family: var(--font-heading); font-weight: 700; font-size: clamp(1.35rem, 4.4vw, 2.5rem); letter-spacing: -0.015em; line-height: 1; color: var(--brand); }
 .hx-stat .stat-label { margin: 0; font-size: var(--text-xs); color: var(--text-muted); line-height: 1.35; }
 @media (min-width: 992px) { .hx-stat { padding: 1.4rem 1.7rem; border-radius: 26px; } .hx-stat .stat-label { font-size: var(--text-sm); } }
 
@@ -2576,3 +2576,34 @@ main > .section:first-child { padding-top: 108px; }
   .hx-title { font-size: clamp(2.6rem, 4.6vw, 4.4rem); }
   .hx-photo { width: 100%; max-width: 640px; }
 }
+
+
+/* v3 type polish: loose enough that letters never touch, kerning on */
+h1, h2, h3, h4, h5, h6, .section-title, .hx-title, .article-h1, .feature-title, .option-title, .person-name {
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern", "liga";
+}
+.feature-title { letter-spacing: 0; word-spacing: 0.02em; }
+
+/* why-choose cards: icon on top, text directly beneath, so titles line up across a row */
+.feature-card { justify-content: flex-start; min-height: 0; }
+.feature-icon { margin-bottom: 1.1rem; }
+.feature-title { margin-top: 0; }
+
+/* the dark highlight card must stay dark (the generic .feature-card mint rule above must not win) */
+.feature-card.feature-card-dark {
+  background: radial-gradient(70% 90% at 100% 0%, rgba(110, 180, 68, 0.34), transparent 70%), var(--brand-deep);
+}
+.feature-card.feature-card-dark .feature-title { color: #ffffff; }
+.feature-card.feature-card-dark .feature-desc { color: #d4e6d9; }
+.feature-card.feature-card-dark .feature-icon { background: rgba(255, 255, 255, 0.14); color: #a3dc7c; }
+
+
+/* lime phone pill: dark-green text for legibility (white on lime is only 2.5:1) */
+.btn-lime { color: var(--brand-deep); }
+.btn-lime:hover { color: var(--brand-deep); }
+
+/* WhatsApp button: dark text keeps the WhatsApp green and passes contrast */
+.btn-whatsapp { color: #06301a; }
+.btn-whatsapp:hover { color: #06301a; }
