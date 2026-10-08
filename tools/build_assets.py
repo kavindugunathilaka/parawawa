@@ -193,7 +193,23 @@ def build_favicons():
     print('favicon: icon-48/192, apple-touch-icon, favicon.ico')
 
 
+def build_hero_bg():
+    """Pre-blurred backdrop for the hero card (cheaper and smoother than a live CSS blur)."""
+    from PIL import ImageEnhance, ImageFilter
+    src = 'assets/real_app_commercial.jpg'
+    if not os.path.exists(src):
+        return
+    dst = 'assets/hero-bg.webp'
+    if os.path.exists(dst) and os.path.getmtime(dst) >= os.path.getmtime(src):
+        return
+    im = Image.open(src).convert('RGB').resize((640, 384), Image.LANCZOS).filter(ImageFilter.GaussianBlur(9))
+    im = ImageEnhance.Color(im).enhance(1.15)
+    im.save(dst, 'WEBP', quality=62, method=6)
+    print('hero-bg: %d KB' % (os.path.getsize(dst) // 1024))
+
+
 def main():
+    build_hero_bg()
     build_favicons()
     build_icons()
     build_fonts()

@@ -44,6 +44,16 @@ Run it after every change to `content/`, `style.css`, `app.js` or the header and
 
 **Change contact details:** edit the header, contact section and footer in `index.html` and the schema in its `<head>`, update `build_extras.py` (`llms.txt`) and `build_articles.py` (article call-to-action phone), then build.
 
+## Design system (v3, green)
+
+Palette (sampled from the client's reference design): brand `#1a8245`, lime `#6eb444`, mint `#f0f8f0`, deep green `#0c3b21`. Tokens are CSS variables at the top of `style.css`; the redesign layer is the last section ("REDESIGN v3").
+
+- **Hero** (`.hx`): rounded photo card with a white notch tab (the navigation) cut into its top edge, a lime phone pill, and a white fact card. The blurred backdrop is a pre-rendered `assets/hero-bg.webp` (built from the real photo by `tools/build_assets.py`).
+- **Navigation** (`.navbar`): a zero-height sticky wrapper; the white pill is absolutely positioned over the page top and becomes a floating pill after scrolling (`.scrolled`). Pages without a hero card keep their content clear of it with extra top padding (`.article-hero`, `main > .section:first-child`).
+- **Panels:** `.section-alt` sections are rounded mint panels; consecutive panels get a gap.
+- **Buttons:** pills; a leading `<i>` in `.btn-primary` renders inside a white circle.
+- **Illustrations** in "How the system is built" are conceptual drawings supplied by the client, cropped from their source sheet; keep the "Illustration" label and the disclaimer.
+
 ## Going live on parawawa.lk
 
 All canonical URLs, the sitemap and the structured data already assume `https://parawawa.lk/`.

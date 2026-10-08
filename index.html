@@ -52,9 +52,9 @@
   <link rel="preload" href="/assets/fonts/inter-tight-2.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/instrument-sans-1.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fa/fa-solid.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/assets/fonts/fonts.css?v=e903b314e8">
-  <link rel="stylesheet" href="/assets/fa/fa-subset.css?v=e903b314e8">
-  <link rel="stylesheet" href="style.css?v=e903b314e8">
+  <link rel="stylesheet" href="/assets/fonts/fonts.css?v=3c3ad5c6d4">
+  <link rel="stylesheet" href="/assets/fa/fa-subset.css?v=3c3ad5c6d4">
+  <link rel="stylesheet" href="style.css?v=3c3ad5c6d4">
 
   <!-- ==========================================================================
        GEO / AEO (GENERATIVE ENGINE & ANSWER ENGINE OPTIMIZATION) JSON-LD SCHEMA
@@ -324,6 +324,7 @@
           <a href="#comparison" class="nav-link">Technology <i class="fas fa-chevron-down" style="font-size: var(--text-xs);"></i></a>
           <ul class="dropdown-menu">
             <li class="dropdown-item"><a href="#models" class="dropdown-link"><i class="fas fa-cogs dropdown-icon"></i> Option A (Gravity) vs Option B (Pump Seal Type)</a></li>
+            <li class="dropdown-item"><a href="#how-it-works" class="dropdown-link"><i class="fas fa-layer-group dropdown-icon"></i> How the System Is Built</a></li>
             <li class="dropdown-item"><a href="/systems/gravity-fed-bio-septic-tank/" class="dropdown-link"><i class="fas fa-water dropdown-icon"></i> Option A: Gravity-Fed System</a></li>
             <li class="dropdown-item"><a href="/systems/pump-seal-type-bio-septic-tank/" class="dropdown-link"><i class="fas fa-faucet-drip dropdown-icon"></i> Option B: Pump Seal Type System</a></li>
             <li class="dropdown-item"><a href="#comparison" class="dropdown-link"><i class="fas fa-balance-scale dropdown-icon"></i> Parawewa vs Mechanical STPs</a></li>
@@ -356,7 +357,7 @@
       </ul>
 
       <div class="nav-actions">
-        <a href="#contact" class="btn btn-primary open-quote-modal"><i class="fas fa-paper-plane"></i> Get Price Quote</a>
+        <a href="tel:+94777347620" class="btn btn-lime nav-phone" aria-label="Call 0777 347 620"><i class="fas fa-phone-alt"></i> <span>0777 347 620</span></a>
         <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Mobile Menu"><i class="fas fa-bars"></i></button>
       </div>
     </div>
@@ -386,6 +387,7 @@
         <span class="mobile-nav-link">Technology & Models</span>
         <ul class="mobile-sub-menu">
           <li><a href="#models" class="mobile-sub-link">Option A (Gravity) & Option B (Pump Seal Type)</a></li>
+          <li><a href="#how-it-works" class="mobile-sub-link">How the System Is Built</a></li>
           <li><a href="/systems/gravity-fed-bio-septic-tank/" class="mobile-sub-link">Option A: Gravity-Fed System</a></li>
           <li><a href="/systems/pump-seal-type-bio-septic-tank/" class="mobile-sub-link">Option B: Pump Seal Type System</a></li>
           <li><a href="#comparison" class="mobile-sub-link">Parawewa vs Mechanical STPs</a></li>
@@ -415,53 +417,61 @@
   <!-- ==========================================================================
        HERO SECTION WITH SINHALA QUOTE BADGE & 10-YEAR WARRANTY
        ========================================================================== -->
-  <section class="hero" id="home">
-    <div class="hero-glow" aria-hidden="true"></div>
-    <div class="container">
+  <section class="hx" id="home">
+    <div class="hx-card">
+      <img class="hx-bg" src="assets/hero-bg.webp" alt="" width="640" height="384" loading="eager" aria-hidden="true">
+      <div class="hx-shade" aria-hidden="true"></div>
 
-      <div class="hero-copy">
-        <div class="hero-main">
+      <div class="hx-inner">
+        <div class="hx-text">
           <div class="hero-badge-container">
             <div class="hero-badge hero-badge-emerald"><i class="fas fa-shield-alt"></i> 10-Year Written Warranty</div>
           </div>
-          <h1 class="hero-title">
-            <span class="hero-title-dim">Sri Lanka's Premier</span>
+          <h1 class="hx-title">
+            <span class="hx-dim">Sri Lanka's Premier</span>
             Parawewa Bio Septic System
           </h1>
-        </div>
-
-        <div class="hero-aside">
-          <p class="hero-sinhala" lang="si">"පරවැව - ස්වභාවික ජෛවීය අපජල පිරිපහදු පද්ධතිය"</p>
-          <p class="hero-subtitle">
-            A patented layer-base system with two options: <strong>Option A</strong> (gravity-fed, no electricity) and <strong>Option B</strong> (pump seal type for high water tables). No gully bowser emptying.
-          </p>
-          <div class="hero-ctas">
-            <a href="#contact" class="btn btn-primary open-quote-modal"><i class="fas fa-paper-plane"></i> Get Free Quote Request</a>
+          <div class="hx-cta">
+            <a href="#contact" class="btn btn-primary open-quote-modal"><i class="fas fa-arrow-right"></i> Get Free Quote Request</a>
+            <a href="tel:+94777347620" class="btn btn-lime"><i class="fas fa-phone-alt"></i> 0777 347 620</a>
             <a href="#models" class="btn btn-ghost"><i class="fas fa-cogs"></i> View System Models (A vs B)</a>
           </div>
+          <div class="hx-desc">
+            <p class="hero-sinhala" lang="si">"පරවැව - ස්වභාවික ජෛවීය අපජල පිරිපහදු පද්ධතිය"</p>
+            <p class="hero-subtitle">
+              A patented layer-base system with two options: <strong>Option A</strong> (gravity-fed, no electricity) and <strong>Option B</strong> (pump seal type for high water tables). No gully bowser emptying.
+            </p>
+          </div>
+        </div>
+
+        <div class="hx-side">
+          <figure class="hx-photo">
+            <img src="assets/real_app_commercial.webp" alt="Parawewa septic tank installed at a commercial property in Sri Lanka" width="500" height="300" loading="eager">
+          </figure>
+          <div class="hx-fact" role="note">
+            <span class="hx-fact-icon" aria-hidden="true"><i class="fas fa-check-circle"></i></span>
+            <div>
+              <strong>Verified installation</strong>
+              <span>Keells Super, Retail Supermarket &bull; Maharamandiya</span>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
 
-      <div class="hero-flow">
-        <div class="hero-photo-card">
-          <img src="assets/real_app_commercial.webp" alt="Parawewa septic tank installed at a commercial property in Sri Lanka" width="500" height="300" fetchpriority="high" loading="eager">
-        </div>
-        <div class="hero-stats" aria-label="Key facts">
-          <div class="hero-stat">
-            <div class="stat-value">1996</div>
-            <div class="stat-label">Invented in Sri Lanka</div>
-          </div>
-          <div class="hero-stat">
-            <div class="stat-value">#10848</div>
-            <div class="stat-label">Patented System</div>
-          </div>
-          <div class="hero-stat">
-            <div class="stat-value">10 YRS</div>
-            <div class="stat-label">Written Warranty</div>
-          </div>
-        </div>
+    <div class="hx-stats" aria-label="Key facts">
+      <div class="hx-stat">
+        <div class="stat-value">1996</div>
+        <div class="stat-label">Invented in Sri Lanka</div>
       </div>
-
+      <div class="hx-stat">
+        <div class="stat-value">#10848</div>
+        <div class="stat-label">Patented System</div>
+      </div>
+      <div class="hx-stat">
+        <div class="stat-value">10 YRS</div>
+        <div class="stat-label">Written Warranty</div>
+      </div>
     </div>
   </section>
 
@@ -572,6 +582,36 @@
         </div>
 
       </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       HOW THE SYSTEM IS BUILT (CONCEPT ILLUSTRATIONS)
+       ========================================================================== -->
+  <section class="section section-alt" id="how-it-works">
+    <div class="container">
+      <div class="section-header section-header-left reveal">
+        <span class="section-tag">HOW THE SYSTEM IS BUILT</span>
+        <h2 class="section-title">A Layer-Base Chamber, <span class="text-blue">Built Below Ground</span></h2>
+        <p class="section-subtitle">Illustrations of where a Parawewa chamber sits beside the building and how it is constructed before it is covered.</p>
+      </div>
+
+      <div class="diagram-grid reveal">
+        <figure class="diagram-card diagram-card-lg">
+          <img src="assets/diagram-system-position.webp" alt="Illustration: cutaway of a Parawewa chamber below ground beside a house, with the inlet pipe from the building and layered biological media inside" width="512" height="478" loading="lazy" decoding="async">
+          <figcaption><span class="diagram-pill">Illustration</span> Where it sits: below ground beside the building. Wastewater enters from the house and passes through layered biological media.</figcaption>
+        </figure>
+        <figure class="diagram-card">
+          <img src="assets/diagram-construction.webp" alt="Illustration: an excavated chamber being constructed with a timber frame and a vent pipe before it is covered" width="768" height="380" loading="lazy" decoding="async">
+          <figcaption><span class="diagram-pill">Illustration</span> The chamber is constructed in the excavation before it is covered.</figcaption>
+        </figure>
+        <figure class="diagram-card">
+          <img src="assets/diagram-covered-tank.webp" alt="Illustration: a finished covered chamber with an access cover and a vent pipe set in the ground" width="768" height="380" loading="lazy" decoding="async">
+          <figcaption><span class="diagram-pill">Illustration</span> The finished chamber is covered, with an access cover and a vent pipe.</figcaption>
+        </figure>
+      </div>
+
+      <p class="diagram-note reveal"><i class="fas fa-info-circle" aria-hidden="true"></i> These illustrations are conceptual. Tank type, size and layout vary by site and are confirmed at your free site inspection.</p>
     </div>
   </section>
 
@@ -1510,7 +1550,7 @@
   </footer>
 
   <!-- Main JavaScript File -->
-  <script src="articles-meta.js?v=e903b314e8" defer></script>
-  <script src="app.js?v=e903b314e8" defer></script>
+  <script src="articles-meta.js?v=3c3ad5c6d4" defer></script>
+  <script src="app.js?v=3c3ad5c6d4" defer></script>
 </body>
 </html>

@@ -86,6 +86,7 @@ FOOTER = between(index_html, '<!-- =============================================
 def rootify(s):
     s = s.replace('href="#"', 'href="/"')
     s = s.replace('href="#', 'href="/#')
+    s = s.replace('href="/#main"', 'href="#main"')   # skip link targets the page's own <main>
     s = s.replace('href="articles.html"', 'href="/articles.html"')
     s = s.replace('src="assets/', 'src="/assets/')
     s = s.replace('class="nav-link active"', 'class="nav-link"')
@@ -93,6 +94,7 @@ def rootify(s):
     return s
 
 
+HEADER = re.sub(r'\s*<main id="main">\s*$', '\n', HEADER)   # index.html opens <main> right after the header; each page adds its own
 HEADER = rootify(HEADER)
 FOOTER = rootify(FOOTER)
 
@@ -361,6 +363,10 @@ def main():
     # homepage featured cards
     patch('index.html', '<!-- BUILD:FEATURED:START -->', '<!-- BUILD:FEATURED:END -->',
           ''.join(card_html(BY_ID[i]) for i in (1, 2, 3)))
+
+    # hub: shared header and footer (same markup as every other page)
+    patch('articles.html', '<!-- BUILD:HEADER:START -->', '<!-- BUILD:HEADER:END -->', HEADER.strip() + '\n\n  ')
+    patch('articles.html', '<!-- BUILD:FOOTER:START -->', '<!-- BUILD:FOOTER:END -->', FOOTER.strip() + '\n\n  ')
 
     # hub grid + schema
     patch('articles.html', '<!-- BUILD:HUB:START -->', '<!-- BUILD:HUB:END -->', ''.join(hub_card(a) for a in ARTICLES))
