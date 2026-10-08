@@ -196,13 +196,15 @@ def build_favicons():
 def build_hero_bg():
     """Pre-blurred backdrop for the hero card (cheaper and smoother than a live CSS blur)."""
     from PIL import ImageEnhance, ImageFilter
-    src = 'assets/real_app_commercial.jpg'
+    src = 'assets/hero-site.jpg'
     if not os.path.exists(src):
         return
     dst = 'assets/hero-bg.webp'
     if os.path.exists(dst) and os.path.getmtime(dst) >= os.path.getmtime(src):
         return
-    im = Image.open(src).convert('RGB').resize((640, 384), Image.LANCZOS).filter(ImageFilter.GaussianBlur(9))
+    full = Image.open(src).convert('RGB')
+    full.resize((640, 480), Image.LANCZOS).save('assets/hero-site-640.webp', 'WEBP', quality=80, method=6)
+    im = full.resize((640, 480), Image.LANCZOS).filter(ImageFilter.GaussianBlur(10))
     im = ImageEnhance.Color(im).enhance(1.15)
     im.save(dst, 'WEBP', quality=62, method=6)
     print('hero-bg: %d KB' % (os.path.getsize(dst) // 1024))

@@ -33,7 +33,7 @@ COMPARE = [
         'eyebrow': 'SYSTEM COMPARISON',
         'lede': 'Aerated package plants are prefabricated wastewater treatment units that use electric blowers. Here is an even-handed comparison with the Parawewa layer-base bio septic system, including where each one fits best.',
         'img': 'assets/real_app_commercial.jpg',
-        'imgAlt': 'Parawewa septic tank installed at a commercial property in Sri Lanka',
+        'imgAlt': 'Parawewa septic tank installation at a site in Sri Lanka',
         'published': '2026-10-07',
         'modified': '2026-10-07',
         'related': [2, 4, 3],

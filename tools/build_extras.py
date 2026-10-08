@@ -20,7 +20,7 @@ def llms():
         'Every installation carries a 10-year written manufacturer warranty. Parawewa won 1st place at the 2018 Presidential Innovation Awards (Sri Lanka) and a Silver Medal at iCAN 2019 (Canada).',
         '',
         'Head office: 143/2 Kesbewa Kindelpitiya, Bandaragama Rd, Piliyandala 10300, Sri Lanka.',
-        'Phone: 0777 347 620, 074 060 4936. Email: info@parawawa.lk. WhatsApp: +94 77 734 7620.',
+        'Phone: 0777 347 620, 074 060 4936. Email: info@parawawa.lk. WhatsApp: +94 77 734 7620 and +94 74 060 4936.',
         'Prices are not published; quotes follow a free site inspection. The site is in English.',
         '',
         '## Systems',
