@@ -45,3 +45,22 @@ build_systems.main()
 build_compare.main()
 build_extras.main()
 build_si.main()
+
+
+def stamp_font_preloads():
+    """Point every <link rel=preload> of the icon font at the same versioned URL the CSS uses."""
+    import glob
+    css = open('assets/fa/fa-subset.css', encoding='utf-8').read()
+    url = 'fa-solid.woff2?v=' + re.search(r'fa-solid\.woff2\?v=([0-9a-f]+)', css).group(1)
+    pages = ['index.html', 'articles.html', '404.html'] + glob.glob('*/index.html') + glob.glob('*/*/index.html')
+    n = 0
+    for p in pages:
+        s = open(p, encoding='utf-8', newline='').read()
+        s2 = re.sub(r'fa-solid\.woff2(\?v=[0-9a-f]+)?"', url + '"', s)
+        if s2 != s:
+            open(p, 'w', encoding='utf-8', newline='').write(s2)
+            n += 1
+    print('font preloads stamped:', n, 'pages')
+
+
+stamp_font_preloads()

@@ -133,7 +133,6 @@ I18N_JS = '''<script>
   window.I18N = {
     thanks: 'ස්තූතියි! ඔබගේ පණිවිඩය ලැබුණි. පරවැව ඉංජිනේරු කණ්ඩායම පැය 2ක් ඇතුළත ඔබ හා සම්බන්ධ වනු ඇත.',
     capacity: 'ලීටර් {n}',
-    savings: 'රු. {n}',
     water: 'ලීටර් {n} / වසරකට'
   };
   </script>
@@ -197,13 +196,13 @@ def main():
     assert n == 1, 'article toggle button'
 
     # --- language switch (header + drawer) and the Sinhala UI strings for app.js
-    sw = '<a href="/" class="lang-switch" lang="en" hreflang="en" title="English version">English</a>\n        '
-    marker = '<a href="tel:+94777347620" class="btn btn-lime nav-phone"'
-    assert body.count(marker) == 1
-    body = body.replace(marker, sw + marker)
-    drawer = '      <li><a href="#contact" class="mobile-nav-link">'
-    assert body.count(drawer) == 1
-    body = body.replace(drawer, '      <li><a href="/" class="mobile-nav-link" lang="en" hreflang="en">English version</a></li>\n' + drawer)
+    toggle = re.compile(r'<div class="lang-toggle"[^>]*>.*?</div>')
+    assert len(toggle.findall(body)) == 1, 'lang toggle'
+    body = toggle.sub('<div class="lang-toggle" aria-label="භාෂාව"><a href="/" lang="en" hreflang="en" title="English">En</a>'
+                      '<span class="lang-current" lang="si">සිං</span></div>', body)
+    drawer = '<li><a href="/si/" class="mobile-nav-link" lang="si" hreflang="si-LK">සිංහල</a></li>'
+    assert body.count(drawer) == 1, 'drawer language link'
+    body = body.replace(drawer, '<li><a href="/" class="mobile-nav-link" lang="en" hreflang="en">English version</a></li>')
     foot = '<li><a href="#founder">'
     assert body.count(foot) == 1
     body = body.replace(foot, '<li><a href="/" lang="en" hreflang="en">English version</a></li>\n            ' + foot)

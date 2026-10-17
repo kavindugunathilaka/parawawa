@@ -2676,3 +2676,70 @@ html[lang="si"] .section-tag, html[lang="si"] .option-ribbon, html[lang="si"] .a
 }
 html[lang="si"] .types-table td:nth-of-type(1)::before { content: 'භූගත ජල මට්ටම පහළ ස්ථානවල'; }
 html[lang="si"] .types-table td:nth-of-type(2)::before { content: 'භූගත ජල මට්ටම ඉහළ ස්ථානවල'; }
+
+/* ==========================================================================
+   CLIENT CHANGES PHASE 2 (2026-10-17)
+   ========================================================================== */
+/* En / සිං language toggle in the nav */
+.lang-toggle { display: inline-flex; align-items: center; gap: 2px; padding: 3px; border: 1.5px solid var(--border-color); border-radius: 999px; background: #fff; flex-shrink: 0; }
+.lang-toggle > * { display: inline-flex; align-items: center; justify-content: center; min-width: 38px; min-height: 36px; padding: 0 0.6rem; border-radius: 999px; font-weight: 700; font-size: 0.85rem; line-height: 1; }
+.lang-toggle a { color: var(--brand-deep); }
+.lang-toggle a:hover { background: var(--mint); color: var(--brand); }
+.lang-toggle .lang-current { background: var(--brand); color: #fff; }
+.lang-toggle [lang="si"] { font-family: 'Noto Sans Sinhala', 'Nirmala UI', 'Iskoola Pota', sans-serif; }
+@media (max-width: 400px) { .lang-toggle > * { min-width: 34px; padding: 0 0.45rem; } }
+.lang-switch { display: none !important; }
+
+/* Hero: award badge, large and gold */
+.hx .hero-badge-container { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center; }
+.hero-award { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.6rem 1.15rem; border-radius: 999px; background: linear-gradient(135deg, #f7d774, #e0a82e); color: #3a2700; font-weight: 800; font-size: clamp(0.95rem, 1.6vw, 1.1rem); box-shadow: 0 6px 18px rgba(224, 168, 46, 0.35); }
+.hero-award i { font-size: 1.15em; }
+.top-bar-social a { font-size: 1rem; }
+
+/* Why choose: awards card */
+.award-list { list-style: none; margin: 0.4rem 0 0; padding: 0; display: grid; gap: 0.65rem; }
+.award-list li { display: flex; gap: 0.7rem; align-items: flex-start; color: #fff; font-weight: 700; font-size: 1rem; line-height: 1.4; }
+.award-list i { color: #f5c451; font-size: 1.15rem; margin-top: 0.1rem; flex-shrink: 0; width: 1.2rem; text-align: center; }
+
+/* How it is built: numbered captions */
+.diagram-card figcaption strong { display: block; color: var(--text-main); font-size: 1rem; margin: 0.35rem 0 0.15rem; }
+
+/* Who suits: seven even cards */
+.suit-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; }
+.suit-card { display: flex; flex-direction: column; gap: 0.55rem; background: #fff; border: 1px solid var(--border-color); border-radius: 20px; padding: 1.35rem; transition: transform .2s ease, box-shadow .2s ease; }
+.suit-card:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(12, 59, 33, 0.08); }
+.suit-icon { display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 14px; background: var(--mint); color: var(--brand); font-size: 1.25rem; }
+.suit-title { font-size: 1.1rem; line-height: 1.3; margin: 0.2rem 0 0; }
+.suit-desc { font-size: 0.95rem; line-height: 1.55; margin: 0; flex: 1; }
+.suit-link { margin-top: 0.35rem; font-weight: 700; color: var(--brand); display: inline-flex; gap: 0.4rem; align-items: center; }
+.suit-link:hover { color: var(--brand-dark); }
+
+/* Clients: full name list */
+.clients-title { text-align: center; font-size: clamp(1.25rem, 2.4vw, 1.7rem); margin: 0.4rem auto 1.5rem; max-width: 760px; }
+.client-names { list-style: none; margin: 1.75rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 0.6rem; }
+.client-name { display: flex; gap: 0.65rem; align-items: flex-start; background: #fff; border: 1px solid var(--border-color); border-radius: 14px; padding: 0.75rem 0.95rem; font-size: 0.92rem; font-weight: 600; color: var(--text-main); line-height: 1.4; }
+.client-name i { color: var(--brand); margin-top: 0.15rem; width: 1.1rem; text-align: center; flex-shrink: 0; }
+
+/* Room for the En / සිං toggle: phone button is icon-only on mid-size screens */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .nav-phone { width: 46px; padding: 0; border-radius: 50%; }
+  .nav-phone span { display: none; }
+  .nav-links { gap: 1.1rem; }
+}
+@media (min-width: 1360px) and (max-width: 1439px) {
+  html[lang="si"] .nav-phone { width: 46px; padding: 0; border-radius: 50%; }
+  html[lang="si"] .nav-phone span { display: none; }
+}
+@media (min-width: 992px) and (max-width: 1099px) {
+  .navbar .nav-links { gap: 0.8rem; }
+  .navbar .nav-link { font-size: 0.82rem; }
+  .navbar .logo img { width: 150px; height: auto; }
+}
+@media (min-width: 1440px) and (max-width: 1499px) {
+  html[lang="si"] .nav-phone { width: 46px; padding: 0; border-radius: 50%; }
+  html[lang="si"] .nav-phone span { display: none; }
+}
+@media (min-width: 992px) and (max-width: 1099px) {
+  html[lang="si"] .navbar .nav-links { gap: 0.6rem; }
+  html[lang="si"] .navbar .nav-link { font-size: 0.78rem; }
+}

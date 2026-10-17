@@ -18,8 +18,11 @@
   "envelope",
   "external-link-alt",
   "faucet-drip",
+  "gears",
   "hand-holding-water",
+  "helmet-safety",
   "home",
+  "hospital",
   "hotel",
   "industry",
   "info-circle",
@@ -28,6 +31,7 @@
   "leaf",
   "map-marked-alt",
   "map-marker-alt",
+  "medal",
   "minus-circle",
   "paper-plane",
   "phone",
@@ -36,6 +40,7 @@
   "question-circle",
   "robot",
   "scale-unbalanced",
+  "school",
   "search",
   "shield-alt",
   "shopping-basket",
@@ -45,6 +50,7 @@
   "th-large",
   "times",
   "times-circle",
+  "trophy",
   "truck-monster",
   "tshirt",
   "users",
@@ -54,8 +60,7 @@
   "clock"
  ],
  "fab": [
-  "facebook-f",
-  "linkedin-in",
+  "tiktok",
   "whatsapp",
   "youtube"
  ]

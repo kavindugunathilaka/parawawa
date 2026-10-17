@@ -152,13 +152,12 @@ document.addEventListener('DOMContentLoaded', () => {
   if (quoteForm) quoteForm.addEventListener('submit', handleFormSubmit);
   if (modalQuoteForm) modalQuoteForm.addEventListener('submit', handleFormSubmit);
 
-  // --- 4. Tank Capacity Calculator & 10-Yr Savings ---
+  // --- 4. Tank Capacity Calculator ---
   const calculateBtn = document.getElementById('calculateBtn');
   const propertyTypeInput = document.getElementById('propertyType');
   const occupantsInput = document.getElementById('occupants');
 
   const resultCapacity = document.getElementById('resultCapacity');
-  const resultSavings = document.getElementById('resultSavings');
   const resultWastewater = document.getElementById('resultWastewater');
 
   const updateCalculator = () => {
@@ -175,13 +174,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const totalDailyLiter = occupants * litersPerPerson;
     const recommendedCapacity = Math.max(1000, Math.ceil((totalDailyLiter * 2) / 500) * 500);
 
-    const annualGullySavings = 15000;
-    const annualPowerSavings = propType === 'residential' ? 22500 : 50000;
-    const total10YrSavings = (annualGullySavings + annualPowerSavings) * 10;
     const annualRecycledWater = occupants * 150 * 365;
 
     resultCapacity.textContent = I18N.capacity ? I18N.capacity.replace('{n}', recommendedCapacity.toLocaleString()) : `${recommendedCapacity.toLocaleString()} Liters`;
-    if (resultSavings) resultSavings.textContent = I18N.savings ? I18N.savings.replace('{n}', total10YrSavings.toLocaleString()) : `LKR ${total10YrSavings.toLocaleString()}`;
     if (resultWastewater) resultWastewater.textContent = I18N.water ? I18N.water.replace('{n}', annualRecycledWater.toLocaleString()) : `${annualRecycledWater.toLocaleString()} L / yr`;
   };
 

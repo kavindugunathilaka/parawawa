@@ -145,9 +145,7 @@ TEXT = [
     # ---- client strip
     ("HAPPY CUSTOMERS", "සතුටු සේවාදායකයින්"),
     ("Nithya Papers (Pvt) Ltd — Horana", "නිත්‍යා පේපර්ස් (පුද්ගලික) සමාගම - හොරණ"),
-    ("JSW Apparels (Pvt) Ltd — Panadura", "JSW ඇපරල්ස් (පුද්ගලික) සමාගම - පානදුර"),
     ("Keells Super — Maharamandiya", "කීල්ස් සුපර් - මාහරමන්ඩිය"),
-    ("Commercial Credit — Kiribathgoda", "කොමර්ෂල් ක්‍රෙඩිට් - කිරිබත්ගොඩ"),
     ("Housing Scheme — Bokundara", "නිවාස යෝජනා ක්‍රමය - බෝකුන්දර"),
     ("Apartment Complex — Kohuwala", "මහල් නිවාස සංකීර්ණය - කොහුවල"),
 
@@ -282,8 +280,8 @@ TEXT = [
     # ---- calculator
     ("INTERACTIVE ESTIMATOR", "අන්තර්ක්‍රියාකාරී ගණකය"),
     ("Calculate Your", "ඔබේ"),
-    ("Tank Capacity & Savings", "ටැංකි ධාරිතාව සහ ඉතිරිය ගණනය කරන්න"),
-    ("Select your building type and estimated number of users to see your recommended Parawewa model and financial savings.", "ඔබේ ගොඩනැගිලි වර්ගය සහ ඇස්තමේන්තුගත පරිශීලකයින් සංඛ්‍යාව තෝරා, නිර්දේශිත පරවැව මාදිලිය සහ මූල්‍ය ඉතිරිය බලන්න."),
+    ("Tank Capacity", "ටැංකි ධාරිතාව ගණනය කරන්න"),
+    ("Select your building type and estimated number of users to see the recommended Parawewa tank capacity.", "ඔබේ ගොඩනැගිලි වර්ගය සහ ඇස්තමේන්තුගත පරිශීලකයින් සංඛ්‍යාව තෝරා, නිර්දේශිත පරවැව ටැංකි ධාරිතාව බලන්න."),
     ("Input Property Details", "දේපළ විස්තර ඇතුළත් කරන්න"),
     ("Property Type", "දේපළ වර්ගය"),
     ("Single Family House / Villa", "තනි පවුල් නිවසක් / විලාවක්"),
@@ -295,12 +293,11 @@ TEXT = [
     ("Recommended Tank Capacity", "නිර්දේශිත ටැංකි ධාරිතාව"),
     ("1,500 Liters", "ලීටර් 1,500"),
     ("Estimated 10-Year Gully Bowser & Power Savings", "ඇස්තමේන්තුගත වසර 10 ක ගලි බවුසර් සහ විදුලි ඉතිරිය"),
-    ("LKR 375,000", "රු. 375,000"),
     ("Wastewater Treated per Year", "වසරකට පිරිපහදු කරන අපජල ප්‍රමාණය"),
     ("273,750 L / yr", "ලීටර් 273,750 / වසරකට"),
     ("Get Price Quote For This Size", "මෙම ප්‍රමාණය සඳහා මිල ගණන් ලබාගන්න"),
     ("Disclaimer Note for General Public:", "සාමාන්‍ය මහජනතාව සඳහා වියාචනය:"),
-    ("This calculator provides an approximate capacity and savings estimation for preliminary public guidance only. For detailed civil engineering design and custom commercial site specifications, please contact Parawewa.", "මෙම ගණකය මූලික මහජන මග පෙන්වීමක් සඳහා පමණක් ආසන්න ධාරිතාවක් සහ ඉතිරි කිරීමක් ඇස්තමේන්තු කරයි. සවිස්තරාත්මක සිවිල් ඉංජිනේරු සැලසුම් සහ අභිරුචි වාණිජ ස්ථාන පිරිවිතර සඳහා කරුණාකර පරවැව අමතන්න."),
+    ("This calculator provides an approximate capacity estimate for preliminary public guidance only. For detailed civil engineering design and custom commercial site specifications, please contact Parawewa.", "මෙම ගණකය මූලික මහජන මග පෙන්වීමක් සඳහා පමණක් ආසන්න ධාරිතාවක් ඇස්තමේන්තු කරයි. සවිස්තරාත්මක සිවිල් ඉංජිනේරු සැලසුම් සහ අභිරුචි වාණිජ ස්ථාන පිරිවිතර සඳහා කරුණාකර පරවැව අමතන්න."),
 
     # ---- FAQ
     ("FREQUENTLY ASKED QUESTIONS", "නිතර අසන ප්‍රශ්න"),
@@ -407,12 +404,58 @@ TEXT = [
     ("the water is treated to a level fit for absorption and then soaks into the ground. Only the water-sealed system uses a pump, and it uses less electricity than other sewage treatment plants.", "අපගේ සෑම පරවැව ක්‍රමයකම ජලය අවශෝෂණයට සුදුසු ප්‍රමාණය දක්වා පිරිපහදු වී පොළොවට අවශෝෂණය වේ. පොම්පයක් භාවිතා වන්නේ ජල මුද්‍රිත පරවැව ක්‍රමයේ පමණක් වන අතර, එයද වෙනත් STP වලට වඩා අඩු විදුලියක් භාවිතා කරයි."),
     ("Where the System Sits", "පද්ධතිය පිහිටන ස්ථානය"),
     ("and How It Is Built", "සහ එය ඉදිකරන ආකාරය"),
+    # ---- Phase 2 (client changes, 2026-10-17)
+    ("1. Position", "1. පිහිටීම"),
+    ("2. Construction", "2. ඉදිකිරීම"),
+    ("3. Finished", "3. නිමි පද්ධතිය"),
+    ("10 Years", "වසර 10"),
+    ("The chamber sits below ground beside the building and receives the wastewater from the house.", "කුටීරය ගොඩනැගිල්ල අසල භූගතව පිහිටා, නිවසෙන් එන අපජලය ලබා ගනී."),
+    ("The chamber is built inside the excavation, before the ground is closed over it.", "පොළොව නැවත වසා දැමීමට පෙර, කැණීම තුළ කුටීරය ඉදිකෙරේ."),
+    ("The chamber is covered and sealed, leaving only an access cover at ground level.", "කුටීරය වසා මුද්‍රා තබන අතර, බිම් මට්ටමේ ඇතුළු වීමේ ආවරණයක් පමණක් ඉතිරි වේ."),
+    ("Invented under Sri Lanka Patent #16371", "ශ්‍රී ලංකා පේටන්ට් අංක #16371 යටතේ නිපදවන ලදී"),
+    ("Winning 1st Place at the 2018 Presidential Innovation Awards", "2018 ජනාධිපති නවෝත්පාදන සම්මාන උලෙළේ පළමු ස්ථානය"),
+    ("iCAN Canada 2019", "iCAN කැනඩාව 2019"),
+    ("Offices & Commercial Buildings", "කාර්යාල සහ වාණිජ ගොඩනැගිලි"),
+    ("Schools, Hospitals & Government Institutions", "පාසල්, රෝහල් සහ රජයේ ආයතන"),
+    ("Odor-free, maintenance-free treatment for family homes, with no gully bowser visits to arrange.", "පවුල් නිවාස සඳහා දුගඳ රහිත, නඩත්තු රහිත පිරිපහදුව - ගලි බවුසර් ගෙන්වීමට අවශ්‍ය නැත."),
+    ("For waterlogged and coastal land in areas such as Negombo, Ja-Ela, Wattala and Mathugama.", "මීගමුව, ජා-ඇල, වත්තල සහ මතුගම වැනි ප්‍රදේශවල ජලය බැඳෙන සහ වෙරළබඩ ඉඩම් සඳහා."),
+    ("For offices, banks and retail outlets that need reliable, CEA-compliant wastewater treatment.", "විශ්වාසදායී, CEA ප්‍රමිතීන්ට අනුකූල අපජල පිරිපහදුවක් අවශ්‍ය කාර්යාල, බැංකු සහ වෙළඳසැල් සඳහා."),
+    ("Odor-free treatment near guest areas for hotels and eco-resorts in Bentota, Ella and Sigiriya.", "බෙන්තොට, ඇල්ල සහ සීගිරිය වැනි ප්‍රදේශවල හෝටල් සහ නිවාඩු නිකේතනවල අමුත්තන් අසල දුගඳ රහිත පිරිපහදුව."),
+    ("One reliable, warranted system for every unit in a new housing scheme or apartment project.", "නව නිවාස යෝජනා ක්‍රමයක හෝ මහල් නිවාස ව්‍යාපෘතියක සෑම ඒකකයකටම වගකීම් සහිත විශ්වාසදායී එක් පද්ධතියක්."),
+    ("High-capacity treatment for factory canteens, staff quarters and busy production sites.", "කර්මාන්තශාලා ආපනශාලා, සේවක නිල නිවාස සහ කාර්යබහුල නිෂ්පාදන ස්ථාන සඳහා ඉහළ ධාරිතා පිරිපහදුව."),
+    ("For schools, education centres, hospitals and government institutions with many daily users.", "දිනපතා බොහෝ දෙනා භාවිතා කරන පාසල්, අධ්‍යාපන ආයතන, රෝහල් සහ රජයේ ආයතන සඳහා."),
+    ("Trusted by factories, hospitals, schools, hotels and homes across Sri Lanka", "ශ්‍රී ලංකාව පුරා කර්මාන්තශාලා, රෝහල්, පාසල්, හෝටල් සහ නිවාස අප කෙරෙහි විශ්වාසය තබයි"),
+    ("Industrial Factory • BOI Zone, Horana", "කාර්මික කර්මාන්තශාලාව • BOI කලාපය, හොරණ"),
 ]
 
 # Text left as it is (names, product names, video titles, contact data).
 KEEP = [
     "Ranjith Dharmakeerthi Mannage", "Ms. Janani Mannage", "Prasad Samarakoon",
     "Environment Friendly Septic Tank", "info@parawawa.lk",
+    "Access Engineering – Port of Colombo",
+    "Atire (Pvt) Ltd",
+    "Cisco Speciality (Pvt) Ltd",
+    "David Pieris Holdings (Pvt) Ltd – GLO Camp, Welikanda",
+    "Elastomeric Engineering Co. Ltd – Horana",
+    "Ethimale Plantation – Siyambalanduwa, Monaragala",
+    "Gislaved Gummi Lanka (Pvt) Ltd – Bokundara",
+    "ITD Cementation India Limited – Port of Colombo",
+    "Jaykay Marketing Services (Pvt) Ltd – Keells",
+    "LOTEK (Pvt) Ltd",
+    "Lanka Precision Engineering (Pvt) Ltd – Mulleriyawa",
+    "Lanka Tiles – Ranala",
+    "MAGA Engineering (Pvt) Ltd – KMTT Project, Ampitiya",
+    "Methodist College – Rawathawatta, Moratuwa",
+    "Nithya Papers & Board Lanka (Pvt) Ltd",
+    "Nithya Papers & Board Lanka (Pvt) Ltd – BOI Zone, Horana",
+    "Roo Mansala Boutique Villa – Sigiriya",
+    "Sabaragamuwa Provincial Council",
+    "WP/JP/ Kottawa Dharmapala Maha Vidyalaya",
+    "Western Provincial Council – Ayurvedic Hospital, Jamburaliya, Kesbewa",
+    "Western Provincial Council – Ayurvedic Hospital, Weediyagoda",
+    "Wish Fertility Hospital – Maharagama",
+    "Commercial Credit – Kiribathgoda",
+    "JSW Apparels (Pvt) Ltd – Panadura",
 ]
 
 # alt / aria-label / placeholder / title attributes
@@ -457,6 +500,10 @@ ATTR = [
     ("e.g. Kanthi Perera / කාන්ති පෙරේරා", "උදා: කාන්ති පෙරේරා"),
     ("e.g. Piliyandala, Colombo / පිළියන්දල", "උදා: පිළියන්දල, කොළඹ"),
     ("iCAN 2019 Canada Silver Medal Certificate Thumbnail", "iCAN 2019 කැනඩා රිදී පදක්කම් සහතිකයේ කුඩා රූපය"),
+    ("Illustration: cutaway of a Parawewa chamber below ground beside a house, with the inlet pipe from the building", "නිදර්ශනය: නිවසක් අසල භූගත පරවැව කුටීරයක හරස්කඩක්, ගොඩනැගිල්ලෙන් එන ඇතුළු වන නලය සහිතව"),
+    ("Language", "භාෂාව"),
+    ("Parawewa clients", "පරවැව සේවාදායකයින්"),
+    ("TikTok", "TikTok"),
 ]
 
 # <title>, meta tags
