@@ -86,16 +86,6 @@
       "permanent": true
     },
     {
-      "source": "/si",
-      "destination": "/",
-      "permanent": false
-    },
-    {
-      "source": "/si/",
-      "destination": "/",
-      "permanent": false
-    },
-    {
       "source": "/articles",
       "destination": "/articles.html",
       "permanent": true
@@ -103,6 +93,71 @@
     {
       "source": "/articles/",
       "destination": "/articles.html",
+      "permanent": true
+    },
+    {
+      "source": "/si",
+      "destination": "/si/",
+      "permanent": true
+    },
+    {
+      "source": "/si/about",
+      "destination": "/si/#founder",
+      "permanent": true
+    },
+    {
+      "source": "/si/about/",
+      "destination": "/si/#founder",
+      "permanent": true
+    },
+    {
+      "source": "/si/projects",
+      "destination": "/si/#customers",
+      "permanent": true
+    },
+    {
+      "source": "/si/projects/",
+      "destination": "/si/#customers",
+      "permanent": true
+    },
+    {
+      "source": "/si/contact-us",
+      "destination": "/si/#contact",
+      "permanent": true
+    },
+    {
+      "source": "/si/contact-us/",
+      "destination": "/si/#contact",
+      "permanent": true
+    },
+    {
+      "source": "/systems/pump-seal-type-bio-septic-tank",
+      "destination": "/systems/seal-type-parawewa-system/",
+      "permanent": true
+    },
+    {
+      "source": "/systems/pump-seal-type-bio-septic-tank/",
+      "destination": "/systems/seal-type-parawewa-system/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/how-layer-base-bio-septic-tank-works",
+      "destination": "/articles/how-parawewa-bio-septic-tank-works/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/how-layer-base-bio-septic-tank-works/",
+      "destination": "/articles/how-parawewa-bio-septic-tank-works/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/sri-lanka-patent-10848-parawewa-story",
+      "destination": "/articles/sri-lanka-patent-16371-parawewa-story/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/sri-lanka-patent-10848-parawewa-story/",
+      "destination": "/articles/sri-lanka-patent-16371-parawewa-story/",
       "permanent": true
     }
   ],

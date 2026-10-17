@@ -18,6 +18,12 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://parawawa.lk/si/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://parawawa.lk/compare/parawewa-vs-aerated-package-plants/</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -38,7 +44,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://parawawa.lk/systems/pump-seal-type-bio-septic-tank/</loc>
+    <loc>https://parawawa.lk/systems/seal-type-parawewa-system/</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -78,7 +84,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://parawawa.lk/articles/how-layer-base-bio-septic-tank-works/</loc>
+    <loc>https://parawawa.lk/articles/how-parawewa-bio-septic-tank-works/</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -138,13 +144,13 @@
     </image:image>
   </url>
   <url>
-    <loc>https://parawawa.lk/articles/sri-lanka-patent-10848-parawewa-story/</loc>
+    <loc>https://parawawa.lk/articles/sri-lanka-patent-16371-parawewa-story/</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://parawawa.lk/assets/real_patent.jpg</image:loc>
-      <image:title>Sri Lanka Patent #10848 certificate for the Parawewa layer-base system</image:title>
+      <image:title>Sri Lanka Patent #16371 certificate for the Parawewa system</image:title>
     </image:image>
   </url>
   <url>
@@ -193,8 +199,8 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://parawawa.lk/assets/project2.jpg</image:loc>
-      <image:title>Illustration of a garden water feature supplied with recycled clean water</image:title>
+      <image:loc>https://parawawa.lk/assets/real_app_house.jpg</image:loc>
+      <image:title>Parawewa tank covers installed beside a building in Sri Lanka</image:title>
     </image:image>
   </url>
   <url>

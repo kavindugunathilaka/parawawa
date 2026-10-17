@@ -5,6 +5,8 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  const I18N = window.I18N || {};  // set by the Sinhala page (si/index.html); empty on English pages
+
   // --- 0. Compact Navbar on Scroll ---
   const navbarEl = document.querySelector('.navbar');
   if (navbarEl) {
@@ -141,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    alert('Thank you! Your quote request has been received. Our engineering team at Parawewa led by Ranjith Dharmakeerthi Mannage will contact you within 2 hours. / ස්තූතියි! ඔබගේ පණිවිඩය ලැබුණි. පරවැව ඉංජිනේරු කණ්ඩායම පැය 2ක් ඇතුළත ඔබ හා සම්බන්ධ වනු ඇත.');
+    alert(I18N.thanks || 'Thank you! Your quote request has been received. Our engineering team at Parawewa led by Ranjith Dharmakeerthi Mannage will contact you within 2 hours. / ස්තූතියි! ඔබගේ පණිවිඩය ලැබුණි. පරවැව ඉංජිනේරු කණ්ඩායම පැය 2ක් ඇතුළත ඔබ හා සම්බන්ධ වනු ඇත.');
     if (quoteModal) quoteModal.classList.remove('active');
     document.body.style.overflow = '';
     e.target.reset();
@@ -178,9 +180,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const total10YrSavings = (annualGullySavings + annualPowerSavings) * 10;
     const annualRecycledWater = occupants * 150 * 365;
 
-    resultCapacity.textContent = `${recommendedCapacity.toLocaleString()} Liters`;
-    if (resultSavings) resultSavings.textContent = `LKR ${total10YrSavings.toLocaleString()}`;
-    if (resultWastewater) resultWastewater.textContent = `${annualRecycledWater.toLocaleString()} L / yr`;
+    resultCapacity.textContent = I18N.capacity ? I18N.capacity.replace('{n}', recommendedCapacity.toLocaleString()) : `${recommendedCapacity.toLocaleString()} Liters`;
+    if (resultSavings) resultSavings.textContent = I18N.savings ? I18N.savings.replace('{n}', total10YrSavings.toLocaleString()) : `LKR ${total10YrSavings.toLocaleString()}`;
+    if (resultWastewater) resultWastewater.textContent = I18N.water ? I18N.water.replace('{n}', annualRecycledWater.toLocaleString()) : `${annualRecycledWater.toLocaleString()} L / yr`;
   };
 
   if (calculateBtn) calculateBtn.addEventListener('click', updateCalculator);

@@ -15,13 +15,13 @@ def llms():
     lines = [
         '# Parawewa',
         '',
-        '> Parawewa is a Sri Lankan manufacturer and installer of the patented layer-base eco bio septic tank system (Sri Lanka Patent #10848, invented in 1996). '
-        'It comes in two options: Option A, a gravity-fed system that uses 0% electricity, and Option B, a sealed submersible pump seal type for high water table land. '
+        '> Parawewa is a Sri Lankan manufacturer and installer of the patented eco bio septic tank system (Sri Lanka Patent #16371, invented in 1996). '
+        'It comes in two options: Option A, a gravity-fed system that uses no electricity, and Option B, the Seal Type Parawewa System for high water table land. '
         'Every installation carries a 10-year written manufacturer warranty. Parawewa won 1st place at the 2018 Presidential Innovation Awards (Sri Lanka) and a Silver Medal at iCAN 2019 (Canada).',
         '',
         'Head office: 143/2 Kesbewa Kindelpitiya, Bandaragama Rd, Piliyandala 10300, Sri Lanka.',
         'Phone: 0777 347 620, 074 060 4936. Email: info@parawawa.lk. WhatsApp: +94 77 734 7620 and +94 74 060 4936.',
-        'Prices are not published; quotes follow a free site inspection. The site is in English.',
+        'Prices are not published; quotes follow a free site inspection. The site is in English; the home page is also available in Sinhala at /si/.',
         '',
         '## Systems',
     ]
@@ -80,7 +80,7 @@ def not_found():
         </div>
         <ul class="notfound-links">
           <li><a href="/systems/gravity-fed-bio-septic-tank/">Option A: gravity-fed bio septic tank</a></li>
-          <li><a href="/systems/pump-seal-type-bio-septic-tank/">Option B: pump seal type for high water table land</a></li>
+          <li><a href="/systems/seal-type-parawewa-system/">Option B: Seal Type Parawewa System for high water table land</a></li>
           <li><a href="/compare/parawewa-vs-aerated-package-plants/">Parawewa vs Aerated Package Plants</a></li>
         </ul>
       </div>
@@ -117,7 +117,7 @@ def feed():
     <title>Parawewa Knowledge Hub</title>
     <link>{SITE}/articles.html</link>
     <atom:link href="{SITE}/feed.xml" rel="self" type="application/rss+xml"/>
-    <description>Guides on eco bio septic tanks, groundwater protection, gravity and pump options, and Sri Lanka Patent #10848.</description>
+    <description>Guides on eco bio septic tanks, groundwater protection, gravity and seal type options, and Sri Lanka Patent #16371.</description>
     <language>en</language>
     <lastBuildDate>{rfc822(max(a['modified'] for a in ba.ARTICLES))}</lastBuildDate>
 {items}  </channel>

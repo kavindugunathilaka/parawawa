@@ -133,7 +133,7 @@ def page(c):
       <aside class="article-cta" aria-label="Request a quote">
         <div>
           <h2>Want a recommendation for your site?</h2>
-          <p>Request a free site inspection. The Parawewa team will assess your ground, power situation and space, and tell you whether <a href="/systems/gravity-fed-bio-septic-tank/">Option A</a> or <a href="/systems/pump-seal-type-bio-septic-tank/">Option B</a> fits.</p>
+          <p>Request a free site inspection. The Parawewa team will assess your ground, power situation and space, and tell you whether <a href="/systems/gravity-fed-bio-septic-tank/">Option A</a> or <a href="/systems/seal-type-parawewa-system/">Option B</a> fits.</p>
         </div>
         <div class="article-cta-actions">
           <a href="/#contact" class="btn btn-primary open-quote-modal"><i class="fas fa-paper-plane"></i> Get Free Quote</a>

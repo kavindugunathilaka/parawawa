@@ -4,7 +4,7 @@
     <title>Parawewa Knowledge Hub</title>
     <link>https://parawawa.lk/articles.html</link>
     <atom:link href="https://parawawa.lk/feed.xml" rel="self" type="application/rss+xml"/>
-    <description>Guides on eco bio septic tanks, groundwater protection, gravity and pump options, and Sri Lanka Patent #10848.</description>
+    <description>Guides on eco bio septic tanks, groundwater protection, gravity and seal type options, and Sri Lanka Patent #16371.</description>
     <language>en</language>
     <lastBuildDate>Tue, 06 Oct 2026 08:00:00 +0530</lastBuildDate>
     <item>
@@ -96,28 +96,28 @@
       <description>Learn the 5 signs your septic tank is leaking groundwater in Sri Lanka&#x27;s monsoon, and how a sealed Parawewa bio tank protects your drinking water.</description>
     </item>
     <item>
-      <title>Parawewa vs. Mechanical STPs: Option A Gravity vs Option B Pump</title>
+      <title>Parawewa vs. Mechanical STPs: Option A Gravity vs Option B Seal Type</title>
       <link>https://parawawa.lk/articles/parawewa-vs-mechanical-stp-option-a-option-b/</link>
       <guid isPermaLink="true">https://parawawa.lk/articles/parawewa-vs-mechanical-stp-option-a-option-b/</guid>
       <pubDate>Tue, 15 Sep 2026 08:00:00 +0530</pubDate>
       <category>Cost Savings</category>
-      <description>Compare 24/7 electric blower running costs of mechanical STPs with Parawewa Option A (gravity, no electricity) and Option B (sealed pump seal type).</description>
+      <description>Compare 24/7 electric blower running costs of mechanical STPs with Parawewa Option A (gravity, no electricity) and Option B (Seal Type Parawewa System).</description>
     </item>
     <item>
-      <title>Installing Bio Septic Tanks in High Water Table Lands (Piliyandala &amp; Coastal)</title>
+      <title>Installing Bio Septic Tanks in High Water Table Lands (Ja-Ela, Mathugama &amp; Coastal)</title>
       <link>https://parawawa.lk/articles/bio-septic-tank-high-water-table-sri-lanka/</link>
       <guid isPermaLink="true">https://parawawa.lk/articles/bio-septic-tank-high-water-table-sri-lanka/</guid>
       <pubDate>Tue, 15 Sep 2026 08:00:00 +0530</pubDate>
       <category>High Water Table Lands</category>
-      <description>Engineering guide to installing leak-proof bio septic systems in high water table, coastal and marshy soils like Piliyandala, Wattala and Negombo.</description>
+      <description>Engineering guide to installing leak-proof bio septic systems in high water table, coastal and marshy soils like Ja-Ela, Mathugama and Negombo.</description>
     </item>
     <item>
-      <title>How Does a Layer-Base Bio Septic Tank Work Without Electricity?</title>
-      <link>https://parawawa.lk/articles/how-layer-base-bio-septic-tank-works/</link>
-      <guid isPermaLink="true">https://parawawa.lk/articles/how-layer-base-bio-septic-tank-works/</guid>
+      <title>How Does the Parawewa Bio Septic Tank Work Without Electricity?</title>
+      <link>https://parawawa.lk/articles/how-parawewa-bio-septic-tank-works/</link>
+      <guid isPermaLink="true">https://parawawa.lk/articles/how-parawewa-bio-septic-tank-works/</guid>
       <pubDate>Tue, 15 Sep 2026 08:00:00 +0530</pubDate>
       <category>Biological Science</category>
-      <description>Explore the 4-stage natural biological filtration in a Parawewa layer-base bio septic tank, where beneficial microbes digest sludge into clean water.</description>
+      <description>Explore the 4-stage natural biological filtration in a Parawewa bio septic tank, where beneficial microbes digest sludge into clean water.</description>
     </item>
     <item>
       <title>Why Gully Bowser Emptying is No Longer Necessary for Modern Homes</title>
@@ -149,7 +149,7 @@
       <guid isPermaLink="true">https://parawawa.lk/articles/bio-septic-tank-hotels-eco-resorts-sri-lanka/</guid>
       <pubDate>Tue, 15 Sep 2026 08:00:00 +0530</pubDate>
       <category>Hotels &amp; Resorts</category>
-      <description>How odour-free bio septic systems suit hotels and eco-resorts in Bentota, Ella and Sigiriya, including water recycling for garden lawns.</description>
+      <description>How odour-free bio septic systems suit hotels and eco-resorts in Bentota, Ella and Sigiriya, with no gully bowser visits near guest areas.</description>
     </item>
     <item>
       <title>How Heavy Monsoons Affect Household Sewage Systems in Sri Lanka</title>
@@ -160,12 +160,12 @@
       <description>Heavy monsoon flooding can make traditional septic tanks back up into bathrooms. Learn how sealed bio tanks keep homes hygienic during floods.</description>
     </item>
     <item>
-      <title>The Story of Sri Lanka Patent #10848: How Ranjith Dharmakeerthi Mannage Invented Parawewa</title>
-      <link>https://parawawa.lk/articles/sri-lanka-patent-10848-parawewa-story/</link>
-      <guid isPermaLink="true">https://parawawa.lk/articles/sri-lanka-patent-10848-parawewa-story/</guid>
+      <title>The Story of Sri Lanka Patent #16371: How Ranjith Dharmakeerthi Mannage Invented Parawewa</title>
+      <link>https://parawawa.lk/articles/sri-lanka-patent-16371-parawewa-story/</link>
+      <guid isPermaLink="true">https://parawawa.lk/articles/sri-lanka-patent-16371-parawewa-story/</guid>
       <pubDate>Tue, 15 Sep 2026 08:00:00 +0530</pubDate>
       <category>Patent &amp; History</category>
-      <description>How Ranjith Dharmakeerthi Mannage created the Parawewa layer-base bio septic system in 1996 and won the 2018 Presidential Innovation Award.</description>
+      <description>How Ranjith Dharmakeerthi Mannage created the Parawewa bio septic system in 1996 and won the 2018 Presidential Innovation Award.</description>
     </item>
   </channel>
 </rss>

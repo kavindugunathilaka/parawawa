@@ -2607,3 +2607,72 @@ h1, h2, h3, h4, h5, h6, .section-title, .hx-title, .article-h1, .feature-title, 
 /* WhatsApp button: dark text keeps the WhatsApp green and passes contrast */
 .btn-whatsapp { color: #06301a; }
 .btn-whatsapp:hover { color: #06301a; }
+
+/* ==========================================================================
+   SINHALA PAGE (html[lang="si"]) - only affects /si/. Sinhala needs its own
+   font, no tracking, taller lines and slightly smaller display sizes.
+   ========================================================================== */
+html[lang="si"] {
+  --font-heading: 'Noto Sans Sinhala', 'Nirmala UI', 'Iskoola Pota', 'Sinhala Sangam MN', 'Inter Tight', sans-serif;
+  --font-body: 'Noto Sans Sinhala', 'Nirmala UI', 'Iskoola Pota', 'Sinhala Sangam MN', 'Instrument Sans', sans-serif;
+}
+html[lang="si"] body { line-height: 1.8; }
+html[lang="si"] h1, html[lang="si"] h2, html[lang="si"] h3, html[lang="si"] h4 { line-height: 1.4; }
+html[lang="si"] * { letter-spacing: 0 !important; text-transform: none !important; }
+html[lang="si"] .hx-title { font-size: clamp(2.1rem, 3.9vw, 3.5rem); line-height: 1.3; }
+html[lang="si"] .section-title { font-size: clamp(1.7rem, 3.4vw, 2.5rem); line-height: 1.35; }
+html[lang="si"] .btn { line-height: 1.5; }
+html[lang="si"] .section-tag, html[lang="si"] .option-ribbon, html[lang="si"] .article-badge { line-height: 1.6; }
+
+.lang-switch {
+  display: none;
+  align-items: center;
+  min-height: 46px;
+  padding: 0 1.1rem;
+  border: 1.5px solid var(--border-color);
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--brand-deep);
+  background: #fff;
+  white-space: nowrap;
+}
+.lang-switch:hover { border-color: var(--brand); color: var(--brand); }
+@media (min-width: 1180px) { .lang-switch { display: inline-flex; } }
+
+/* Sinhala labels are wider: tighten the desktop nav so the phone button never clips */
+@media (min-width: 992px) {
+  html[lang="si"] .nav-links { gap: 1.1rem; }
+  html[lang="si"] .nav-link { font-size: 0.84rem; }
+  html[lang="si"] .lang-switch { padding: 0 0.85rem; min-height: 42px; font-size: 0.82rem; }
+  html[lang="si"] .nav-phone { width: 46px; padding: 0; border-radius: 50%; }
+  html[lang="si"] .nav-phone span { display: none; }
+}
+@media (min-width: 1360px) {
+  html[lang="si"] .nav-links { gap: 1.6rem; }
+  html[lang="si"] .nav-phone { width: auto; padding: 0.55rem 1.4rem; border-radius: 999px; }
+  html[lang="si"] .nav-phone span { display: inline; }
+}
+
+/* Parawewa system types (toilet / wastewater x low / high groundwater) */
+.types-box { margin-top: 2rem; background: #fff; border: 1px solid var(--border-color); border-radius: 22px; padding: 1.5rem; }
+.types-title { font-size: 1.15rem; margin: 0 0 1rem; display: flex; gap: 0.6rem; align-items: center; }
+.types-title i { color: var(--brand); }
+.types-table-wrap { overflow-x: auto; }
+.types-table { width: 100%; border-collapse: collapse; min-width: 520px; font-size: 0.95rem; }
+.types-table th, .types-table td { padding: 0.85rem 1rem; border-bottom: 1px solid var(--border-color); text-align: left; vertical-align: top; }
+.types-table thead th { background: var(--mint); color: var(--brand-deep); font-weight: 700; }
+.types-table tbody th { font-weight: 700; color: var(--text-main); }
+.types-table td span { display: block; font-size: 0.85rem; color: var(--text-muted); }
+.types-note { margin: 1rem 0 0; color: var(--text-main); }
+@media (max-width: 600px) {
+  .types-table { min-width: 0; }
+  .types-table thead { display: none; }
+  .types-table tr { display: block; border-bottom: 1px solid var(--border-color); padding: 0.5rem 0; }
+  .types-table th, .types-table td { display: block; border: 0; padding: 0.3rem 0; }
+  .types-table td::before { display: block; font-size: 0.8rem; font-weight: 700; color: var(--brand); }
+  .types-table td:nth-of-type(1)::before { content: 'Low groundwater level'; }
+  .types-table td:nth-of-type(2)::before { content: 'High groundwater level'; }
+}
+html[lang="si"] .types-table td:nth-of-type(1)::before { content: 'භූගත ජල මට්ටම පහළ ස්ථානවල'; }
+html[lang="si"] .types-table td:nth-of-type(2)::before { content: 'භූගත ජල මට්ටම ඉහළ ස්ථානවල'; }

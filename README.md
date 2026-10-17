@@ -12,7 +12,8 @@ Static site (HTML, CSS, vanilla JS). No framework. Deployed to Vercel from `main
 | `content/articles.json` | **Source of truth for the 20 articles** | Yes |
 | `content/systems.py` | Option A and Option B pages | Yes |
 | `content/compare.py` | Comparison pages | Yes |
-| `articles/`, `systems/`, `compare/` | Generated pages | **No** |
+| `content/si_strings.py` | **Sinhala wording** for the Sinhala home page (English text -> Sinhala) | Yes |
+| `articles/`, `systems/`, `compare/`, `si/` | Generated pages (`si/index.html` is built from `index.html` + `content/si_strings.py`) | **No** |
 | `articles-meta.js`, `sitemap.xml`, `feed.xml`, `llms.txt`, `404.html` | Generated | **No** |
 | `assets/fa/`, `assets/fonts/`, `assets/*.webp`, `assets/icons/`, `favicon.ico` | Generated | **No** |
 | `tools/` | Build scripts | Only when changing the build |
@@ -31,6 +32,8 @@ Needs Python 3 with `pillow`, `fonttools` and `brotli` (`pip install pillow font
 3. regenerates every article, system and comparison page, the hub grid, the home page featured cards, the sitemap, the feed, `llms.txt` and the 404 page
 
 Run it after every change to `content/`, `style.css`, `app.js` or the header and footer in `index.html`, then commit everything it changed.
+
+**Sinhala page (`/si/`):** same design and content as the home page. After changing English text on `index.html`, add or update its Sinhala in `content/si_strings.py`; the build prints any English text still untranslated. Articles, system and comparison pages are English only; the Sinhala page links to them and says so.
 
 ## Common tasks
 
@@ -67,4 +70,5 @@ All canonical URLs, the sitemap and the structured data already assume `https://
 
 - No prices, capacities or specifications that the client has not confirmed.
 - No testimonials or ratings that are not real.
-- Option A: gravity-fed, 0% electricity. Option B: sealed submersible pump (uses electricity). Both: 10-year written warranty, Sri Lanka Patent #10848.
+- Option A: gravity-fed, no electricity ("Standard Parawewa system", low groundwater). Option B: "Seal Type Parawewa System" (water-sealed, high groundwater; uses some electricity, less than mechanical STPs). Both: 10-year written warranty, Sri Lanka Patent #16371.
+- Client wording rules (2026-10-17): never write "layer-base"; never put "pump"/"submersible pump" in Option B titles, headings or labels; write "No" instead of "0"/"0%"/"Zero"; treated water is absorbed into the ground (never "irrigation", "recycled", "to turf/drains").

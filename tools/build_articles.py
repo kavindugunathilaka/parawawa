@@ -102,12 +102,11 @@ FOOTER = rootify(FOOTER)
 # ---------------------------------------------------------------- content transforms
 AUTOLINKS = [
     (r'\bOption A\b', '/systems/gravity-fed-bio-septic-tank/', 'gravity-fed-bio-septic-tank'),
-    (r'\bOption B\b', '/systems/pump-seal-type-bio-septic-tank/', 'pump-seal-type-bio-septic-tank'),
+    (r'\bOption B\b', '/systems/seal-type-parawewa-system/', 'seal-type-parawewa-system'),
     (r'\bgully bowser\b', '/articles/gully-bowser-emptying-not-needed-bio-septic/', 'gully-bowser-emptying-not-needed-bio-septic'),
     (r'\bCEA\b', '/articles/cea-compliance-septic-tank-sri-lanka/', 'cea-compliance-septic-tank-sri-lanka'),
     (r'\bhigh water table\b', '/articles/bio-septic-tank-high-water-table-sri-lanka/', 'bio-septic-tank-high-water-table-sri-lanka'),
-    (r'Patent #10848', '/articles/sri-lanka-patent-10848-parawewa-story/', 'sri-lanka-patent-10848-parawewa-story'),
-    (r'\blayer-base\b', '/articles/how-layer-base-bio-septic-tank-works/', 'how-layer-base-bio-septic-tank-works'),
+    (r'Patent #16371', '/articles/sri-lanka-patent-16371-parawewa-story/', 'sri-lanka-patent-16371-parawewa-story'),
     (r'\bsoakage pit\b', '/articles/septic-tank-vs-soakage-pit-sri-lanka/', 'septic-tank-vs-soakage-pit-sri-lanka'),
 ]
 NO_LINK_TAGS = {'a', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'th', 'button', 'script', 'style'}
@@ -290,8 +289,8 @@ def page(a):
 
       <aside class="article-cta" aria-label="Request a quote">
         <div>
-          <h2>Planning a septic system for your site?</h2>
-          <p>Talk to the Parawewa team about <a href="/systems/gravity-fed-bio-septic-tank/">Option A (gravity-fed)</a> or <a href="/systems/pump-seal-type-bio-septic-tank/">Option B (pump seal type)</a> for your property. Every installation comes with a 10-year written warranty.</p>
+          <h2>Planning a Septic System for your site?</h2>
+          <p>Talk to the Parawewa team about <a href="/systems/gravity-fed-bio-septic-tank/">Option A (gravity-fed)</a> or <a href="/systems/seal-type-parawewa-system/">Option B (Seal Type Parawewa System)</a> for your property. Every Parawewa Sewerage installation comes with a 10-year written warranty.</p>
         </div>
         <div class="article-cta-actions">
           <a href="/#contact" class="btn btn-primary open-quote-modal"><i class="fas fa-paper-plane"></i> Get Free Quote</a>
@@ -391,6 +390,7 @@ def main():
       <image:title>Parawewa Patented Eco Bio Septic Tank System Sri Lanka</image:title>
     </image:image>'''),
         (SITE + '/articles.html', '2026-10-06', 'weekly', '0.9', ''),
+        (SITE + '/si/', '2026-10-08', 'monthly', '0.9', ''),
     ] + [(f"{SITE}/compare/{c['slug']}/", c['modified'], 'monthly', '0.9', f'''
     <image:image>
       <image:loc>{SITE}/{c['img']}</image:loc>
