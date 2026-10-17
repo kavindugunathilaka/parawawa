@@ -57,6 +57,18 @@ Palette (sampled from the client's reference design): brand `#1a8245`, lime `#6e
 - **Buttons:** pills; a leading `<i>` in `.btn-primary` renders inside a white circle.
 - **Illustrations** in "How the system is built" are conceptual drawings supplied by the client, cropped from their source sheet; keep the "Illustration" label and the disclaimer.
 
+## Quote form emails
+
+Both quote forms (contact section and the pop-up on every page) post to `api/quote.js`, a Vercel serverless function that emails the request through [Resend](https://resend.com) to every address in `QUOTE_TO`. Set these in Vercel > Project > Settings > Environment Variables, then redeploy:
+
+| Variable | Value |
+|---|---|
+| `RESEND_API_KEY` | API key from the Resend dashboard (keep it secret) |
+| `QUOTE_TO` | Recipients, comma-separated, e.g. `info@parawawa.lk, someone@gmail.com` |
+| `QUOTE_FROM` | Optional. e.g. `Parawewa Website <quotes@parawawa.lk>`, only after `parawawa.lk` is verified in Resend (DNS records). Without it, Resend's test sender delivers only to the Resend account owner's own address. |
+
+Until the variables are set the form shows "could not be sent, please call or WhatsApp". Spam protection: a hidden field and a minimum fill-in time. When moving the domain's DNS to Vercel, keep the existing MX records so info@parawawa.lk keeps receiving mail.
+
 ## Going live on parawawa.lk
 
 All canonical URLs, the sitemap and the structured data already assume `https://parawawa.lk/`.

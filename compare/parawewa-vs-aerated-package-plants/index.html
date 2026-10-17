@@ -30,9 +30,9 @@
   <link rel="preload" href="/assets/fonts/inter-tight-2.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/instrument-sans-1.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fa/fa-solid.woff2?v=4557aeac07" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/assets/fonts/fonts.css?v=ee7f208562">
-  <link rel="stylesheet" href="/assets/fa/fa-subset.css?v=ee7f208562">
-  <link rel="stylesheet" href="/style.css?v=ee7f208562">
+  <link rel="stylesheet" href="/assets/fonts/fonts.css?v=be0e0dddd5">
+  <link rel="stylesheet" href="/assets/fa/fa-subset.css?v=be0e0dddd5">
+  <link rel="stylesheet" href="/style.css?v=be0e0dddd5">
 
   <script type="application/ld+json">
 {
@@ -479,29 +479,31 @@
 
       <form id="modalQuoteForm">
         <div class="form-group">
-          <label class="form-label">Your Full Name / ඔබගේ නම *</label>
-          <input type="text" class="form-control" placeholder="e.g. Kanthi Perera / කාන්ති පෙරේරා" required>
+          <label class="form-label" for="m-name">Your Full Name / ඔබගේ නම *</label>
+          <input type="text" id="m-name" name="name" class="form-control" autocomplete="name" maxlength="100" placeholder="e.g. Kanthi Perera / කාන්ති පෙරේරා" required>
         </div>
         <div class="form-group">
-          <label class="form-label">Phone Number / දුරකථන අංකය (WhatsApp) *</label>
-          <input type="tel" class="form-control" placeholder="e.g. 077 123 4567" required>
+          <label class="form-label" for="m-phone">Phone Number / දුරකථන අංකය (WhatsApp) *</label>
+          <input type="tel" id="m-phone" name="phone" class="form-control" autocomplete="tel" inputmode="tel" maxlength="30" placeholder="e.g. 077 123 4567" required>
         </div>
         <div class="form-group">
-          <label class="form-label">Property Location / නගරය (District / Town) *</label>
-          <input type="text" class="form-control" placeholder="e.g. Piliyandala, Colombo / පිළියන්දල" required>
+          <label class="form-label" for="m-location">Property Location / නගරය (District / Town) *</label>
+          <input type="text" id="m-location" name="location" class="form-control" autocomplete="address-level2" maxlength="120" placeholder="e.g. Piliyandala, Colombo / පිළියන්දල" required>
         </div>
         <div class="form-group">
-          <label class="form-label">Preferred System Model / පද්ධති මාදිලිය</label>
-          <select class="form-control">
+          <label class="form-label" for="m-model">Preferred System Model / පද්ධති මාදිලිය</label>
+          <select id="m-model" name="model" class="form-control">
             <option value="gravity">Option A: 100% Gravity-Fed Model (No Electricity)</option>
             <option value="pump">Option B: Seal Type Parawewa System (High Water Table)</option>
             <option value="consult">Engineering Consultation Required (නොදනිමි)</option>
           </select>
         </div>
         <div class="form-group">
-          <label class="form-label">Your Message / ඔබගේ පණිවිඩය (Optional)</label>
-          <textarea class="form-control" rows="3" placeholder="Type any additional questions or details about your site here... / ඔබගේ අදහස හෝ ප්‍රශ්නය මෙහි ඇතුළත් කරන්න..."></textarea>
+          <label class="form-label" for="m-message">Your Message / ඔබගේ පණිවිඩය (Optional)</label>
+          <textarea id="m-message" name="message" class="form-control" maxlength="2000" rows="3" placeholder="Type any additional questions or details about your site here... / ඔබගේ අදහස හෝ ප්‍රශ්නය මෙහි ඇතුළත් කරන්න..."></textarea>
         </div>
+        <div class="hp-field" aria-hidden="true"><label>Company <input type="text" name="company" tabindex="-1" autocomplete="off"></label></div>
+        <p class="form-status" role="status" aria-live="polite"></p>
         <button type="submit" class="btn btn-primary btn-block" style="margin-top: 0.5rem;">
           <i class="fas fa-paper-plane"></i> Submit Inquiry / පණිවිඩය යවන්න
         </button>
@@ -574,6 +576,6 @@
     </div>
   </footer>
 
-  <script src="/app.js?v=ee7f208562" defer></script>
+  <script src="/app.js?v=be0e0dddd5" defer></script>
 </body>
 </html>

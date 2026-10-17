@@ -432,6 +432,7 @@ TEXT = [
 KEEP = [
     "Ranjith Dharmakeerthi Mannage", "Ms. Janani Mannage", "Prasad Samarakoon",
     "Environment Friendly Septic Tank", "info@parawawa.lk",
+    "Company",  # hidden spam-trap field label
     "Access Engineering – Port of Colombo",
     "Atire (Pvt) Ltd",
     "Cisco Speciality (Pvt) Ltd",

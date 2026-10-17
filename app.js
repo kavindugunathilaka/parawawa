@@ -137,16 +137,49 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Form Submissions
+  // Form Submissions: POST /api/quote emails the request (api/quote.js); phone/WhatsApp shown if sending fails
   const quoteForm = document.getElementById('quoteForm');
   const modalQuoteForm = document.getElementById('modalQuoteForm');
+  const pageOpenedAt = Date.now();
+  const FORM_MSG = {
+    sending: I18N.sending || 'Sending... / යවමින්...',
+    ok: I18N.thanks || 'Thank you! Your quote request has been sent. The Parawewa team will contact you soon. / ස්තූතියි! ඔබගේ ඉල්ලීම යවන ලදී.',
+    fail: I18N.failed || 'Sorry, your request could not be sent. Please call or WhatsApp 0777 347 620. / කරුණාකර 0777 347 620 අමතන්න.'
+  };
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
-    alert(I18N.thanks || 'Thank you! Your quote request has been received. Our engineering team at Parawewa led by Ranjith Dharmakeerthi Mannage will contact you within 2 hours. / ස්තූතියි! ඔබගේ පණිවිඩය ලැබුණි. පරවැව ඉංජිනේරු කණ්ඩායම පැය 2ක් ඇතුළත ඔබ හා සම්බන්ධ වනු ඇත.');
-    if (quoteModal) quoteModal.classList.remove('active');
-    document.body.style.overflow = '';
-    e.target.reset();
+    const form = e.target;
+    if (!form.reportValidity()) return;
+    const status = form.querySelector('.form-status');
+    const btn = form.querySelector('button[type="submit"]');
+    const show = (text, kind) => {
+      if (!status) return;
+      status.textContent = text;
+      status.className = 'form-status ' + kind;
+    };
+    const data = Object.fromEntries(new FormData(form).entries());
+    data.page = window.location.pathname;
+    data.lang = document.documentElement.lang === 'si' ? 'si' : 'en';
+    data.elapsed = Date.now() - pageOpenedAt;
+
+    if (btn) btn.disabled = true;
+    show(FORM_MSG.sending, 'is-pending');
+    try {
+      const r = await fetch('/api/quote', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      const j = await r.json().catch(() => ({}));
+      if (!r.ok || !j.ok) throw new Error(j.error || String(r.status));
+      form.reset();
+      show(FORM_MSG.ok, 'is-ok');
+    } catch (err) {
+      show(FORM_MSG.fail, 'is-error');
+    } finally {
+      if (btn) btn.disabled = false;
+    }
   };
 
   if (quoteForm) quoteForm.addEventListener('submit', handleFormSubmit);

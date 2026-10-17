@@ -62,9 +62,9 @@
   <link rel="preload" href="/assets/fonts/inter-tight-2.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/instrument-sans-1.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fa/fa-solid.woff2?v=4557aeac07" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/assets/fonts/fonts.css?v=ee7f208562">
-  <link rel="stylesheet" href="/assets/fa/fa-subset.css?v=ee7f208562">
-  <link rel="stylesheet" href="/style.css?v=ee7f208562">
+  <link rel="stylesheet" href="/assets/fonts/fonts.css?v=be0e0dddd5">
+  <link rel="stylesheet" href="/assets/fa/fa-subset.css?v=be0e0dddd5">
+  <link rel="stylesheet" href="/style.css?v=be0e0dddd5">
 
   <!-- ==========================================================================
        GEO / AEO (GENERATIVE ENGINE & ANSWER ENGINE OPTIMIZATION) JSON-LD SCHEMA
@@ -1415,30 +1415,30 @@
         </div>
 
         <!-- On-Page Send Quote Form with Sinhala Option & Message Textarea -->
-        <form id="quoteForm" class="contact-form-card">
+        <form id="quoteForm" novalidate class="quote-form contact-form-card">
           <div class="flex-between" style="margin-bottom: var(--space-3);">
             <h3 class="contact-form-title">මිල ගණන් විමසුමක් යවන්න</h3>
             <span class="lang-pill">සිංහල</span>
           </div>
 
           <div class="form-group">
-            <label class="form-label">ඔබගේ සම්පූර්ණ නම *</label>
-            <input type="text" class="form-control" placeholder="උදා: කාන්ති පෙරේරා" required>
+            <label class="form-label" for="q-name">ඔබගේ සම්පූර්ණ නම *</label>
+            <input type="text" id="q-name" name="name" class="form-control" autocomplete="name" maxlength="100" placeholder="උදා: කාන්ති පෙරේරා" required>
           </div>
 
           <div class="form-group">
-            <label class="form-label">දුරකථන අංකය (WhatsApp) *</label>
-            <input type="tel" class="form-control" placeholder="e.g. 077 123 4567" required>
+            <label class="form-label" for="q-phone">දුරකථන අංකය (WhatsApp) *</label>
+            <input type="tel" id="q-phone" name="phone" class="form-control" autocomplete="tel" inputmode="tel" maxlength="30" placeholder="e.g. 077 123 4567" required>
           </div>
 
           <div class="form-group">
-            <label class="form-label">දේපළ පිහිටි ස්ථානය / නගරය (දිස්ත්‍රික්කය / නගරය) *</label>
-            <input type="text" class="form-control" placeholder="උදා: පිළියන්දල, කොළඹ" required>
+            <label class="form-label" for="q-location">දේපළ පිහිටි ස්ථානය / නගරය (දිස්ත්‍රික්කය / නගරය) *</label>
+            <input type="text" id="q-location" name="location" class="form-control" autocomplete="address-level2" maxlength="120" placeholder="උදා: පිළියන්දල, කොළඹ" required>
           </div>
 
           <div class="form-group">
-            <label class="form-label">කැමති පද්ධති මාදිලිය</label>
-            <select class="form-control">
+            <label class="form-label" for="q-model">කැමති පද්ධති මාදිලිය</label>
+            <select id="q-model" name="model" class="form-control">
               <option value="gravity">විකල්ප A: 100% ගුරුත්ව ප්‍රවාහ මාදිලිය (විදුලිය නැත)</option>
               <option value="pump">විකල්ප B: ජල මුද්‍රිත පරවැව ක්‍රමය (ඉහළ ජල මට්ටම)</option>
               <option value="consult">ඉංජිනේරු උපදේශනයක් අවශ්‍යයි (නොදනිමි)</option>
@@ -1446,10 +1446,12 @@
           </div>
 
           <div class="form-group">
-            <label class="form-label">ඔබගේ පණිවිඩය (අත්‍යවශ්‍ය නොවේ)</label>
-            <textarea class="form-control" rows="3" placeholder="ඔබගේ ඉඩම පිළිබඳ අමතර ප්‍රශ්න හෝ විස්තර මෙහි ඇතුළත් කරන්න..."></textarea>
+            <label class="form-label" for="q-message">ඔබගේ පණිවිඩය (අත්‍යවශ්‍ය නොවේ)</label>
+            <textarea id="q-message" name="message" class="form-control" maxlength="2000" rows="3" placeholder="ඔබගේ ඉඩම පිළිබඳ අමතර ප්‍රශ්න හෝ විස්තර මෙහි ඇතුළත් කරන්න..."></textarea>
           </div>
 
+          <div class="hp-field" aria-hidden="true"><label>Company <input type="text" name="company" tabindex="-1" autocomplete="off"></label></div>
+          <p class="form-status" role="status" aria-live="polite"></p>
           <button type="submit" class="btn btn-primary btn-block" style="margin-top: 0.5rem;">
             <i class="fas fa-paper-plane"></i> පණිවිඩය යවන්න
           </button>
@@ -1482,29 +1484,31 @@
 
       <form id="modalQuoteForm">
         <div class="form-group">
-          <label class="form-label">ඔබගේ සම්පූර්ණ නම *</label>
-          <input type="text" class="form-control" placeholder="උදා: කාන්ති පෙරේරා" required>
+          <label class="form-label" for="m-name">ඔබගේ සම්පූර්ණ නම *</label>
+          <input type="text" id="m-name" name="name" class="form-control" autocomplete="name" maxlength="100" placeholder="උදා: කාන්ති පෙරේරා" required>
         </div>
         <div class="form-group">
-          <label class="form-label">දුරකථන අංකය (WhatsApp) *</label>
-          <input type="tel" class="form-control" placeholder="e.g. 077 123 4567" required>
+          <label class="form-label" for="m-phone">දුරකථන අංකය (WhatsApp) *</label>
+          <input type="tel" id="m-phone" name="phone" class="form-control" autocomplete="tel" inputmode="tel" maxlength="30" placeholder="e.g. 077 123 4567" required>
         </div>
         <div class="form-group">
-          <label class="form-label">දේපළ පිහිටි ස්ථානය / නගරය (දිස්ත්‍රික්කය / නගරය) *</label>
-          <input type="text" class="form-control" placeholder="උදා: පිළියන්දල, කොළඹ" required>
+          <label class="form-label" for="m-location">දේපළ පිහිටි ස්ථානය / නගරය (දිස්ත්‍රික්කය / නගරය) *</label>
+          <input type="text" id="m-location" name="location" class="form-control" autocomplete="address-level2" maxlength="120" placeholder="උදා: පිළියන්දල, කොළඹ" required>
         </div>
         <div class="form-group">
-          <label class="form-label">කැමති පද්ධති මාදිලිය</label>
-          <select class="form-control">
+          <label class="form-label" for="m-model">කැමති පද්ධති මාදිලිය</label>
+          <select id="m-model" name="model" class="form-control">
             <option value="gravity">විකල්ප A: 100% ගුරුත්ව ප්‍රවාහ මාදිලිය (විදුලිය නැත)</option>
             <option value="pump">විකල්ප B: ජල මුද්‍රිත පරවැව ක්‍රමය (ඉහළ ජල මට්ටම)</option>
             <option value="consult">ඉංජිනේරු උපදේශනයක් අවශ්‍යයි (නොදනිමි)</option>
           </select>
         </div>
         <div class="form-group">
-          <label class="form-label">ඔබගේ පණිවිඩය (අත්‍යවශ්‍ය නොවේ)</label>
-          <textarea class="form-control" rows="3" placeholder="ඔබගේ ඉඩම පිළිබඳ අමතර ප්‍රශ්න හෝ විස්තර මෙහි ඇතුළත් කරන්න..."></textarea>
+          <label class="form-label" for="m-message">ඔබගේ පණිවිඩය (අත්‍යවශ්‍ය නොවේ)</label>
+          <textarea id="m-message" name="message" class="form-control" maxlength="2000" rows="3" placeholder="ඔබගේ ඉඩම පිළිබඳ අමතර ප්‍රශ්න හෝ විස්තර මෙහි ඇතුළත් කරන්න..."></textarea>
         </div>
+        <div class="hp-field" aria-hidden="true"><label>Company <input type="text" name="company" tabindex="-1" autocomplete="off"></label></div>
+        <p class="form-status" role="status" aria-live="polite"></p>
         <button type="submit" class="btn btn-primary btn-block" style="margin-top: 0.5rem;">
           <i class="fas fa-paper-plane"></i> පණිවිඩය යවන්න
         </button>
@@ -1581,12 +1585,14 @@
   <!-- Main JavaScript File -->
   <script>
   window.I18N = {
-    thanks: 'ස්තූතියි! ඔබගේ පණිවිඩය ලැබුණි. පරවැව ඉංජිනේරු කණ්ඩායම පැය 2ක් ඇතුළත ඔබ හා සම්බන්ධ වනු ඇත.',
+    sending: 'යවමින්...',
+    thanks: 'ස්තූතියි! ඔබගේ මිල ගණන් ඉල්ලීම යවන ලදී. පරවැව කණ්ඩායම ඉක්මනින් ඔබ හා සම්බන්ධ වනු ඇත.',
+    failed: 'කණගාටුයි, ඔබගේ ඉල්ලීම යැවීමට නොහැකි විය. කරුණාකර 0777 347 620 අමතන්න හෝ WhatsApp කරන්න.',
     capacity: 'ලීටර් {n}',
     water: 'ලීටර් {n} / වසරකට'
   };
   </script>
-  <script src="/articles-meta.js?v=ee7f208562" defer></script>
-  <script src="/app.js?v=ee7f208562" defer></script>
+  <script src="/articles-meta.js?v=be0e0dddd5" defer></script>
+  <script src="/app.js?v=be0e0dddd5" defer></script>
 </body>
 </html>

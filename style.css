@@ -2743,3 +2743,12 @@ html[lang="si"] .types-table td:nth-of-type(2)::before { content: 'භූගත 
   html[lang="si"] .navbar .nav-links { gap: 0.6rem; }
   html[lang="si"] .navbar .nav-link { font-size: 0.78rem; }
 }
+
+/* Quote forms: hidden spam trap + send status */
+.hp-field { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+.form-status { margin: 0.25rem 0 0; font-size: 0.92rem; font-weight: 600; line-height: 1.5; min-height: 0; }
+.form-status:empty { display: none; }
+.form-status.is-pending { color: var(--text-muted); }
+.form-status.is-ok { color: var(--brand-dark); background: var(--mint); border-radius: 12px; padding: 0.7rem 0.9rem; }
+.form-status.is-error { color: #a12020; background: #fdecec; border-radius: 12px; padding: 0.7rem 0.9rem; }
+.quote-form button[disabled], #quoteForm button[disabled], #modalQuoteForm button[disabled] { opacity: 0.6; cursor: wait; }
