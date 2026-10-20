@@ -76,7 +76,7 @@ FAQ_ANSWERS = [  # English fragment keys, in the order they appear in each FAQ a
      "Option B (Seal Type Parawewa System)", "is a water-sealed system designed specifically for high water table lands (such as Negombo, Ja-Ela, Wattala or Mathugama) where natural gravity discharge is restricted. It uses some electricity, but less than mechanical STPs."],
     ["Parawewa issues an official", "10-Year written manufacturer guarantee certificate",
      "covering structural tank integrity, chamber sealing, and multi-stage biological layer filtration performance."],
-    ["Yes! Parawewa Option B is specifically engineered for high groundwater tables, wetlands, and coastal soils (Negombo, Ja-Ela, Wattala, Mathugama, Galle). The hermetically sealed composite body prevents inward water seepage and flood backflow."],
+    ["Yes! Parawewa Option B is specifically engineered for high groundwater tables, wetlands, and coastal soils (Negombo, Ja-Ela, Wattala, Mathugama, Galle). The hermetically sealed concrete body prevents inward water seepage and flood backflow."],
     ["Yes, Parawewa effluent discharge is laboratory-tested to meet all Sri Lanka Central Environmental Authority (CEA) discharge guidelines (BOD & COD limits), making it suitable for commercial buildings, hotels, and apartments."],
     ["The Parawewa bio septic system was invented in 1996 by", NAME,
      ", Managing Director of Parawewa in Sri Lanka. The technology holds Sri Lanka Patent #16371."],

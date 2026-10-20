@@ -9,7 +9,7 @@ TABLE = '''
   <thead><tr><th>Feature</th><th>Parawewa</th><th>Aerated package plant</th></tr></thead>
   <tbody>
     <tr><td><strong>Origin and technology</strong></td><td>Sri Lankan, patented system (Patent #16371, invented 1996)</td><td>Prefabricated aerated treatment unit</td></tr>
-    <tr><td><strong>Tank body</strong></td><td>Hermetically sealed composite body</td><td>Fibre-reinforced plastic (FRP) unit</td></tr>
+    <tr><td><strong>Tank body</strong></td><td>Hermetically sealed concrete body</td><td>Fibre-reinforced plastic (FRP) unit</td></tr>
     <tr><td><strong>How oxygen reaches the bacteria</strong></td><td>Natural, passive aeration built into the tank geometry (Option A)</td><td>Electric air blowers</td></tr>
     <tr><td><strong>Electricity</strong></td><td>Option A: none. Option B: low (less than mechanical STPs)</td><td>Required for the blowers</td></tr>
     <tr><td><strong>During a power cut</strong></td><td>Option A keeps operating</td><td>Depends on the blower; ask the supplier in writing</td></tr>
@@ -89,7 +89,7 @@ COMPARE = [
             ('Is an aerated package plant better than a septic tank?', 'It depends on the site. A conventional concrete septic tank is a simple settling pit. An aerated package plant is a prefabricated unit that uses blowers. Parawewa is neither: it is a patented bio septic system that treats wastewater through biological filtration, with a gravity-fed option and a Seal Type Parawewa System option.'),
             ('Does an aerated package plant need electricity?', 'According to supplier descriptions, these units use electric air blowers for aeration, and the blowers are their main electricity use.'),
             ('Does Parawewa need electricity?', 'Option A, the gravity-fed model, uses no electricity. Option B, the Seal Type Parawewa System for high water table land, uses some electricity, but less than mechanical STPs.'),
-            ('Can Parawewa be used where the water table is high?', 'Yes. Option B is engineered for high groundwater table land, wetlands and coastal soils, with a hermetically sealed composite body that prevents inward water seepage and flood backflow.'),
+            ('Can Parawewa be used where the water table is high?', 'Yes. Option B is engineered for high groundwater table land, wetlands and coastal soils, with a hermetically sealed concrete body that prevents inward water seepage and flood backflow.'),
             ('What warranty does Parawewa give?', 'Parawewa issues a 10-year written manufacturer guarantee covering structural tank integrity, chamber sealing and multi-stage biological layer filtration performance.'),
         ],
     },

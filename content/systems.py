@@ -89,7 +89,7 @@ SYSTEMS = [
         'metaDescription': 'Parawewa Option B: the Seal Type Parawewa System for high water table, marshy and coastal land in Sri Lanka. 10-year written warranty.',
         'keywords': 'high water table septic tank, marshy land septic, Parawewa Option B',
         'eyebrow': 'OPTION B • HIGH WATER TABLE',
-        'lede': 'Engineered for high groundwater table land where gravity discharge is not possible: a hermetically sealed composite body that lifts the treated water to the absorption point.',
+        'lede': 'Engineered for high groundwater table land where gravity discharge is not possible: a hermetically sealed concrete body that lifts the treated water to the absorption point.',
         'img': 'assets/real_app_house.jpg',
         'imgAlt': 'Parawewa tank covers installed beside a building in Sri Lanka',
         'published': '2026-10-07',
@@ -98,7 +98,7 @@ SYSTEMS = [
         'other': 'gravity-fed-bio-septic-tank',
         'facts': [
             ('Best for', 'High water table, marshy, coastal and flat land'),
-            ('Body', 'Hermetically sealed composite shell'),
+            ('Body', 'Hermetically sealed concrete body'),
             ('Discharge unit', 'Lifts the treated water to the absorption point'),
             ('Discharge', 'Treated to a level fit for absorption, then soaks into the ground'),
             ('Warranty', '10-year written guarantee'),
@@ -106,7 +106,7 @@ SYSTEMS = [
         ],
         'body': '''
 <h2>What is Option B?</h2>
-<p>Option B is the Parawewa configuration for sites where natural gravity discharge is restricted. It uses the same patented biological treatment as Option A, in a hermetically sealed composite body, and adds a heavy-duty submersible pump that lifts the treated water to the absorption point where it can be discharged safely.</p>
+<p>Option B is the Parawewa configuration for sites where natural gravity discharge is restricted. It uses the same patented biological treatment as Option A, in a hermetically sealed concrete body, and adds a heavy-duty submersible pump that lifts the treated water to the absorption point where it can be discharged safely.</p>
 
 <h2>Why high water table land needs a different design</h2>
 <p>In low-lying coastal and wetland areas, the ground is saturated for much of the year, and heavy monsoon rain raises the water table further. Standard concrete rings were never designed for that:</p>
@@ -119,7 +119,7 @@ SYSTEMS = [
 
 <h2>How Option B is engineered for these sites</h2>
 <ul>
-  <li><strong>Sealed composite shell.</strong> A non-porous synthetic wall, rather than jointed concrete, prevents inward water seepage and flood backflow, even when the tank sits below the local water table.</li>
+  <li><strong>Sealed concrete chamber.</strong> A one-piece, in-situ cast concrete chamber, rather than jointed rings or brickwork, prevents inward water infiltration even when the tank sits below the local water table.</li>
   <li><strong>Discharge to the absorption point.</strong> A heavy-duty sealed pump lifts the treated water to the absorption point where gravity discharge is not possible.</li>
   <li><strong>Shallow, wide geometry.</strong> Wide, shallow tank geometry avoids deep excavation into saturated ground, reducing excavation risk and dewatering cost.</li>
   <li><strong>Anti-buoyancy anchoring.</strong> The installation is anchored and ballasted to resist uplift from groundwater pressure.</li>
@@ -135,7 +135,7 @@ SYSTEMS = [
 <p>If your ground is standard and your water table is normal, <a href="/systems/gravity-fed-bio-septic-tank/">Option A (gravity-fed)</a> avoids the pump and uses no electricity. If your site is waterlogged, coastal or flat, Option B is the right fit. A free site inspection confirms which applies.</p>
 ''' + COMPARE_TABLE,
         'faqs': [
-            ('Can Parawewa be installed in high water table and marshy land?', 'Yes. Option B is engineered for high groundwater tables, wetlands and coastal soils such as Negombo, Ja-Ela, Wattala, Mathugama and Galle. The hermetically sealed composite body prevents inward water seepage and flood backflow.'),
+            ('Can Parawewa be installed in high water table and marshy land?', 'Yes. Option B is engineered for high groundwater tables, wetlands and coastal soils such as Negombo, Ja-Ela, Wattala, Mathugama and Galle. The hermetically sealed concrete body prevents inward water seepage and flood backflow.'),
             ('Does Option B use electricity?', 'Yes. Option B uses some electricity, less than a mechanical STP, to lift the treated water to the discharge point. Option A, the gravity-fed model, uses no electricity and is the choice for standard ground.'),
             ('Will the tank float in waterlogged ground?', 'The installation is anchored and ballasted to resist uplift from groundwater pressure, and the tank uses a shallow, wide geometry that avoids deep excavation into saturated soil.'),
             ('What is the difference between Option A and Option B?', 'Option A operates on passive gravity flow with no electricity and suits standard ground levels. Option B, the Seal Type Parawewa System, suits high water table land where gravity discharge is restricted. Both use the same patented biological treatment and carry a 10-year written warranty.'),
