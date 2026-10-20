@@ -409,7 +409,7 @@ TEXT = [
     ("2. Construction", "2. ඉදිකිරීම"),
     ("3. Finished", "3. නිමි පද්ධතිය"),
     ("10 Years", "වසර 10"),
-    ("The chamber sits below ground beside the building and receives the wastewater from the house.", "කුටීරය ගොඩනැගිල්ල අසල භූගතව පිහිටා, නිවසෙන් එන අපජලය ලබා ගනී."),
+    ("The chamber sits below ground beside the building; treated water soaks into the ground through a gravel bed.", "කුටීරය ගොඩනැගිල්ල අසල භූගතව පිහිටයි; පිරිපහදු කළ ජලය බොරළු ස්ථරයක් හරහා පොළොවට අවශෝෂණය වේ."),
     ("The chamber is built inside the excavation, before the ground is closed over it.", "පොළොව නැවත වසා දැමීමට පෙර, කැණීම තුළ කුටීරය ඉදිකෙරේ."),
     ("The chamber is covered and sealed, leaving only an access cover at ground level.", "කුටීරය වසා මුද්‍රා තබන අතර, බිම් මට්ටමේ ඇතුළු වීමේ ආවරණයක් පමණක් ඉතිරි වේ."),
     ("Invented under Sri Lanka Patent #16371", "ශ්‍රී ලංකා පේටන්ට් අංක #16371 යටතේ නිපදවන ලදී"),
@@ -543,6 +543,7 @@ ATTR = [
     ("Language", "භාෂාව"),
     ("Parawewa clients", "පරවැව සේවාදායකයින්"),
     ("TikTok", "TikTok"),
+    ("Illustration: a Parawewa concrete chamber below ground beside a house, with the inlet pipe from the house and treated water soaking into the ground through a gravel bed", "නිදර්ශනය: නිවසක් අසල භූගත පරවැව කොන්ක්‍රීට් කුටීරයක්, නිවසෙන් එන ඇතුළු වන නලය සහ බොරළු ස්ථරයක් හරහා පොළොවට අවශෝෂණය වන පිරිපහදු කළ ජලය සහිතව"),
 ]
 
 # <title>, meta tags
