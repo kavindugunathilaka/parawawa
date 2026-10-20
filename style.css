@@ -2787,3 +2787,11 @@ html[lang="si"] .types-table td:nth-of-type(2)::before { content: 'භූගත 
 .apart-grid, .service-grid { grid-template-columns: 1fr; }
 @media (min-width: 640px) { .apart-grid, .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (min-width: 1200px) { .apart-grid, .service-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+
+/* Founder's diagrams: labelled Parawewa tank (Why choose) and traditional tank (comparison) */
+.why-figure, .compare-figure { margin: 0 0 1.75rem; background: #fff; border: 1px solid var(--border-color); border-radius: 22px; padding: 0.6rem; }
+.why-figure img, .compare-figure img { display: block; width: 100%; height: auto; border-radius: 16px; }
+.why-figure figcaption, .compare-figure figcaption { padding: 0.75rem 0.5rem 0.35rem; font-size: 0.95rem; line-height: 1.55; color: var(--text-muted); }
+.compare-figure { margin: 1.75rem 0 0; }
+.compare-figure figcaption strong { color: var(--text-main); }
+@media (min-width: 992px) { .why-figure { max-width: 900px; } }

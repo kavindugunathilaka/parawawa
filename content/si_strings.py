@@ -463,6 +463,12 @@ TEXT = [
     ("Specially weighted and reinforced concrete structures resist flotation and cracking in low-lying and flood-prone areas, with Option B, the Seal Type Parawewa System, for high water tables.", "විශේෂයෙන් බර කළ, ශක්තිමත් කළ කොන්ක්‍රීට් ව්‍යුහ පහත් සහ ගංවතුරට ලක්වන ප්‍රදේශවල පාවීම සහ ඉරිතැලීම වළක්වයි; ඉහළ ජල මට්ටම් සඳහා විකල්ප B, ජල මුද්‍රිත පරවැව ක්‍රමය ඇත."),
     ("6. Rapid Islandwide Installation", "6. දිවයින පුරා ඉක්මන් ස්ථාපනය"),
     ("Built on site under strict quality control, with turnkey excavation, installation and backfilling by our own team, across Sri Lanka.", "දැඩි ගුණාත්මක පාලනය යටතේ ස්ථානයේදීම ඉදිකරන අතර, කැණීම, ස්ථාපනය සහ පස් පිරවීම ශ්‍රී ලංකාව පුරා අපගේම කණ්ඩායම විසින් සිදු කෙරේ."),
+    ("2. Soakage", "2. අවශෝෂණය"),
+    ("Treated water passes through the gravel bed under the chamber and soaks safely into the ground.", "පිරිපහදු කළ ජලය කුටීරය යට ඇති බොරළු ස්ථරය හරහා ගොස් ආරක්ෂිතව පොළොවට අවශෝෂණය වේ."),
+    ("One square concrete chamber with a single access cover. The bottom is open, so the treated water soaks directly into the ground.", "එක් ඇතුළු වීමේ ආවරණයක් සහිත හතරැස් කොන්ක්‍රීට් කුටීරයක්. පතුල විවෘත නිසා පිරිපහදු කළ ජලය කෙලින්ම පොළොවට අවශෝෂණය වේ."),
+    ("For comparison: a traditional septic tank.", "සැසඳීම සඳහා: සාම්ප්‍රදායික සෙප්ටික් ටැංකියක්."),
+    ("Solids settle as sludge in two compartments and must be pumped out by a gully bowser, while the liquid flows on to a drain field. Parawewa uses a single concrete chamber with biological treatment instead.", "කුටීර දෙකක ඝන ද්‍රව්‍ය රොන්මඩ ලෙස තැන්පත් වන අතර ඒවා ගලි බවුසරයකින් ඉවත් කළ යුතුය; දියර කොටස කාණු ක්ෂේත්‍රයකට ගලා යයි. පරවැව ඒ වෙනුවට ජෛව පිරිපහදුව සහිත තනි කොන්ක්‍රීට් කුටීරයක් භාවිතා කරයි."),
+    ("The chamber sits below ground beside the building and receives the wastewater from the house.", "කුටීරය ගොඩනැගිල්ල අසල භූගතව පිහිටා, නිවසෙන් එන අපජලය ලබා ගනී."),
 ]
 
 # Text left as it is (names, product names, video titles, contact data).
@@ -544,6 +550,9 @@ ATTR = [
     ("Parawewa clients", "පරවැව සේවාදායකයින්"),
     ("TikTok", "TikTok"),
     ("Illustration: a Parawewa concrete chamber below ground beside a house, with the inlet pipe from the house and treated water soaking into the ground through a gravel bed", "නිදර්ශනය: නිවසක් අසල භූගත පරවැව කොන්ක්‍රීට් කුටීරයක්, නිවසෙන් එන ඇතුළු වන නලය සහ බොරළු ස්ථරයක් හරහා පොළොවට අවශෝෂණය වන පිරිපහදු කළ ජලය සහිතව"),
+    ("Illustration: a Parawewa concrete chamber set on a gravel bed beside a house, with treated water soaking down into the ground", "නිදර්ශනය: නිවසක් අසල බොරළු ස්ථරයක් මත පිහිටි පරවැව කොන්ක්‍රීට් කුටීරයක්, පිරිපහදු කළ ජලය පොළොවට අවශෝෂණය වන අයුරු"),
+    ("Labelled diagram of a Parawewa tank: house wastewater inlet, single access cover, square concrete single chamber and an open bottom for direct soakage", "පරවැව ටැංකියේ නම් කළ රූප සටහන: නිවසේ අපජල ඇතුළු වීම, තනි ඇතුළු වීමේ ආවරණය, හතරැස් කොන්ක්‍රීට් තනි කුටීරය සහ සෘජු අවශෝෂණය සඳහා විවෘත පතුල"),
+    ("Diagram of a traditional two-compartment septic tank: sewage enters, scum floats, sludge settles, and the liquid flows on to a drain field", "සාම්ප්‍රදායික කුටීර දෙකේ සෙප්ටික් ටැංකියක රූප සටහන: අපජලය ඇතුළු වේ, පෙණ පාවේ, රොන්මඩ තැන්පත් වේ, දියර කාණු ක්ෂේත්‍රයකට ගලා යයි"),
 ]
 
 # <title>, meta tags
