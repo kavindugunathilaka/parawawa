@@ -141,7 +141,7 @@ def page(sy):
         </div>
         <div class="article-cta-actions">
           <a href="/#contact" class="btn btn-primary open-quote-modal"><i class="fas fa-paper-plane"></i> Get Free Quote</a>
-          <a href="tel:+94777347620" class="btn btn-secondary"><i class="fas fa-phone"></i> 0777 347 620</a>
+          <a href="tel:+94740604936" class="btn btn-secondary"><i class="fas fa-phone"></i> 074 060 4936</a>
         </div>
       </aside>
     </article>

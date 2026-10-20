@@ -5,7 +5,7 @@
 TEXT = [
     # ---- top bar, navigation
     ("Skip to main content", "ප්‍රධාන අන්තර්ගතයට පිවිසෙන්න"),
-    ("Hotline: 0777 347 620", "ආධාරක දුරකථනය: 0777 347 620"),
+    ("Hotline: 074 060 4936", "ආධාරක දුරකථනය: 074 060 4936"),
     ("Piliyandala, Sri Lanka", "පිළියන්දල, ශ්‍රී ලංකාව"),
     ("2018 Presidential Innovation Award Winner", "2018 ජනාධිපති නවෝත්පාදන සම්මාන ජයග්‍රාහකයා"),
     ("PATENT #16371", "පේටන්ට් අංක #16371"),
@@ -42,7 +42,7 @@ TEXT = [
     ("Projects & Media", "ව්‍යාපෘති සහ මාධ්‍ය"),
     ("Client Reviews", "සේවාදායක ව්‍යාපෘති"),
     ("Contact Head Office", "ප්‍රධාන කාර්යාලය අමතන්න"),
-    ("Call Hotline: 0777 347 620", "ආධාරක දුරකථනය අමතන්න: 0777 347 620"),
+    ("Call Hotline: 074 060 4936", "ආධාරක දුරකථනය අමතන්න: 074 060 4936"),
     ("Get Free Quote", "නොමිලේ මිල ගණන් ලබාගන්න"),
 
     # ---- hero
@@ -362,7 +362,7 @@ TEXT = [
     ("Engineering Consultation Required (නොදනිමි)", "ඉංජිනේරු උපදේශනයක් අවශ්‍යයි (නොදනිමි)"),
     ("Your Message / ඔබගේ පණිවිඩය (Optional)", "ඔබගේ පණිවිඩය (අත්‍යවශ්‍ය නොවේ)"),
     ("Submit Inquiry / පණිවිඩය යවන්න", "පණිවිඩය යවන්න"),
-    ("Call 0777347620", "0777347620 අමතන්න"),
+    ("Call 0740604936", "0740604936 අමතන්න"),
     ("Instant Quote", "වහාම මිල ගණන්"),
     ("Request Price Quote", "මිල ගණන් ඉල්ලන්න"),
     ("Fill out details for customized pricing & technical specifications from Parawewa.", "පරවැවෙන් අභිරුචි මිල ගණන් සහ තාක්ෂණික පිරිවිතර ලබාගැනීමට විස්තර පුරවන්න."),
@@ -553,6 +553,7 @@ ATTR = [
     ("Illustration: a Parawewa concrete chamber set on a gravel bed beside a house, with treated water soaking down into the ground", "නිදර්ශනය: නිවසක් අසල බොරළු ස්ථරයක් මත පිහිටි පරවැව කොන්ක්‍රීට් කුටීරයක්, පිරිපහදු කළ ජලය පොළොවට අවශෝෂණය වන අයුරු"),
     ("Labelled diagram of a Parawewa tank: house wastewater inlet, single access cover, square concrete single chamber and an open bottom for direct soakage", "පරවැව ටැංකියේ නම් කළ රූප සටහන: නිවසේ අපජල ඇතුළු වීම, තනි ඇතුළු වීමේ ආවරණය, හතරැස් කොන්ක්‍රීට් තනි කුටීරය සහ සෘජු අවශෝෂණය සඳහා විවෘත පතුල"),
     ("Diagram of a traditional two-compartment septic tank: sewage enters, scum floats, sludge settles, and the liquid flows on to a drain field", "සාම්ප්‍රදායික කුටීර දෙකේ සෙප්ටික් ටැංකියක රූප සටහන: අපජලය ඇතුළු වේ, පෙණ පාවේ, රොන්මඩ තැන්පත් වේ, දියර කාණු ක්ෂේත්‍රයකට ගලා යයි"),
+    ("Call 074 060 4936", "074 060 4936 අමතන්න"),
 ]
 
 # <title>, meta tags

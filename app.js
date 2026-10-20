@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const FORM_MSG = {
     sending: I18N.sending || 'Sending... / යවමින්...',
     ok: I18N.thanks || 'Thank you! Your quote request has been sent. The Parawewa team will contact you soon. / ස්තූතියි! ඔබගේ ඉල්ලීම යවන ලදී.',
-    fail: I18N.failed || 'Sorry, your request could not be sent. Please call or WhatsApp 0777 347 620. / කරුණාකර 0777 347 620 අමතන්න.'
+    fail: I18N.failed || 'Sorry, your request could not be sent. Please call or WhatsApp 074 060 4936. / කරුණාකර 074 060 4936 අමතන්න.'
   };
 
   const handleFormSubmit = async (e) => {
