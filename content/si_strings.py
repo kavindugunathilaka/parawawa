@@ -426,6 +426,7 @@ TEXT = [
     ("For schools, education centres, hospitals and government institutions with many daily users.", "දිනපතා බොහෝ දෙනා භාවිතා කරන පාසල්, අධ්‍යාපන ආයතන, රෝහල් සහ රජයේ ආයතන සඳහා."),
     ("Trusted by factories, hospitals, schools, hotels and homes across Sri Lanka", "ශ්‍රී ලංකාව පුරා කර්මාන්තශාලා, රෝහල්, පාසල්, හෝටල් සහ නිවාස අප කෙරෙහි විශ්වාසය තබයි"),
     ("Industrial Factory • BOI Zone, Horana", "කාර්මික කර්මාන්තශාලාව • BOI කලාපය, හොරණ"),
+    ("Also trusted by", "තවත් අප කෙරෙහි විශ්වාසය තැබූ ආයතන")
 ]
 
 # Text left as it is (names, product names, video titles, contact data).
@@ -436,6 +437,7 @@ KEEP = [
     "Access Engineering – Port of Colombo",
     "Atire (Pvt) Ltd",
     "Cisco Speciality (Pvt) Ltd",
+    "Cisco Speciality Packaging (Pvt) Ltd",
     "David Pieris Holdings (Pvt) Ltd – GLO Camp, Welikanda",
     "Elastomeric Engineering Co. Ltd – Horana",
     "Ethimale Plantation – Siyambalanduwa, Monaragala",
