@@ -469,6 +469,9 @@ TEXT = [
     ("For comparison: a traditional septic tank.", "සැසඳීම සඳහා: සාම්ප්‍රදායික සෙප්ටික් ටැංකියක්."),
     ("Solids settle as sludge in two compartments and must be pumped out by a gully bowser, while the liquid flows on to a drain field. Parawewa uses a single concrete chamber with biological treatment instead.", "කුටීර දෙකක ඝන ද්‍රව්‍ය රොන්මඩ ලෙස තැන්පත් වන අතර ඒවා ගලි බවුසරයකින් ඉවත් කළ යුතුය; දියර කොටස කාණු ක්ෂේත්‍රයකට ගලා යයි. පරවැව ඒ වෙනුවට ජෛව පිරිපහදුව සහිත තනි කොන්ක්‍රීට් කුටීරයක් භාවිතා කරයි."),
     ("The chamber sits below ground beside the building and receives the wastewater from the house.", "කුටීරය ගොඩනැගිල්ල අසල භූගතව පිහිටා, නිවසෙන් එන අපජලය ලබා ගනී."),
+    ("Get Directions", "මග පෙන්වීම"),
+    ("Review us on Google", "Google හි අපව සමාලෝචනය කරන්න"),
+    ("Happy with Parawewa? Review us on Google", "පරවැව ගැන සතුටුද? Google හි අපව සමාලෝචනය කරන්න"),
 ]
 
 # Text left as it is (names, product names, video titles, contact data).
@@ -554,6 +557,7 @@ ATTR = [
     ("Labelled diagram of a Parawewa tank: house wastewater inlet, single access cover, square concrete single chamber and an open bottom for direct soakage", "පරවැව ටැංකියේ නම් කළ රූප සටහන: නිවසේ අපජල ඇතුළු වීම, තනි ඇතුළු වීමේ ආවරණය, හතරැස් කොන්ක්‍රීට් තනි කුටීරය සහ සෘජු අවශෝෂණය සඳහා විවෘත පතුල"),
     ("Diagram of a traditional two-compartment septic tank: sewage enters, scum floats, sludge settles, and the liquid flows on to a drain field", "සාම්ප්‍රදායික කුටීර දෙකේ සෙප්ටික් ටැංකියක රූප සටහන: අපජලය ඇතුළු වේ, පෙණ පාවේ, රොන්මඩ තැන්පත් වේ, දියර කාණු ක්ෂේත්‍රයකට ගලා යයි"),
     ("Call 074 060 4936", "074 060 4936 අමතන්න"),
+    ("Parawewa head office on Google Maps", "Google සිතියමේ පරවැව ප්‍රධාන කාර්යාලය"),
 ]
 
 # <title>, meta tags

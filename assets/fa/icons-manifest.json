@@ -15,6 +15,7 @@
   "city",
   "cogs",
   "compress-alt",
+  "directions",
   "envelope",
   "external-link-alt",
   "faucet-drip",
@@ -60,6 +61,7 @@
   "clock"
  ],
  "fab": [
+  "facebook-f",
   "tiktok",
   "whatsapp",
   "youtube"
