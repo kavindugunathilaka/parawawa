@@ -16,7 +16,7 @@ os.chdir(ROOT)
 sys.path.insert(0, os.path.join(ROOT, 'content'))
 import si_strings as S  # noqa: E402
 
-SITE = 'https://parawawa.lk'
+SITE = 'https://parawewa.lk'
 SI_URL = SITE + '/si/'
 SINHALA = re.compile('[඀-෿]')
 LATIN = re.compile('[A-Za-z]{3}')

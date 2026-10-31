@@ -11,7 +11,7 @@ if ! cmp -s "$SITE/deploy/nginx/parawawa.conf" /etc/nginx/sites-available/parawa
   cp /etc/nginx/sites-available/parawawa.conf /etc/nginx/sites-available/parawawa.conf.bak
   cp "$SITE/deploy/nginx/parawawa.conf" /etc/nginx/sites-available/parawawa.conf
   # certbot's HTTPS lines live in the live file; re-run certbot to put them back
-  certbot --nginx -d parawawa.lk -d www.parawawa.lk --redirect --non-interactive --reinstall >/dev/null 2>&1 || true
+  certbot --nginx -d parawewa.lk -d www.parawewa.lk --redirect --non-interactive --reinstall >/dev/null 2>&1 || true
   if nginx -t; then
     systemctl reload nginx
   else

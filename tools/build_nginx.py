@@ -11,7 +11,7 @@ import os
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 
-DOMAIN = 'parawawa.lk'
+DOMAIN = 'parawewa.lk'
 WEBROOT = '/var/www/parawawa/current'
 QUOTE_PORT = 3005
 DOCKER_WEBROOT = '/site'

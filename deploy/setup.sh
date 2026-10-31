@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# One-time setup of a fresh Ubuntu 22.04/24.04 VPS (e.g. Contabo) for parawawa.lk.
+# One-time setup of a fresh Ubuntu 22.04/24.04 VPS (e.g. Contabo) for parawewa.lk.
 # Run as root:   bash setup.sh https://github.com/kavindugunathilaka/parawawa.git
 # Safe to re-run.
 set -euo pipefail
@@ -7,7 +7,7 @@ set -euo pipefail
 REPO="${1:-https://github.com/kavindugunathilaka/parawawa.git}"
 WEB=/var/www/parawawa
 SITE=$WEB/current
-DOMAIN=parawawa.lk
+DOMAIN=parawewa.lk
 
 echo "==> Packages (nginx, certbot, git, firewall)"
 apt-get update -y

@@ -16,7 +16,7 @@ from datetime import datetime
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 
-SITE = 'https://parawawa.lk'
+SITE = 'https://parawewa.lk'
 ARTICLES = json.load(open('content/articles.json', encoding='utf-8'))
 BY_ID = {a['id']: a for a in ARTICLES}
 

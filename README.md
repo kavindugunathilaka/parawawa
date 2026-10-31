@@ -65,7 +65,7 @@ Both quote forms (contact section and the pop-up on every page) post to `api/quo
 |---|---|
 | `RESEND_API_KEY` | API key from the Resend dashboard (keep it secret) |
 | `QUOTE_TO` | Recipients, comma-separated, e.g. `info@parawawa.lk, someone@gmail.com` |
-| `QUOTE_FROM` | Optional. e.g. `Parawewa Website <quotes@parawawa.lk>`, only after `parawawa.lk` is verified in Resend (DNS records). Without it, Resend's test sender delivers only to the Resend account owner's own address. |
+| `QUOTE_FROM` | Optional. e.g. `Parawewa Website <quotes@parawewa.lk>`, only after `parawewa.lk` is verified in Resend (DNS records). Without it, Resend's test sender delivers only to the Resend account owner's own address. |
 
 Until the variables are set the form shows "could not be sent, please call or WhatsApp". Spam protection: a hidden field and a minimum fill-in time. When moving the domain's DNS to Vercel, keep the existing MX records so info@parawawa.lk keeps receiving mail.
 
@@ -89,8 +89,8 @@ curl -fsSL https://raw.githubusercontent.com/kavindugunathilaka/parawawa/main/de
 bash setup.sh
 ```
 
-Then point the `A` records for `parawawa.lk` and `www.parawawa.lk` at the server IP (keep the MX records), run
-`certbot --nginx -d parawawa.lk -d www.parawawa.lk --redirect`, fill in `/etc/parawewa/quote.env` and
+Then point the `A` records for `parawewa.lk` and `www.parawewa.lk` at the server IP (keep the MX records), run
+`certbot --nginx -d parawewa.lk -d www.parawewa.lk --redirect`, fill in `/etc/parawewa/quote.env` and
 `systemctl restart parawewa-quote`. After each push to GitHub: `bash /var/www/parawawa/current/deploy/update.sh`.
 
 The site files need no build on the server: the generated pages are committed.
@@ -124,13 +124,13 @@ example.com {
 
 then `docker exec caddy caddy reload --config /etc/caddy/Caddyfile`.
 
-## Going live on parawawa.lk
+## Going live on parawewa.lk
 
-All canonical URLs, the sitemap and the structured data already assume `https://parawawa.lk/`.
+All canonical URLs, the sitemap and the structured data already assume `https://parawewa.lk/`.
 
-1. In Vercel, add `parawawa.lk` (and `www`) to this project and update the DNS records it asks for.
+1. In Vercel, add `parawewa.lk` (and `www`) to this project and update the DNS records it asks for.
 2. The old WordPress URLs (`/en/...`, `/si/`, `/wp-sitemap.xml`) redirect through `vercel.json`.
-3. In Google Search Console add a **Domain** property for `parawawa.lk` (verify with a DNS TXT record), submit `https://parawawa.lk/sitemap.xml`, and request indexing of the home page.
+3. In Google Search Console add a **Domain** property for `parawewa.lk` (verify with a DNS TXT record), submit `https://parawewa.lk/sitemap.xml`, and request indexing of the home page.
 4. Repeat in Bing Webmaster Tools if wanted.
 
 ## Content rules

@@ -18,4 +18,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://parawawa.lk/sitemap.xml
+Sitemap: https://parawewa.lk/sitemap.xml

@@ -263,7 +263,7 @@ TEXT = [
     ("AUTHENTIC DOCUMENTS & CERTIFICATES", "සැබෑ ලේඛන සහ සහතික"),
     ("Official", "නිල"),
     ("Awards & Patent Gallery", "සම්මාන සහ පේටන්ට් ගැලරිය"),
-    ("Real document photographs downloaded directly from parawawa.lk official archives.", "parawawa.lk නිල ලේඛනාගාරයෙන් ලබාගත් සැබෑ ලේඛනවල ඡායාරූප."),
+    ("Real document photographs downloaded directly from parawewa.lk official archives.", "parawewa.lk නිල ලේඛනාගාරයෙන් ලබාගත් සැබෑ ලේඛනවල ඡායාරූප."),
     ("PRESIDENTIAL AWARD 2018", "ජනාධිපති සම්මානය 2018"),
     ("1st Place New Innovation", "නව නිපැයුමට පළමු ස්ථානය"),
     ("Official Presidential innovation certificate awarded by the President of Sri Lanka.", "ශ්‍රී ලංකා ජනාධිපතිතුමා විසින් ප්‍රදානය කළ නිල ජනාධිපති නවෝත්පාදන සහතිකය."),
