@@ -8,7 +8,7 @@ set -euo pipefail
 SITES=${SITES:-/root/apps/proxy/sites}
 
 # Parawewa: the main address + the addresses that redirect to it
-PARAWEWA_PRIMARY=${PARAWEWA_PRIMARY:-parawawa.lk}
+PARAWEWA_PRIMARY=${PARAWEWA_PRIMARY:-parawewa.lk}
 PARAWEWA_ALL="parawawa.lk www.parawawa.lk parawewa.lk www.parawewa.lk parawewa.com www.parawewa.com"
 # DBM system: always on http://<server IP> (how users reach it today), plus its own domain once
 # DNS points here (http and https, no forced redirect until the app is checked on https).

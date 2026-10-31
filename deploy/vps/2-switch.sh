@@ -82,9 +82,18 @@ restore() {
   exit 1
 }
 
+# latest site-file writer from this checkout, then check the whole Caddy config before anything stops
+cp "$HERE/../proxy/write-sites.sh" "$PROXY/write-sites.sh"
 bash "$PROXY/write-sites.sh"
 [ -f "$PROXY/sites/dbm.caddy" ] || { echo "dbm.caddy missing - nothing switched"; cp -p "$BACKUP" "$F"; exit 1; }
 MYIP=$(ip -4 route get 1.1.1.1 | awk '{for(i=1;i<=NF;i++) if($i=="src") print $(i+1)}')
+
+echo "== checking Caddy before the switch"
+(cd "$PROXY" && docker compose pull -q) || { cp -p "$BACKUP" "$F"; echo "Caddy download failed - nothing switched"; exit 1; }
+docker run --rm -v "$PROXY/Caddyfile:/etc/caddy/Caddyfile:ro" -v "$PROXY/sites:/etc/caddy/sites:ro" caddy:2.8-alpine \
+  caddy validate --config /etc/caddy/Caddyfile --adapter caddyfile >/dev/null \
+  || { cp -p "$BACKUP" "$F"; echo "Caddy config invalid - nothing switched"; exit 1; }
+echo "Caddy config OK"
 
 echo "== switching (DBM offline for a few seconds)"
 docker compose -f "$F" up -d --no-deps "$FRONT" || restore
