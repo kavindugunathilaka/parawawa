@@ -69,6 +69,32 @@ Both quote forms (contact section and the pop-up on every page) post to `api/quo
 
 Until the variables are set the form shows "could not be sent, please call or WhatsApp". Spam protection: a hidden field and a minimum fill-in time. When moving the domain's DNS to Vercel, keep the existing MX records so info@parawawa.lk keeps receiving mail.
 
+## Hosting on a Linux VPS (Contabo or any Ubuntu server)
+
+Everything the server needs is in `deploy/`:
+
+| File | What it is |
+|---|---|
+| `deploy/nginx/parawawa.conf` | nginx site: redirects, cache and security headers, quote-form proxy. **Generated from `vercel.json`** by `tools/build_nginx.py` (part of the build), so both stay in sync |
+| `deploy/quote-server.js` | Runs `api/quote.js` as a small Node service on `127.0.0.1:3005` |
+| `deploy/parawewa-quote.service` | systemd unit that keeps the quote service running |
+| `deploy/quote.env.example` | Template for `/etc/parawewa/quote.env` (Resend key, recipients) |
+| `deploy/setup.sh` | One-time server setup (nginx, certbot, Node 20, firewall, service) |
+| `deploy/update.sh` | Pull the latest site from GitHub and apply it |
+
+First time (Ubuntu 22.04/24.04, as root):
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/kavindugunathilaka/parawawa/main/deploy/setup.sh -o setup.sh
+bash setup.sh
+```
+
+Then point the `A` records for `parawawa.lk` and `www.parawawa.lk` at the server IP (keep the MX records), run
+`certbot --nginx -d parawawa.lk -d www.parawawa.lk --redirect`, fill in `/etc/parawewa/quote.env` and
+`systemctl restart parawewa-quote`. After each push to GitHub: `bash /var/www/parawawa/current/deploy/update.sh`.
+
+The site files need no build on the server: the generated pages are committed.
+
 ## Going live on parawawa.lk
 
 All canonical URLs, the sitemap and the structured data already assume `https://parawawa.lk/`.

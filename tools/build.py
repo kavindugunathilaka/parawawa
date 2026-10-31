@@ -39,12 +39,14 @@ import build_systems  # noqa: E402
 import build_compare  # noqa: E402
 import build_extras  # noqa: E402
 import build_si  # noqa: E402
+import build_nginx  # noqa: E402
 
 build_articles.main()
 build_systems.main()
 build_compare.main()
 build_extras.main()
 build_si.main()
+build_nginx.main()
 
 
 def stamp_font_preloads():
