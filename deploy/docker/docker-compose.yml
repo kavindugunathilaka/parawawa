@@ -1,0 +1,53 @@
+# Parawewa website on a shared Docker VPS, behind the Caddy proxy (deploy/proxy/).
+#
+# Server layout:
+#   /root/apps/parawewa/site        git clone of this repo (the site is served straight from it)
+#   /root/apps/parawewa/quote.env   Resend key + recipients (from deploy/quote.env.example, chmod 600)
+#
+# Run from this folder:  docker compose up -d
+# No host ports: Caddy reaches the site as parawewa-web:80 over the shared "web" network.
+
+name: parawewa
+
+x-logging: &logging
+  driver: json-file
+  options: { max-size: "10m", max-file: "3" }
+
+services:
+  web:
+    image: nginx:1.27-alpine
+    container_name: parawewa-web
+    restart: unless-stopped
+    depends_on: [quote]
+    volumes:
+      - ../..:/site:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    networks: [default, web]
+    mem_limit: 128m
+    logging: *logging
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  quote:
+    image: node:22-alpine
+    container_name: parawewa-quote
+    restart: unless-stopped
+    user: node
+    working_dir: /site
+    command: ["node", "deploy/quote-server.js"]
+    environment:
+      HOST: 0.0.0.0
+      PORT: "3005"
+    env_file: ../../../quote.env
+    volumes:
+      - ../..:/site:ro
+    read_only: true
+    mem_limit: 128m
+    logging: *logging
+
+networks:
+  web:
+    external: true

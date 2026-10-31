@@ -95,6 +95,35 @@ Then point the `A` records for `parawawa.lk` and `www.parawawa.lk` at the server
 
 The site files need no build on the server: the generated pages are committed.
 
+### Shared Docker VPS (several sites on one server, Caddy in front)
+
+Use this instead of `setup.sh` when the server already runs other sites in Docker (the current VPS runs DBM).
+Caddy owns ports 80/443, gets HTTPS certificates for every domain automatically and sends each domain to
+its own containers over a shared Docker network called `web`.
+
+| File | What it is |
+|---|---|
+| `deploy/proxy/` | Caddy compose file, `Caddyfile` (imports `sites/*.caddy`) and `write-sites.sh`, which writes a site file for every domain whose DNS already points to the server |
+| `deploy/docker/docker-compose.yml` | Parawewa: nginx container (`deploy/docker/nginx.conf`, generated from `vercel.json`) + the quote-form Node container. No public ports |
+| `deploy/vps/1-prepare.sh` | Network, site clone in `/root/apps/parawewa/site`, Parawewa containers, proxy files in `/root/apps/proxy`. Touches nothing else |
+| `deploy/vps/2-switch.sh` | Backs up DBM's compose file, moves 80/443 from DBM's nginx to Caddy, binds Prisma Studio to 127.0.0.1; puts everything back on its own if DBM does not answer |
+| `deploy/vps/rollback.sh` | Undo `2-switch.sh` |
+| `deploy/vps/3-harden.sh` | Firewall, fail2ban, automatic security updates, nightly DBM database dump |
+| `deploy/vps/update-parawewa.sh` | After each push: pull and reload |
+
+Order: `1-prepare.sh`, `2-switch.sh`, `3-harden.sh`. After any DNS change run `bash /root/apps/proxy/write-sites.sh`.
+To add another website later: give it its own compose project on the `web` network (no host ports) and a
+`sites/<name>.caddy` file:
+
+```
+example.com {
+	import common
+	reverse_proxy <container>:<port>
+}
+```
+
+then `docker exec caddy caddy reload --config /etc/caddy/Caddyfile`.
+
 ## Going live on parawawa.lk
 
 All canonical URLs, the sitemap and the structured data already assume `https://parawawa.lk/`.

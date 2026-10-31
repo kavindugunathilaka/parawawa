@@ -1,0 +1,13 @@
+# Global settings for every site on this server.
+{
+	# Let's Encrypt / ZeroSSL certificate expiry notices go here (optional, uncomment and set)
+	# email you@example.com
+}
+
+# Shared settings, used in site files as:  import common
+(common) {
+	encode zstd gzip
+	header -Server
+}
+
+import sites/*.caddy

@@ -2,13 +2,15 @@
 // nginx proxies POST /api/quote to it. Needs Node 18+ (built-in fetch).
 //
 // Settings come from the environment (systemd EnvironmentFile=/etc/parawewa/quote.env):
-//   PORT (default 3005), RESEND_API_KEY, QUOTE_TO, QUOTE_FROM  -- see deploy/quote.env.example
+//   PORT (default 3005), HOST (default 127.0.0.1; 0.0.0.0 in Docker), RESEND_API_KEY, QUOTE_TO, QUOTE_FROM
+//   -- see deploy/quote.env.example
 
 const http = require('http');
 const path = require('path');
 const handler = require(path.join(__dirname, '..', 'api', 'quote.js'));
 
 const PORT = Number(process.env.PORT) || 3005;
+const HOST = process.env.HOST || '127.0.0.1';
 const MAX_BODY = 16 * 1024;
 
 const server = http.createServer((req, res) => {
@@ -50,4 +52,4 @@ const server = http.createServer((req, res) => {
   });
 });
 
-server.listen(PORT, '127.0.0.1', () => console.log(`quote-server listening on 127.0.0.1:${PORT}`));
+server.listen(PORT, HOST, () => console.log(`quote-server listening on ${HOST}:${PORT}`));

@@ -1,0 +1,37 @@
+# Caddy: the one front door of the VPS. Owns ports 80/443, gets and renews HTTPS certificates
+# for every domain automatically, and sends each domain to its site's container.
+#
+# Server folder: /root/apps/proxy   (copied there by deploy/vps/1-prepare.sh)
+#   Caddyfile        global settings, imports sites/*.caddy
+#   sites/*.caddy    one small file per website
+# After adding or changing a site file:  docker exec caddy caddy reload --config /etc/caddy/Caddyfile
+
+name: proxy
+
+services:
+  caddy:
+    image: caddy:2.8-alpine
+    container_name: caddy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./sites:/etc/caddy/sites:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    networks: [web]
+    mem_limit: 256m
+    logging:
+      driver: json-file
+      options: { max-size: "10m", max-file: "3" }
+
+volumes:
+  caddy_data:
+  caddy_config:
+
+networks:
+  web:
+    external: true
