@@ -25,7 +25,8 @@ echo "Server IP: $MYIP"
 
 # ---- DBM system
 dbm=$(pick $DBM_ALL)
-addr="http://$MYIP"
+# 127.0.0.1/localhost: DBM's own scripts/deploy.sh health check calls http://127.0.0.1/ on the server
+addr="http://$MYIP, http://127.0.0.1, http://localhost"
 [ -n "$dbm" ] && addr="$addr, $(join http:// $dbm), $(join https:// $dbm)"
 cat > "$SITES/dbm.caddy" <<EOF
 # DBM system (react-node-architect). Container: dbm_frontend_nginx
