@@ -5,13 +5,15 @@
 #
 #   bash write-sites.sh            (run as root on the VPS)
 set -euo pipefail
-SITES=/root/apps/proxy/sites
+SITES=${SITES:-/root/apps/proxy/sites}
 
 # Parawewa: the main address + the addresses that redirect to it
 PARAWEWA_PRIMARY=${PARAWEWA_PRIMARY:-parawawa.lk}
 PARAWEWA_ALL="parawawa.lk www.parawawa.lk parawewa.lk www.parawewa.lk parawewa.com www.parawewa.com"
-# DBM: served over both http and https, no forced redirect until its app is checked on https
-DBM_ALL="dbm.lk www.dbm.lk"
+# DBM system: always on http://<server IP> (how users reach it today), plus its own domain once
+# DNS points here (http and https, no forced redirect until the app is checked on https).
+# dbm.lk itself is kept free for the DBM company website.
+DBM_ALL="app.dbm.lk"
 
 MYIP=$(ip -4 route get 1.1.1.1 | awk '{for(i=1;i<=NF;i++) if($i=="src") print $(i+1)}')
 here() { [ "$(getent ahostsv4 "$1" | awk 'NR==1{print $1}')" = "$MYIP" ]; }
@@ -21,18 +23,18 @@ join() { local p=$1 s=""; shift; for d in "$@"; do s="${s:+$s, }$p$d"; done; ech
 mkdir -p "$SITES"
 echo "Server IP: $MYIP"
 
-# ---- DBM
+# ---- DBM system
 dbm=$(pick $DBM_ALL)
-if [ -n "$dbm" ]; then
-  cat > "$SITES/dbm.caddy" <<EOF
-# DBM (react-node-architect). Container: dbm_frontend_nginx
-$(join http:// $dbm), $(join https:// $dbm) {
+addr="http://$MYIP"
+[ -n "$dbm" ] && addr="$addr, $(join http:// $dbm), $(join https:// $dbm)"
+cat > "$SITES/dbm.caddy" <<EOF
+# DBM system (react-node-architect). Container: dbm_frontend_nginx
+$addr {
 	import common
 	reverse_proxy dbm_frontend_nginx:80
 }
 EOF
-  echo "dbm.caddy:$dbm"
-fi
+echo "dbm.caddy: $addr"
 
 # ---- Parawewa
 pw=$(pick $PARAWEWA_ALL)

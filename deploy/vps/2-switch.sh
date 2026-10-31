@@ -83,15 +83,16 @@ restore() {
 }
 
 bash "$PROXY/write-sites.sh"
-[ -f "$PROXY/sites/dbm.caddy" ] || { echo "dbm.lk does not point to this server - nothing switched"; cp -p "$BACKUP" "$F"; exit 1; }
+[ -f "$PROXY/sites/dbm.caddy" ] || { echo "dbm.caddy missing - nothing switched"; cp -p "$BACKUP" "$F"; exit 1; }
+MYIP=$(ip -4 route get 1.1.1.1 | awk '{for(i=1;i<=NF;i++) if($i=="src") print $(i+1)}')
 
 echo "== switching (DBM offline for a few seconds)"
 docker compose -f "$F" up -d --no-deps "$FRONT" || restore
 (cd "$PROXY" && docker compose up -d) || restore
 
 sleep 6
-read -r code size < <(curl -s -o /dev/null -w '%{http_code} %{size_download}' -H 'Host: dbm.lk' http://127.0.0.1/ || echo "000 0")
-echo "DBM through Caddy: HTTP $code, $size bytes"
+read -r code size < <(curl -s -o /dev/null -w '%{http_code} %{size_download}' -H "Host: $MYIP" http://127.0.0.1/ || echo "000 0")
+echo "DBM through Caddy (http://$MYIP): HTTP $code, $size bytes"
 case "$code" in 2*|3*|401|403) [ "${size%.*}" -gt 0 ] || [ "${code:0:1}" = 3 ] || restore ;; *) restore ;; esac
 
 # ---- Prisma Studio: only recreate when the DB password is available, otherwise stop it
