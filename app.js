@@ -1,5 +1,5 @@
 /* ==========================================================================
-   PARAWAWA (PARAWEMA) ECO BIO SEPTIC TANK - MOBILE RESPONSIVE JS
+   PARAWEWA ECO BIO SEPTIC TANK - MOBILE RESPONSIVE JS
    Handles Mobile Drawer, Accordion, Calculator, Modal & 10 SEO Article Reader
    ========================================================================== */
 

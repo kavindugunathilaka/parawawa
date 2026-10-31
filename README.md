@@ -64,10 +64,10 @@ Both quote forms (contact section and the pop-up on every page) post to `api/quo
 | Variable | Value |
 |---|---|
 | `RESEND_API_KEY` | API key from the Resend dashboard (keep it secret) |
-| `QUOTE_TO` | Recipients, comma-separated, e.g. `info@parawawa.lk, someone@gmail.com` |
+| `QUOTE_TO` | Recipients, comma-separated, e.g. `info@parawewa.lk, someone@gmail.com` |
 | `QUOTE_FROM` | Optional. e.g. `Parawewa Website <quotes@parawewa.lk>`, only after `parawewa.lk` is verified in Resend (DNS records). Without it, Resend's test sender delivers only to the Resend account owner's own address. |
 
-Until the variables are set the form shows "could not be sent, please call or WhatsApp". Spam protection: a hidden field and a minimum fill-in time. When moving the domain's DNS to Vercel, keep the existing MX records so info@parawawa.lk keeps receiving mail.
+Until the variables are set the form shows "could not be sent, please call or WhatsApp". Spam protection: a hidden field and a minimum fill-in time. When moving the domain's DNS to Vercel, keep the existing MX records so info@parawewa.lk keeps receiving mail.
 
 ## Hosting on a Linux VPS (Contabo or any Ubuntu server)
 

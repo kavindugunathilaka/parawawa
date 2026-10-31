@@ -477,7 +477,7 @@ TEXT = [
 # Text left as it is (names, product names, video titles, contact data).
 KEEP = [
     "Ranjith Dharmakeerthi Mannage", "Ms. Janani Mannage", "Prasad Samarakoon",
-    "Environment Friendly Septic Tank", "info@parawawa.lk",
+    "Environment Friendly Septic Tank", "info@parawewa.lk",
     "Company",  # hidden spam-trap field label
     "Access Engineering – Port of Colombo",
     "Atire (Pvt) Ltd",

@@ -3,7 +3,7 @@
 // Sends each request to every address in QUOTE_TO through Resend (https://resend.com).
 // Environment variables (set in Vercel > Project > Settings > Environment Variables):
 //   RESEND_API_KEY  Resend API key (secret)
-//   QUOTE_TO        recipients, comma-separated, e.g. "info@parawawa.lk, you@example.com"
+//   QUOTE_TO        recipients, comma-separated, e.g. "info@parawewa.lk, you@example.com"
 //   QUOTE_FROM      sender, e.g. "Parawewa Website <quotes@parawewa.lk>" (domain must be verified in Resend).
 //                   Until the domain is verified, leave it unset: Resend's test sender then only
 //                   delivers to the email address that owns the Resend account.
