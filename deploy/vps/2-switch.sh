@@ -100,8 +100,7 @@ docker compose -f "$F" up -d --no-deps "$FRONT" || restore
 (cd "$PROXY" && docker compose up -d) || restore
 
 sleep 6
-read -r code size < <(curl -s -o /dev/null -w '%{http_code} %{size_download}
-' -H "Host: $MYIP" http://127.0.0.1/ || echo "000 0")
+read -r code size < <(curl -s -o /dev/null -w '%{http_code} %{size_download}\n' -H "Host: $MYIP" http://127.0.0.1/ || echo "000 0")
 echo "DBM through Caddy (http://$MYIP): HTTP $code, $size bytes"
 case "$code" in 2*|3*|401|403) [ "${size%.*}" -gt 0 ] || [ "${code:0:1}" = 3 ] || restore ;; *) restore ;; esac
 
